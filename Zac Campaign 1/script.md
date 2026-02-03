@@ -16,3 +16,11 @@ Then they're sent to an airfield.   Something seems a bit off but they land.   I
 We've located the general viscinity of the GPS spoofers that were used to hijack out F22s.   We need to find the exact locations and destroy enemy defenses.   Then the F22s will strike the 4(?) special hardened targets with their "special penetrator bombs".   A10s will mark targets (probably with laser or whatever mission editor allows) and the "speicial targets" are marked as invulnerable until the mission progresses and alt spawns for the F22s are created with bomb loadout.   Before then F22 may be available for CAP.   F16s are available as well.   F22 will land and swap to another alt spawn that has different weapons available and another life will be provided to allow the respawn to the alt if needed.   
 
 If single player no enemy fighters will spawn or maybe some attack planes will for the A10 to shoot down.   2x A10, 2xF22, 2xF16.  No F22s can be lost.   A10s and F16s can respawn.   
+
+
+# General Design
+Set a GV as the difficulty modifier - set either by picking "MISSION (EASY)" from mission selection or doing something in game to modify the difficulty (like spawning a plane in an alt spawn to set it)
+Use player count + modifier to determine difficulty
+Then spawn enemies based on modified difficulty GV.
+
+Make a NO-FAIL version of the missions, too - so set a GV on whether failure is allowed and if not and use that in the "failure condition"
