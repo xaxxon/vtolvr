@@ -17,7 +17,7 @@ CustomScenario
 	isTraining = False
 	rtbWptID = 
 	refuelWptID = 
-	mpPlayerCount = 8
+	mpPlayerCount = 10
 	autoPlayerCount = True
 	overrideAlliedPlayerCount = 0
 	overrideEnemyPlayerCount = 0
@@ -172,7 +172,7 @@ CustomScenario
 			unitInstanceID = 2
 			unitID = staticAAA-20x2
 			rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
-			lastValidPlacement = (21177.726623535156, 1052.5892333984375, 156465.73193359375)
+			lastValidPlacement = (18814.568115234375, 1041.22265625, 157217.95227050781)
 			editorPlacementMode = Ground
 			onCarrier = False
 			mpSelectEnabled = True
@@ -185,6 +185,60 @@ CustomScenario
 				respawnable = False
 				receiveFriendlyDamage = True
 			}
+			altSpawn
+			{
+				globalPos = (20832.600952148438, 1052.58935546875, 156789.69146728516)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (19712.167724609375, 1052.5894775390625, 157087.20245361328)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (18814.568115234375, 1041.22265625, 157217.95227050781)
+				rotation = (2.163206, 11.03285, 0.7073461)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
 		}
 		UnitSpawner
 		{
@@ -193,7 +247,7 @@ CustomScenario
 			unitInstanceID = 3
 			unitID = staticAAA-20x2
 			rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
-			lastValidPlacement = (20559.67333984375, 1052.5892333984375, 154889.69750976563)
+			lastValidPlacement = (19283.19140625, 1052.5894775390625, 156070.455078125)
 			editorPlacementMode = Ground
 			onCarrier = False
 			mpSelectEnabled = True
@@ -205,6 +259,42 @@ CustomScenario
 				invincible = False
 				respawnable = False
 				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (20102.09423828125, 1052.58935546875, 155374.29931640625)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (19283.19140625, 1052.5894775390625, 156070.455078125)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
 			}
 		}
 		UnitSpawner
@@ -222,7 +312,7 @@ CustomScenario
 			{
 				vehicle = F-16
 				selectableAltSpawn = True
-				slotLabel = Alpha 1-1 F-22 Thief
+				slotLabel = Thief 1 F-22 Thief
 				unitGroup = Allied:Alpha
 				startMode = FlightReady
 				equipment = 
@@ -333,7 +423,7 @@ CustomScenario
 			{
 				vehicle = F-16
 				selectableAltSpawn = True
-				slotLabel = Alpha 1-2 F-22 Thief
+				slotLabel = Thief 2 F-22 Thief
 				unitGroup = Allied:Alpha
 				startMode = FlightReady
 				equipment = 
@@ -457,7 +547,7 @@ CustomScenario
 				allowHOJ = True
 				engageEnemies = True
 				detectionMode = Default
-				spawnOnStart = False
+				spawnOnStart = True
 				invincible = False
 				respawnable = False
 				receiveFriendlyDamage = True
@@ -483,7 +573,7 @@ CustomScenario
 				allowHOJ = True
 				engageEnemies = True
 				detectionMode = Default
-				spawnOnStart = False
+				spawnOnStart = True
 				invincible = False
 				respawnable = False
 				receiveFriendlyDamage = True
@@ -801,7 +891,7 @@ CustomScenario
 				vehicle = F-16
 				selectableAltSpawn = True
 				slotLabel = Bravo 1-1 SEAD/CAP Support
-				unitGroup = Allied:Alpha
+				unitGroup = Allied:Bravo
 				startMode = FlightReady
 				equipment = 
 				initialSpeed = 0
@@ -929,7 +1019,7 @@ CustomScenario
 			globalPosition = (101960.21364212036, 761.43603515625, 173149.85314941406)
 			unitInstanceID = 29
 			unitID = MultiplayerSpawn
-			rotation = (-6.896021E-06, 359.0201, 9.377285E-08)
+			rotation = (-6.896026E-06, 359.0201, 9.377285E-08)
 			lastValidPlacement = (101960.21364212036, 761.43603515625, 173149.85314941406)
 			editorPlacementMode = Ground
 			onCarrier = False
@@ -939,7 +1029,7 @@ CustomScenario
 				vehicle = F-16
 				selectableAltSpawn = True
 				slotLabel = Bravo 1-2 SEAD/CAP Support
-				unitGroup = Allied:Alpha
+				unitGroup = Allied:Bravo
 				startMode = FlightReady
 				equipment = 
 				initialSpeed = 0
@@ -1037,7 +1127,7 @@ CustomScenario
 				vehicle = F-16
 				selectableAltSpawn = True
 				slotLabel = 
-				unitGroup = Allied:Alpha
+				unitGroup = Allied:Charlie
 				startMode = FlightReady
 				equipment = 
 				initialSpeed = 0
@@ -1067,7 +1157,7 @@ CustomScenario
 				vehicle = F-16
 				selectableAltSpawn = True
 				slotLabel = 
-				unitGroup = Allied:Alpha
+				unitGroup = Allied:Charlie
 				startMode = FlightReady
 				equipment = 
 				initialSpeed = 0
@@ -1208,6 +1298,387 @@ CustomScenario
 				receiveFriendlyDamage = True
 			}
 		}
+		UnitSpawner
+		{
+			unitName = F22 Base IR SAM 1
+			globalPosition = (21603.306640625, 1052.58935546875, 155095.5263671875)
+			unitInstanceID = 40
+			unitID = eIRMDlauncher
+			rotation = (-1.024528E-05, 1.526666E-12, -8.537737E-06)
+			lastValidPlacement = (18501.35302734375, 1031.1044921875, 155633.66943359375)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (22449.75244140625, 1049.0009765625, 156916.23852539063)
+				rotation = (0.9962516, 359.9937, 359.6352)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = False
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (19773.345703125, 992.5244140625, 158428.25244140625)
+				rotation = (7.383626, 1.604977, 12.29969)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = False
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (18501.35302734375, 1031.1044921875, 155633.66943359375)
+				rotation = (356.0295, 359.7137, 4.126872)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = False
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+		}
+		UnitSpawner
+		{
+			unitName = IRAPC
+			globalPosition = (20957.337036132813, 1052.639404296875, 156056.97076416016)
+			unitInstanceID = 45
+			unitID = IRAPC
+			rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+			lastValidPlacement = (19661.328857421875, 1052.6395263671875, 156677.18316650391)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				moveSpeed = Slow_10
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (20620.731567382813, 1052.639404296875, 156117.28814697266)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					unitGroup = null
+					moveSpeed = Slow_10
+					behavior = Parked
+					defaultPath = null
+					waypoint = null
+					stopToEngage = True
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (20449.29296875, 1052.639404296875, 156483.36749267578)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					unitGroup = null
+					moveSpeed = Slow_10
+					behavior = Parked
+					defaultPath = null
+					waypoint = null
+					stopToEngage = True
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (19661.328857421875, 1052.6395263671875, 156677.18316650391)
+				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					unitGroup = null
+					moveSpeed = Slow_10
+					behavior = Parked
+					defaultPath = null
+					waypoint = null
+					stopToEngage = True
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F22 Base IR SAM 2
+			globalPosition = (22008.08056640625, 1052.29833984375, 155930.8828125)
+			unitInstanceID = 44
+			unitID = eIRMDlauncher
+			rotation = (359.5707, 0.007978179, 358.9353)
+			lastValidPlacement = (19387.65185546875, 1107.05712890625, 154331.1513671875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (21567.41455078125, 1045.658203125, 157704.44189453125)
+				rotation = (9.426067E-06, -7.539786E-07, 355.4267)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = False
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (18945.8359375, 1028.318359375, 157407.02124023438)
+				rotation = (5.60828, 0.339113, 3.465821)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = False
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (19387.65185546875, 1107.05712890625, 154331.1513671875)
+				rotation = (7.326871, 0.03363599, 0.2637482)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = False
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Factory A
+			globalPosition = (22317.652099609375, 1050.73095703125, 155180.140625)
+			unitInstanceID = 46
+			unitID = factory1e
+			rotation = (9.311904E-06, 11.00614, 1.811087E-06)
+			lastValidPlacement = (22317.652099609375, 1050.73095703125, 155180.140625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				combatTarget = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = No Fail Mode
+			globalPosition = (102928.28436279297, 761.38623046875, 174396.37194824219)
+			unitInstanceID = 47
+			unitID = MultiplayerSpawn
+			rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+			lastValidPlacement = (102928.28436279297, 761.38623046875, 174396.37194824219)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = AV-42C
+				selectableAltSpawn = False
+				slotLabel = Spawn to enable no-fail mode
+				unitGroup = null
+				startMode = Cold
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = False
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Difficulty Mode
+			globalPosition = (102870.30035400391, 761.38623046875, 174497.37591552734)
+			unitInstanceID = 48
+			unitID = MultiplayerSpawn
+			rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+			lastValidPlacement = (102870.30035400391, 761.38623046875, 174497.37591552734)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = AV-42C
+				selectableAltSpawn = True
+				slotLabel = Set difficulty EASY
+				unitGroup = null
+				startMode = Cold
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = False
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (102870.30035400391, 761.38623046875, 174497.37591552734)
+				rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = AV-42C
+					selectableAltSpawn = True
+					slotLabel = Set difficulty HARDEST
+					unitGroup = null
+					startMode = Cold
+					equipment = 
+					initialSpeed = 0
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = False
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (102870.30035400391, 761.38623046875, 174497.37591552734)
+				rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = AV-42C
+					selectableAltSpawn = True
+					slotLabel = Spawn to set difficulty
+					unitGroup = null
+					startMode = Cold
+					equipment = 
+					initialSpeed = 0
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = False
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+				}
+			}
+		}
 	}
 	PATHS
 	{
@@ -1234,18 +1705,34 @@ CustomScenario
 			name = Enemy Intercept Location
 			globalPoint = (53484.1435546875, 2366.11328125, 167306.21875)
 		}
+		WAYPOINT
+		{
+			id = 3
+			name = F22 Airbase
+			globalPoint = (20312.05078125, 1052.58935546875, 156044.40625)
+		}
 	}
 	UNITGROUPS
 	{
 		ALLIED
 		{
 			Foxtrot = 2;0;1;
-			Alpha = 2;7;8;28;29;33;34;
+			Alpha = 2;7;8;
+			Bravo = 2;28;29;
+			Charlie = 2;33;34;
 			Foxtrot_SETTINGS
 			{
 				syncAltSpawns = False
 			}
 			Alpha_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Bravo_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Charlie_SETTINGS
 			{
 				syncAltSpawns = False
 			}
@@ -1281,16 +1768,96 @@ CustomScenario
 	}
 	TimedEventGroups
 	{
+		TimedEventGroup
+		{
+			groupName = Timed Events 0
+			groupID = 0
+			beginImmediately = True
+			initialDelay = 0
+			ListOrderIndex = 0
+			ListFolderName = 
+		}
+		TimedEventGroup
+		{
+			groupName = Set Difficulty
+			groupID = 1
+			beginImmediately = True
+			initialDelay = 0
+			ListOrderIndex = 10
+			ListFolderName = 
+			TimedEventInfo
+			{
+				eventName = Set Difficulty
+				time = 10
+				EventTarget
+				{
+					targetType = System
+					targetID = 0
+					eventName = Fire Conditional Action
+					methodName = FireConditionalAction
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = ConditionalActionReference
+						value = 9
+						name = Action
+					}
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Copy Value
+					methodName = CopyValue
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 6
+						name = Source
+					}
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 5
+						name = Destination
+					}
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Add Values
+					methodName = AddValues
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 4
+						name = Source
+					}
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 5
+						name = Destination
+					}
+				}
+			}
+		}
+		FOLDER_DATA
+		{
+		}
 	}
 	TRIGGER_EVENTS
 	{
 		TriggerEvent
 		{
 			id = 1
-			enabled = False
+			enabled = True
 			triggerType = Conditional
 			ListOrderIndex = 0
-			ListFolderName = 
+			ListFolderName = F16 approach phase triggers
 			conditional = 3
 			eventName = Launch Enemy Fighters
 			EventInfo
@@ -1339,6 +1906,36 @@ CustomScenario
 					methodName = BeginEvent
 					altTargetIdx = -1
 				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Set Value
+					methodName = SetValue
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 3
+						name = Global Value
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Set to
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (-99999,99999)
+						}
+					}
+				}
 			}
 		}
 		TriggerEvent
@@ -1346,7 +1943,7 @@ CustomScenario
 			id = 2
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 20
+			ListOrderIndex = 10
 			ListFolderName = 
 			conditional = 19
 			eventName = Unlock F-22 2
@@ -1501,8 +2098,8 @@ CustomScenario
 			id = 5
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 30
-			ListFolderName = 
+			ListOrderIndex = 0
+			ListFolderName = F22 Esca[e Phase
 			conditional = 14
 			eventName = Spawn Gen5 Enemies
 			EventInfo
@@ -1580,10 +2177,10 @@ CustomScenario
 			id = 6
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 40
+			ListOrderIndex = 20
 			ListFolderName = 
 			conditional = 15
-			eventName = Test GPS trigger
+			eventName = Send Stealth GPS Path To Alpha-1
 			EventInfo
 			{
 				eventName = 
@@ -1624,8 +2221,8 @@ CustomScenario
 			id = 7
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 50
-			ListFolderName = 
+			ListOrderIndex = 1
+			ListFolderName = F22 Esca[e Phase
 			conditional = 16
 			eventName = Call off Gen5 Fighters
 			EventInfo
@@ -1723,28 +2320,10 @@ CustomScenario
 		}
 		TriggerEvent
 		{
-			id = 9
-			enabled = True
-			triggerType = Proximity
-			ListOrderIndex = 60
-			ListFolderName = 
-			waypoint = null
-			radius = 500
-			sphericalRadius = False
-			triggerMode = Player
-			proxyMode = OnEnter
-			eventName = Trigger Events 9
-			EventInfo
-			{
-				eventName = 
-			}
-		}
-		TriggerEvent
-		{
 			id = 11
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 10
+			ListOrderIndex = 0
 			ListFolderName = 
 			conditional = 19
 			eventName = Unlock F-22 1
@@ -2006,13 +2585,230 @@ CustomScenario
 				}
 			}
 		}
+		TriggerEvent
+		{
+			id = 16
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 1
+			ListFolderName = F16 approach phase triggers
+			conditional = 21
+			eventName = Successful Stealth
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Successful stealth approach
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 5
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+				EventTarget
+				{
+					targetType = Trigger_Events
+					targetID = 1
+					eventName = Disable
+					methodName = Disable
+					altTargetIdx = -1
+				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 17
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 4
+			ListFolderName = DEBUG CHEATS
+			conditional = 22
+			eventName = Factory megakill
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 45
+					eventName = Destroy
+					methodName = DestroySelf
+					altTargetIdx = -2
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 44
+					eventName = Destroy
+					methodName = DestroySelf
+					altTargetIdx = -2
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 40
+					eventName = Destroy
+					methodName = DestroySelf
+					altTargetIdx = -2
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 3
+					eventName = Destroy
+					methodName = DestroySelf
+					altTargetIdx = -2
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 2
+					eventName = Destroy
+					methodName = DestroySelf
+					altTargetIdx = -2
+				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 18
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 0
+			ListFolderName = Game Modifiers
+			conditional = 23
+			eventName = Set Difficulty
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = System
+					targetID = 0
+					eventName = Fire Conditional Action
+					methodName = FireConditionalAction
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = ConditionalActionReference
+						value = 25
+						name = Action
+					}
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 48
+					eventName = Destroy Vehicle
+					methodName = DestroyVehicle
+					altTargetIdx = -2
+				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 19
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 1
+			ListFolderName = Game Modifiers
+			conditional = 24
+			eventName = Set NO FAIL
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Set Value
+					methodName = SetValue
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 7
+						name = Global Value
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Set to
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (-99999,99999)
+						}
+					}
+				}
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 47
+					eventName = Destroy Vehicle
+					methodName = DestroyVehicle
+					altTargetIdx = -2
+				}
+			}
+		}
 		FOLDER_DATA
 		{
 			FOLDER
 			{
 				name = DEBUG CHEATS
-				sortOrder = 70
-				expanded = True
+				sortOrder = 30
+				expanded = False
+			}
+			FOLDER
+			{
+				name = F16 approach phase triggers
+				sortOrder = 40
+				expanded = False
+			}
+			FOLDER
+			{
+				name = F22 Esca[e Phase
+				sortOrder = 50
+				expanded = False
+			}
+			FOLDER
+			{
+				name = Game Modifiers
+				sortOrder = 60
+				expanded = False
 			}
 		}
 	}
@@ -2280,7 +3076,7 @@ CustomScenario
 			prefabID = ConcreteBarrierX7
 			id = 12
 			globalPos = (20229.474990844727, 1052.6394195556641, 156204.2179107666)
-			rotation = (8.145742E-06, 192.4532, -3.969332E-12)
+			rotation = (8.145742E-06, 192.4532, -4.274665E-12)
 		}
 		StaticObject
 		{
@@ -2388,14 +3184,47 @@ CustomScenario
 		CONDITIONAL
 		{
 			id = 3
-			outputNodePos = (15.79957, -20.60815, 0)
-			root = 0
+			outputNodePos = (272.7321, -30.37963, 0)
+			root = 2
 			COMP
 			{
 				id = 0
 				type = SCCUnitGroup
-				uiPos = (-350.3266, 26.23077, 0)
+				uiPos = (-289.3985, 77.96215, 0)
 				unitGroup = Allied:Alpha
+				methodName = SCC_AnyUnitDetected
+				isNot = False
+				methodParameters
+				{
+					value = Enemy
+				}
+			}
+			COMP
+			{
+				id = 1
+				type = SCCUnitGroup
+				uiPos = (-282.2235, -63.22726, 0)
+				unitGroup = Allied:Bravo
+				methodName = SCC_AnyUnitDetected
+				isNot = False
+				methodParameters
+				{
+					value = Enemy
+				}
+			}
+			COMP
+			{
+				id = 2
+				type = SCCOr
+				uiPos = (54.939, 24.14132, 0)
+				factors = 0;1;3;
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnitGroup
+				uiPos = (-284.189, -212.6735, 0)
+				unitGroup = Allied:Charlie
 				methodName = SCC_AnyUnitDetected
 				isNot = False
 				methodParameters
@@ -2587,7 +3416,7 @@ CustomScenario
 			{
 				id = 0
 				type = SCCUnit
-				uiPos = (-335.1044, 50.5818, 0)
+				uiPos = (-305.2151, 45.98346, 0)
 				unit = 7
 				methodName = SCC_Spawns
 				isNot = False
@@ -2747,6 +3576,90 @@ CustomScenario
 				type = SCCAnd
 				uiPos = (268.7723, -94.94463, 0)
 				factors = 2;3;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 21
+			outputNodePos = (364.4189, 0.5747938, 0)
+			root = 1
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-290.8454, -39.08594, 0)
+				gv = -1
+				comparison = Equals
+				c_value = 0
+			}
+			COMP
+			{
+				id = 1
+				type = SCCAnd
+				uiPos = (74.14833, 31.03883, 0)
+				factors = 2;0;
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-281.0739, 152.895, 0)
+				unit = 7
+				methodName = SCC_NearWaypoint
+				isNot = False
+				methodParameters
+				{
+					value = 
+				}
+				methodParameters
+				{
+					value = 7000
+				}
+			}
+		}
+		CONDITIONAL
+		{
+			id = 22
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-524.2114, 87.94337, 0)
+				unit = 46
+				methodName = SCC_GetsKilled
+				isNot = False
+			}
+		}
+		CONDITIONAL
+		{
+			id = 23
+			outputNodePos = (9.196693, 51.73139, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-386.8358, 95.41567, 0)
+				unit = 48
+				methodName = SCC_Spawns
+				isNot = False
+			}
+		}
+		CONDITIONAL
+		{
+			id = 24
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-359.8206, 26.44049, 0)
+				unit = 47
+				methodName = SCC_IsAlive
+				isNot = False
 			}
 		}
 	}
@@ -3001,6 +3914,608 @@ CustomScenario
 							}
 						}
 					}
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 9
+			name = 
+			BASE_BLOCK
+			{
+				blockName = 1 player
+				blockId = 10
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCMPTeamStats
+						uiPos = (-362.6945, 59.2037, 0)
+						team = Allied
+						statType = Player_Count
+						comparison = Equals
+						count = 1
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 6
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+				}
+				ELSE_IF
+				{
+					blockName = 2 players
+					blockId = 20
+					CONDITIONAL
+					{
+						id = 0
+						outputNodePos = (0, 0, 0)
+						root = 0
+						COMP
+						{
+							id = 0
+							type = SCCMPTeamStats
+							uiPos = (-313.8371, 24.14132, 0)
+							team = Allied
+							statType = Player_Count
+							comparison = Equals
+							count = 2
+						}
+					}
+					ACTIONS
+					{
+						eventName = 
+						EventTarget
+						{
+							targetType = System
+							targetID = 2
+							eventName = Set Value
+							methodName = SetValue
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = GlobalValue
+								value = 6
+								name = Global Value
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 2
+								name = Set to
+								ParamAttrInfo
+								{
+									type = UnitSpawnAttributeRange+RangeTypes
+									data = Int
+								}
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (-99999,99999)
+								}
+							}
+						}
+					}
+				}
+				ELSE_IF
+				{
+					blockName = 3 players
+					blockId = 21
+					CONDITIONAL
+					{
+						id = 0
+						outputNodePos = (0, 0, 0)
+						root = 0
+						COMP
+						{
+							id = 0
+							type = SCCMPTeamStats
+							uiPos = (-276.4755, 40.81032, 0)
+							team = Allied
+							statType = Player_Count
+							comparison = Equals
+							count = 3
+						}
+					}
+					ACTIONS
+					{
+						eventName = 
+						EventTarget
+						{
+							targetType = System
+							targetID = 2
+							eventName = Set Value
+							methodName = SetValue
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = GlobalValue
+								value = 6
+								name = Global Value
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 3
+								name = Set to
+								ParamAttrInfo
+								{
+									type = UnitSpawnAttributeRange+RangeTypes
+									data = Int
+								}
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (-99999,99999)
+								}
+							}
+						}
+					}
+				}
+				ELSE_IF
+				{
+					blockName = 4 players
+					blockId = 22
+					CONDITIONAL
+					{
+						id = 0
+						outputNodePos = (0, 0, 0)
+						root = 0
+						COMP
+						{
+							id = 0
+							type = SCCMPTeamStats
+							uiPos = (-362.1197, 57.47932, 0)
+							team = Allied
+							statType = Player_Count
+							comparison = Equals
+							count = 4
+						}
+					}
+					ACTIONS
+					{
+						eventName = 
+						EventTarget
+						{
+							targetType = System
+							targetID = 2
+							eventName = Set Value
+							methodName = SetValue
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = GlobalValue
+								value = 6
+								name = Global Value
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 4
+								name = Set to
+								ParamAttrInfo
+								{
+									type = UnitSpawnAttributeRange+RangeTypes
+									data = Int
+								}
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (-99999,99999)
+								}
+							}
+						}
+					}
+				}
+				ELSE_IF
+				{
+					blockName = 5 players
+					blockId = 23
+					CONDITIONAL
+					{
+						id = 0
+						outputNodePos = (0, 0, 0)
+						root = 0
+						COMP
+						{
+							id = 0
+							type = SCCMPTeamStats
+							uiPos = (-339.128, 75.87271, 0)
+							team = Allied
+							statType = Player_Count
+							comparison = Equals
+							count = 5
+						}
+					}
+					ACTIONS
+					{
+						eventName = 
+						EventTarget
+						{
+							targetType = System
+							targetID = 2
+							eventName = Set Value
+							methodName = SetValue
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = GlobalValue
+								value = 6
+								name = Global Value
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 5
+								name = Set to
+								ParamAttrInfo
+								{
+									type = UnitSpawnAttributeRange+RangeTypes
+									data = Int
+								}
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (-99999,99999)
+								}
+							}
+						}
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 6
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 6
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 25
+			name = 
+			BASE_BLOCK
+			{
+				blockName = EASY
+				blockId = 26
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (3.448761, 13.22024, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-408.678, 56.32973, 0)
+						unit = 48
+						methodName = SCC_IsUsingAltNumber
+						isNot = False
+						methodParameters
+						{
+							value = 1
+						}
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 4
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = -1
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Difficulty set to: EASY
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 3
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+				}
+				ELSE_IF
+				{
+					blockName = HARD
+					blockId = 27
+					CONDITIONAL
+					{
+						id = 0
+						outputNodePos = (0, 0, 0)
+						root = 0
+						COMP
+						{
+							id = 0
+							type = SCCUnit
+							uiPos = (-367.8677, 91.39212, 0)
+							unit = 48
+							methodName = SCC_IsUsingAltNumber
+							isNot = False
+							methodParameters
+							{
+								value = 2
+							}
+						}
+					}
+					ACTIONS
+					{
+						eventName = 
+						EventTarget
+						{
+							targetType = System
+							targetID = 2
+							eventName = Set Value
+							methodName = SetValue
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = GlobalValue
+								value = 4
+								name = Global Value
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 1
+								name = Set to
+								ParamAttrInfo
+								{
+									type = UnitSpawnAttributeRange+RangeTypes
+									data = Int
+								}
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (-99999,99999)
+								}
+							}
+						}
+						EventTarget
+						{
+							targetType = System
+							targetID = 1
+							eventName = Display Message
+							methodName = DisplayMessage
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = System.String
+								value = Difficulty set to: HARD
+								name = Text
+								ParamAttrInfo
+								{
+									type = TextInputModes
+									data = MultiLine
+								}
+								ParamAttrInfo
+								{
+									type = System.Int32
+									data = 140
+								}
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 3
+								name = Duration
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (1,9999)
+								}
+							}
+						}
+					}
+				}
+				ELSE_IF
+				{
+					blockName = HARDEST
+					blockId = 28
+					CONDITIONAL
+					{
+						id = 0
+						outputNodePos = (0, 0, 0)
+						root = 0
+						COMP
+						{
+							id = 0
+							type = SCCUnit
+							uiPos = (-378.7887, 42.5347, 0)
+							unit = 48
+							methodName = SCC_IsUsingAltNumber
+							isNot = False
+							methodParameters
+							{
+								value = 3
+							}
+						}
+					}
+					ACTIONS
+					{
+						eventName = 
+						EventTarget
+						{
+							targetType = System
+							targetID = 2
+							eventName = Set Value
+							methodName = SetValue
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = GlobalValue
+								value = 4
+								name = Global Value
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 2
+								name = Set to
+								ParamAttrInfo
+								{
+									type = UnitSpawnAttributeRange+RangeTypes
+									data = Int
+								}
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (-99999,99999)
+								}
+							}
+						}
+						EventTarget
+						{
+							targetType = System
+							targetID = 1
+							eventName = Display Message
+							methodName = DisplayMessage
+							altTargetIdx = -1
+							ParamInfo
+							{
+								type = System.String
+								value = Difficulty set to: HARDEST
+								name = Text
+								ParamAttrInfo
+								{
+									type = TextInputModes
+									data = MultiLine
+								}
+								ParamAttrInfo
+								{
+									type = System.Int32
+									data = 140
+								}
+							}
+							ParamInfo
+							{
+								type = System.Single
+								value = 3
+								name = Duration
+								ParamAttrInfo
+								{
+									type = MinMax
+									data = (1,9999)
+								}
+							}
+						}
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
 				}
 			}
 		}
@@ -3325,6 +4840,36 @@ CustomScenario
 		gv
 		{
 			data = 2;F22 1 Unlocked;;0;
+			ListOrderIndex = 50
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 3;Ingress Detected;;0;
+			ListOrderIndex = 60
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 4;Difficulty Modifier;A fixed difficulty modifier added to the difficulty computed from player count;0;
+			ListOrderIndex = 40
+			ListFolderName = 
+		}
+		gv
+		{
+			{data} = {5;Difficulty;The final difficulty number used to compute how much and which enemies to spawn.///n///n0 means "standard".   Negative makes the game easier, positive makes the game harder;0;}
+			ListOrderIndex = 30
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 6;Player Count;The number of players connected to the game - used to compute difficulty;0;
+			ListOrderIndex = 20
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 7;No Fail;If set to 1, mission can not be failed.;0;
 			ListOrderIndex = 10
 			ListFolderName = 
 		}
