@@ -1,0 +1,68 @@
+VTMapCustom
+{
+	mapID = hmapper1
+	mapName = F22 Heist
+	mapDescription = 
+	mapType = HeightMap
+	edgeMode = Hills
+	longitude = 0
+	latitude = 0
+	cloudHeightOffset = -1
+	biome = Boreal
+	seed = seed
+	mapSize = 64
+	TerrainSettings
+	{
+	}
+	StaticPrefabs
+	{
+		StaticPrefab
+		{
+			prefab = airbase3
+			id = 0
+			globalPos = (20312.05078125, 1050.73046875, 156044.404296875)
+			rotation = (0, 311.9636, 0)
+			grid = (6,50)
+			tSpacePos = (-1880.051, 2444.404, 1050.73)
+			terrainToLocalMatrix = -0.6686582;0.7435701;-8.864046E-08;-3074.696;0;-1.192093E-07;1;-1050.73;0.7435703;0.6686581;-7.971025E-08;-236.5218;0;0;0;1;
+			baseName = F22 Airbase
+		}
+		StaticPrefab
+		{
+			prefab = airbase2
+			id = 1
+			globalPos = (4825.950927734375, 871.7734375, 173780.498046875)
+			rotation = (0, 311.9636, 0)
+			grid = (1,56)
+			tSpacePos = (-1753.951, 1748.498, 871.7733)
+			terrainToLocalMatrix = -0.6686581;0.7435703;-8.864048E-08;-2472.924;0;-1.192093E-07;1;-871.7734;0.7435704;0.668658;-7.971023E-08;135.0388;0;0;0;1;
+			baseName = Hostile Airbase 1
+		}
+		StaticPrefab
+		{
+			prefab = airbase2
+			id = 2
+			globalPos = (54262.58349609375, 754.51171875, 119790.80078125)
+			rotation = (0, 311.9636, 0)
+			grid = (17,38)
+			tSpacePos = (-2038.584, 3054.801, 754.5115)
+			terrainToLocalMatrix = -0.6686581;0.7435703;-8.864048E-08;-3634.573;0;-1.192093E-07;1;-754.5117;0.7435704;0.668658;-7.971023E-08;-526.787;0;0;0;1;
+			baseName = Hostile Airbase 2
+		}
+		StaticPrefab
+		{
+			prefab = airbase3
+			id = 4
+			globalPos = (102343.2841796875, 759.52734375, 174686.462890625)
+			rotation = (0, 0, 0)
+			grid = (33,56)
+			tSpacePos = (-967.2844, 2654.463, 759.5271)
+			terrainToLocalMatrix = -1;0;0;-967.2842;0;-1.192093E-07;1;-759.5273;0;1;-1.192093E-07;-2654.463;0;0;0;1;
+			baseName = Friendly Airbase
+		}
+	}
+	BezierRoads
+	{
+	}
+}
+
