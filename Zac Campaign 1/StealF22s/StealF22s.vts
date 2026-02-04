@@ -188,7 +188,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (20832.600952148438, 1052.58935546875, 156789.69146728516)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -206,7 +206,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (19712.167724609375, 1052.5894775390625, 157087.20245361328)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -263,7 +263,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (20102.09423828125, 1052.58935546875, 155374.29931640625)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -281,7 +281,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (19283.19140625, 1052.5894775390625, 156070.455078125)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1019,7 +1019,7 @@ CustomScenario
 			globalPosition = (101960.21364212036, 761.43603515625, 173149.85314941406)
 			unitInstanceID = 29
 			unitID = MultiplayerSpawn
-			rotation = (-6.896026E-06, 359.0201, 9.377285E-08)
+			rotation = (-6.896038E-06, 359.0201, 9.377285E-08)
 			lastValidPlacement = (101960.21364212036, 761.43603515625, 173149.85314941406)
 			editorPlacementMode = Ground
 			onCarrier = False
@@ -1357,7 +1357,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (18501.35302734375, 1031.1044921875, 155633.66943359375)
-				rotation = (356.0295, 359.7137, 4.126872)
+				rotation = (356.0295, 359.7137, 4.126873)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1379,7 +1379,7 @@ CustomScenario
 			globalPosition = (20957.337036132813, 1052.639404296875, 156056.97076416016)
 			unitInstanceID = 45
 			unitID = IRAPC
-			rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+			rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 			lastValidPlacement = (19661.328857421875, 1052.6395263671875, 156677.18316650391)
 			editorPlacementMode = Ground
 			onCarrier = False
@@ -1402,7 +1402,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (20620.731567382813, 1052.639404296875, 156117.28814697266)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1426,7 +1426,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (20449.29296875, 1052.639404296875, 156483.36749267578)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1450,7 +1450,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (19661.328857421875, 1052.6395263671875, 156677.18316650391)
-				rotation = (-8.426863E-06, 11.00614, -1.033667E-05)
+				rotation = (-8.426859E-06, 11.00614, -1.033667E-05)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1495,7 +1495,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (21567.41455078125, 1045.658203125, 157704.44189453125)
-				rotation = (9.426067E-06, -7.539786E-07, 355.4267)
+				rotation = (9.426069E-06, -7.539786E-07, 355.4267)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1513,7 +1513,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (18945.8359375, 1028.318359375, 157407.02124023438)
-				rotation = (5.60828, 0.339113, 3.465821)
+				rotation = (5.608288, 0.339113, 3.465821)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1531,7 +1531,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (19387.65185546875, 1107.05712890625, 154331.1513671875)
-				rotation = (7.326871, 0.03363599, 0.2637482)
+				rotation = (7.326863, 0.03363599, 0.2637482)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1575,7 +1575,7 @@ CustomScenario
 			globalPosition = (102928.28436279297, 761.38623046875, 174396.37194824219)
 			unitInstanceID = 47
 			unitID = MultiplayerSpawn
-			rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+			rotation = (3.379665E-06, 240.3426, 5.935432E-06)
 			lastValidPlacement = (102928.28436279297, 761.38623046875, 174396.37194824219)
 			editorPlacementMode = Ground
 			onCarrier = False
@@ -1604,7 +1604,7 @@ CustomScenario
 			globalPosition = (102870.30035400391, 761.38623046875, 174497.37591552734)
 			unitInstanceID = 48
 			unitID = MultiplayerSpawn
-			rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+			rotation = (3.379665E-06, 240.3426, 5.935432E-06)
 			lastValidPlacement = (102870.30035400391, 761.38623046875, 174497.37591552734)
 			editorPlacementMode = Ground
 			onCarrier = False
@@ -1629,7 +1629,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (102870.30035400391, 761.38623046875, 174497.37591552734)
-				rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+				rotation = (3.379665E-06, 240.3426, 5.935432E-06)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1655,7 +1655,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (102870.30035400391, 761.38623046875, 174497.37591552734)
-				rotation = (3.379666E-06, 240.3426, 5.935432E-06)
+				rotation = (3.379665E-06, 240.3426, 5.935432E-06)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1679,6 +1679,111 @@ CustomScenario
 				}
 			}
 		}
+		UnitSpawner
+		{
+			unitName = Early Warning Radar
+			globalPosition = (54185.31689453125, 2818.923828125, 175311.6875)
+			unitInstanceID = 50
+			unitID = ewRadarPyramid
+			rotation = (351.3832, 1.347861, 351.075)
+			lastValidPlacement = (54185.31689453125, 2818.923828125, 175311.6875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Early Warning Radar
+			globalPosition = (74014.125, 3486.5, 138939.708984375)
+			unitInstanceID = 51
+			unitID = ewRadarPyramid
+			rotation = (8.616693, 358.6521, 351.0749)
+			lastValidPlacement = (74014.125, 3486.5, 138939.708984375)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Early Warning Radar
+			globalPosition = (90883.162109375, 2849.2900390625, 131824.3125)
+			unitInstanceID = 52
+			unitID = ewRadarPyramid
+			rotation = (351.9492, 2.516821, 342.5755)
+			lastValidPlacement = (90883.162109375, 2849.2900390625, 131824.3125)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Early Warning Radar
+			globalPosition = (47870.9111328125, 1897.441162109375, 189878.8857421875)
+			unitInstanceID = 53
+			unitID = ewRadarPyramid
+			rotation = (19.45746, 355.0515, 345.4296)
+			lastValidPlacement = (47870.9111328125, 1897.441162109375, 189878.8857421875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Early Warning Radar
+			globalPosition = (84697.3583984375, 2733.4912109375, 182210.13525390625)
+			unitInstanceID = 54
+			unitID = ewRadarPyramid
+			rotation = (9.486375E-06, 0, 0)
+			lastValidPlacement = (84697.3583984375, 2733.4912109375, 182210.13525390625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
 	}
 	PATHS
 	{
@@ -1687,7 +1792,7 @@ CustomScenario
 			id = 0
 			name = Stealth Path
 			loop = False
-			points = (97028.1328125, 741.8359375, 172434.03125);(92375.78125, 821.982421875, 171339.625);(89366.609375, 919.787109375, 168766.015625);(88393.359375, 992.94140625, 167903.796875);(87330.875, 1116.953125, 169058.421875);(87084.046875, 1111.1015625, 171129.53125);(82998.375, 1246.05078125, 171729.46875);(80700.328125, 1283.939453125, 172723.953125);(77451.984375, 1460.7421875, 177482.203125);
+			points = (97028.1328125, 741.8359375, 172434.03125);(92375.78125, 821.982421875, 171339.625);(89366.609375, 919.787109375, 168766.015625);(88393.359375, 992.94140625, 167903.796875);(87330.875, 1116.953125, 169058.421875);(87084.046875, 1111.1015625, 171129.53125);(82998.375, 1246.05078125, 171729.46875);(80700.328125, 1283.939453125, 172723.953125);(77451.984375, 1460.7421875, 177482.203125);(75292.65625, 1394.369140625, 180140.40625);(71516.859375, 1389.70703125, 182393.015625);(65168.66796875, 1341.298828125, 185670.046875);(56578.56640625, 1507.810546875, 186731.875);(54622.09765625, 1507.810546875, 185639.21875);(51232.296875, 2347.7021484375, 185476.296875);(47434.796875, 1800.21484375, 183607.359375);(47158.0703125, 1608.859375, 180863.8125);(43546.78125, 1591.1181640625, 177737.953125);(39838.796875, 1374.4326171875, 174946.21875);(35033.3125, 1302.90234375, 173814.015625);(31422.6875, 1179.0126953125, 170158.6875);(24627.5234375, 1182.923828125, 166712.78125);
 			pathMode = Smooth
 		}
 	}
@@ -1710,6 +1815,30 @@ CustomScenario
 			id = 3
 			name = F22 Airbase
 			globalPoint = (20312.05078125, 1052.58935546875, 156044.40625)
+		}
+		WAYPOINT
+		{
+			id = 4
+			name = Stealth detection point 1
+			globalPoint = (91013.98095703125, 860.8372802734375, 170150.11499023438)
+		}
+		WAYPOINT
+		{
+			id = 5
+			name = Stealth detection point 2
+			globalPoint = (87517.609741210938, 976.891357421875, 168361.40869140625)
+		}
+		WAYPOINT
+		{
+			id = 6
+			name = Stealth detection point 3
+			globalPoint = (86804.32568359375, 1123.124267578125, 171326.86389160156)
+		}
+		WAYPOINT
+		{
+			id = 7
+			name = Stealth detection point 4
+			globalPoint = (80889.128295898438, 1309.59521484375, 172805.65979003906)
 		}
 	}
 	UNITGROUPS
@@ -1845,6 +1974,143 @@ CustomScenario
 				}
 			}
 		}
+		TimedEventGroup
+		{
+			groupName = Stealth Approach Timer
+			groupID = 2
+			beginImmediately = False
+			initialDelay = 0
+			ListOrderIndex = 20
+			ListFolderName = 
+			TimedEventInfo
+			{
+				eventName = New Timed Event
+				time = 120
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Enemy radio traffic increasing (2m elapsed)
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 10
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = New Timed Event
+				time = 240
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Enemy discussing launching fighters to search canyon (4m elapsed)
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 10
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = New Timed Event
+				time = 300
+				EventTarget
+				{
+					targetType = Trigger_Events
+					targetID = 1
+					eventName = Trigger
+					methodName = Trigger
+					altTargetIdx = -1
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Enemy suspicious, launching fighters
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 10
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+			}
+		}
 		FOLDER_DATA
 		{
 		}
@@ -1856,7 +2122,7 @@ CustomScenario
 			id = 1
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 0
+			ListOrderIndex = 1
 			ListFolderName = F16 approach phase triggers
 			conditional = 3
 			eventName = Launch Enemy Fighters
@@ -1935,6 +2201,22 @@ CustomScenario
 							data = (-99999,99999)
 						}
 					}
+				}
+				EventTarget
+				{
+					targetType = Timed_Events
+					targetID = 2
+					eventName = Stop
+					methodName = Stop
+					altTargetIdx = -1
+				}
+				EventTarget
+				{
+					targetType = Trigger_Events
+					targetID = 21
+					eventName = Disable
+					methodName = Disable
+					altTargetIdx = -1
 				}
 			}
 		}
@@ -2099,7 +2381,7 @@ CustomScenario
 			enabled = True
 			triggerType = Conditional
 			ListOrderIndex = 0
-			ListFolderName = F22 Esca[e Phase
+			ListFolderName = F22 Escape Phase
 			conditional = 14
 			eventName = Spawn Gen5 Enemies
 			EventInfo
@@ -2222,7 +2504,7 @@ CustomScenario
 			enabled = True
 			triggerType = Conditional
 			ListOrderIndex = 1
-			ListFolderName = F22 Esca[e Phase
+			ListFolderName = F22 Escape Phase
 			conditional = 16
 			eventName = Call off Gen5 Fighters
 			EventInfo
@@ -2588,9 +2870,9 @@ CustomScenario
 		TriggerEvent
 		{
 			id = 16
-			enabled = True
+			enabled = False
 			triggerType = Conditional
-			ListOrderIndex = 1
+			ListOrderIndex = 3
 			ListFolderName = F16 approach phase triggers
 			conditional = 21
 			eventName = Successful Stealth
@@ -2636,6 +2918,22 @@ CustomScenario
 				{
 					targetType = Trigger_Events
 					targetID = 1
+					eventName = Disable
+					methodName = Disable
+					altTargetIdx = -1
+				}
+				EventTarget
+				{
+					targetType = Timed_Events
+					targetID = 2
+					eventName = Stop
+					methodName = Stop
+					altTargetIdx = -1
+				}
+				EventTarget
+				{
+					targetType = Trigger_Events
+					targetID = 21
 					eventName = Disable
 					methodName = Disable
 					altTargetIdx = -1
@@ -2784,6 +3082,93 @@ CustomScenario
 				}
 			}
 		}
+		TriggerEvent
+		{
+			id = 20
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 0
+			ListFolderName = F16 approach phase triggers
+			conditional = 25
+			eventName = Detect Stealth Approach
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = Timed_Events
+					targetID = 2
+					eventName = Begin
+					methodName = Begin
+					altTargetIdx = -1
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Enemies getting suspicious of noise reports in valley
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+				EventTarget
+				{
+					targetType = Trigger_Events
+					targetID = 16
+					eventName = Enable
+					methodName = Enable
+					altTargetIdx = -1
+				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 21
+			enabled = False
+			triggerType = Conditional
+			ListOrderIndex = 2
+			ListFolderName = F16 approach phase triggers
+			conditional = 26
+			eventName = Stealth Approach AGL check
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = Trigger_Events
+					targetID = 1
+					eventName = Trigger
+					methodName = Trigger
+					altTargetIdx = -1
+				}
+			}
+		}
 		FOLDER_DATA
 		{
 			FOLDER
@@ -2796,13 +3181,13 @@ CustomScenario
 			{
 				name = F16 approach phase triggers
 				sortOrder = 40
-				expanded = False
+				expanded = True
 			}
 			FOLDER
 			{
-				name = F22 Esca[e Phase
+				name = F22 Escape Phase
 				sortOrder = 50
-				expanded = False
+				expanded = True
 			}
 			FOLDER
 			{
@@ -3076,7 +3461,7 @@ CustomScenario
 			prefabID = ConcreteBarrierX7
 			id = 12
 			globalPos = (20229.474990844727, 1052.6394195556641, 156204.2179107666)
-			rotation = (8.145742E-06, 192.4532, -4.274665E-12)
+			rotation = (8.145742E-06, 192.4532, -5.088887E-12)
 		}
 		StaticObject
 		{
@@ -3317,63 +3702,90 @@ CustomScenario
 		{
 			id = 10
 			outputNodePos = (3.448761, 2.873966, 0)
-			root = 0
+			root = 2
 			COMP
 			{
-				id = 0
-				type = SCCMPTeamStats
-				uiPos = (-329.3565, 77.02229, 0)
-				team = Allied
-				statType = Player_Count
+				id = 2
+				type = SCCGlobalValue
+				uiPos = (-381.0879, 42.5347, 0)
+				gv = 5
 				comparison = Greater_Than
-				count = 0
+				c_value = 0
 			}
 		}
 		CONDITIONAL
 		{
 			id = 11
 			outputNodePos = (0, 0, 0)
-			root = 0
+			root = 2
 			COMP
 			{
-				id = 0
-				type = SCCMPTeamStats
-				uiPos = (-271.3024, 66.67601, 0)
-				team = Allied
-				statType = Player_Count
+				id = 2
+				type = SCCGlobalValue
+				uiPos = (-369.1506, 38.51115, 0)
+				gv = 5
 				comparison = Greater_Than
-				count = 1
+				c_value = 1
 			}
 		}
 		CONDITIONAL
 		{
 			id = 12
-			outputNodePos = (0, 0, 0)
+			outputNodePos = (102.8879, -22.99173, 0)
+			root = 1
 			COMP
 			{
-				id = 0
-				type = SCCMPTeamStats
-				uiPos = (-277.0503, 83.91981, 0)
-				team = Allied
-				statType = Player_Count
+				id = 1
+				type = SCCGlobalValue
+				uiPos = (-284.5226, 16.09421, 0)
+				gv = 5
 				comparison = Greater_Than
-				count = 2
+				c_value = 3
 			}
 		}
 		CONDITIONAL
 		{
 			id = 13
-			outputNodePos = (0, 0, 0)
-			root = 0
+			outputNodePos = (325.3329, -60.35329, 0)
+			root = 5
 			COMP
 			{
-				id = 0
-				type = SCCMPTeamStats
-				uiPos = (-312.1127, 66.67601, 0)
-				team = Allied
-				statType = Player_Count
+				id = 1
+				type = SCCGlobalValue
+				uiPos = (-321.8842, 36.78677, 0)
+				gv = 5
 				comparison = Greater_Than
-				count = 3
+				c_value = 4
+			}
+			COMP
+			{
+				id = 2
+				type = SCCChance
+				uiPos = (-304.0656, -125.3049, 0)
+				chance = 50
+			}
+			COMP
+			{
+				id = 3
+				type = SCCAnd
+				uiPos = (-17.2438, -48.85743, 0)
+				factors = 1;2;
+			}
+			COMP
+			{
+				id = 4
+				type = SCCGlobalValue
+				uiPos = (-311.5379, 206.3508, 0)
+				gv = 5
+				comparison = Greater_Than
+				c_value = 5
+			}
+			COMP
+			{
+				id = 5
+				type = SCCOr
+				uiPos = (140.2495, -16.669, 0)
+				factors = 4;3;
 			}
 		}
 		CONDITIONAL
@@ -3582,39 +3994,51 @@ CustomScenario
 		{
 			id = 21
 			outputNodePos = (364.4189, 0.5747938, 0)
-			root = 1
+			root = 5
 			COMP
 			{
-				id = 0
-				type = SCCGlobalValue
-				uiPos = (-290.8454, -39.08594, 0)
-				gv = -1
-				comparison = Equals
-				c_value = 0
-			}
-			COMP
-			{
-				id = 1
-				type = SCCAnd
-				uiPos = (74.14833, 31.03883, 0)
-				factors = 2;0;
-			}
-			COMP
-			{
-				id = 2
-				type = SCCUnit
-				uiPos = (-281.0739, 152.895, 0)
-				unit = 7
-				methodName = SCC_NearWaypoint
+				id = 3
+				type = SCCUnitGroup
+				uiPos = (-163.2412, 38.51115, 0)
+				unitGroup = Allied:Alpha
+				methodName = LivePlayersPresentNearWP
 				isNot = False
 				methodParameters
 				{
-					value = 
+					value = 3
 				}
 				methodParameters
 				{
-					value = 7000
+					value = 12000
 				}
+				methodParameters
+				{
+					value = True
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCUnitGroup
+				uiPos = (-154.6194, 210.3743, 0)
+				unitGroup = Allied:Alpha
+				methodName = NumAirborne
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 0
+				}
+			}
+			COMP
+			{
+				id = 5
+				type = SCCAnd
+				uiPos = (197.154, 77.02229, 0)
+				factors = 4;3;
 			}
 		}
 		CONDITIONAL
@@ -3660,6 +4084,218 @@ CustomScenario
 				unit = 47
 				methodName = SCC_IsAlive
 				isNot = False
+			}
+		}
+		CONDITIONAL
+		{
+			id = 25
+			outputNodePos = (154.2762, -48.52879, 0)
+			root = 4
+			COMP
+			{
+				id = 0
+				type = SCCUnitGroup
+				uiPos = (-445.4648, 212.6735, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyNearPoint
+				isNot = False
+				methodParameters
+				{
+					value = (91013.984375, 860.8369140625, 170150.109375)
+				}
+				methodParameters
+				{
+					value = 800
+				}
+				methodParameters
+				{
+					value = True
+				}
+			}
+			COMP
+			{
+				id = 1
+				type = SCCUnitGroup
+				uiPos = (-449.4882, -368.4424, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyNearPoint
+				isNot = False
+				methodParameters
+				{
+					value = (80914.87939453125, 1282.423828125, 172657.23706054688)
+				}
+				methodParameters
+				{
+					value = 800
+				}
+				methodParameters
+				{
+					value = True
+				}
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnitGroup
+				uiPos = (-436.2681, -185.0834, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyNearPoint
+				isNot = False
+				methodParameters
+				{
+					value = (86821.13330078125, 1129.9111328125, 171264.75390625)
+				}
+				methodParameters
+				{
+					value = 800
+				}
+				methodParameters
+				{
+					value = True
+				}
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnitGroup
+				uiPos = (-437.4176, 35.63718, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyNearPoint
+				isNot = False
+				methodParameters
+				{
+					value = (87476.88134765625, 985.7080078125, 168377.47778320313)
+				}
+				methodParameters
+				{
+					value = 800
+				}
+				methodParameters
+				{
+					value = True
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCOr
+				uiPos = (18.5235, 18.48011, 0)
+				factors = 0;3;2;1;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 26
+			outputNodePos = (412.6986, -83.08356, 0)
+			root = 7
+			COMP
+			{
+				id = 1
+				type = SCCUnit
+				uiPos = (-520.1879, 173.5876, 0)
+				unit = 7
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 300
+				}
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-524.2114, -27.01528, 0)
+				unit = 8
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 300
+				}
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnit
+				uiPos = (-508.1172, -186.233, 0)
+				unit = 28
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 300
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCUnit
+				uiPos = (-526.3019, -399.1123, 0)
+				unit = 29
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 300
+				}
+			}
+			COMP
+			{
+				id = 5
+				type = SCCUnit
+				uiPos = (-530.6878, -574.5463, 0)
+				unit = 33
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 300
+				}
+			}
+			COMP
+			{
+				id = 6
+				type = SCCUnit
+				uiPos = (-528.4949, -769.7166, 0)
+				unit = 34
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 300
+				}
+			}
+			COMP
+			{
+				id = 7
+				type = SCCOr
+				uiPos = (64.15402, 9.738851, 0)
+				factors = 1;2;3;4;5;6;
 			}
 		}
 	}
@@ -4029,6 +4665,10 @@ CustomScenario
 							}
 						}
 					}
+					ELSE_ACTIONS
+					{
+						eventName = 
+					}
 				}
 				ELSE_IF
 				{
@@ -4083,6 +4723,10 @@ CustomScenario
 								}
 							}
 						}
+					}
+					ELSE_ACTIONS
+					{
+						eventName = 
 					}
 				}
 				ELSE_IF
@@ -4139,6 +4783,10 @@ CustomScenario
 							}
 						}
 					}
+					ELSE_ACTIONS
+					{
+						eventName = 
+					}
 				}
 				ELSE_IF
 				{
@@ -4193,6 +4841,10 @@ CustomScenario
 								}
 							}
 						}
+					}
+					ELSE_ACTIONS
+					{
+						eventName = 
 					}
 				}
 				ELSE_ACTIONS
@@ -4419,6 +5071,10 @@ CustomScenario
 							}
 						}
 					}
+					ELSE_ACTIONS
+					{
+						eventName = 
+					}
 				}
 				ELSE_IF
 				{
@@ -4511,6 +5167,10 @@ CustomScenario
 								}
 							}
 						}
+					}
+					ELSE_ACTIONS
+					{
+						eventName = 
 					}
 				}
 				ELSE_ACTIONS
@@ -4647,8 +5307,8 @@ CustomScenario
 			sequenceName = Spawn fighters
 			startImmediately = False
 			whileLoop = False
-			ListOrderIndex = 10
-			ListFolderName = 
+			ListOrderIndex = 0
+			ListFolderName = F16 Ingress
 			EVENT
 			{
 				conditional = 10
@@ -4670,7 +5330,7 @@ CustomScenario
 			EVENT
 			{
 				conditional = 11
-				delay = 0
+				delay = 5
 				nodeName = New Node
 				EventInfo
 				{
@@ -4688,7 +5348,7 @@ CustomScenario
 			EVENT
 			{
 				conditional = 12
-				delay = 0
+				delay = 5
 				nodeName = New Node
 				EventInfo
 				{
@@ -4706,7 +5366,7 @@ CustomScenario
 			EVENT
 			{
 				conditional = 13
-				delay = 0
+				delay = 5
 				nodeName = New Node
 				EventInfo
 				{
@@ -4779,14 +5439,20 @@ CustomScenario
 			FOLDER
 			{
 				name = Capture F22s Objective
-				sortOrder = 0
+				sortOrder = 10
 				expanded = False
 			}
 			FOLDER
 			{
 				name = F22 Blocking Tents
 				sortOrder = 20
-				expanded = True
+				expanded = False
+			}
+			FOLDER
+			{
+				name = F16 Ingress
+				sortOrder = 0
+				expanded = False
 			}
 		}
 	}
@@ -4881,12 +5547,6 @@ CustomScenario
 	{
 		BRIEFING_NOTE
 		{
-			text = For players 1-6.  Fill from top down.///n///nDifficulty optimized for 1, 2, 3, 4 players.///n///nAt 4+ players enemy forces are maximized and balanced for 4 players.  ///n///nSlots 5/6 being filled don't increase difficulty.
-			imagePath = 
-			audioClipPath = 
-		}
-		BRIEFING_NOTE
-		{
 			text = After being tricked into landing our prototype F-22 fighters at an enemy airbase we have created a secret airbase on the other side of the mountains where we will launch a recovery mission from.  ///n///nDepending on available pilots, we will launch some number of F16s to recover what F-22 assets we can.
 			imagePath = 
 			audioClipPath = 
@@ -4900,6 +5560,18 @@ CustomScenario
 		BRIEFING_NOTE
 		{
 			text = Threat: 3.5 gen aircraft are on standby if a threat is detected by enemy radars on your way in.///n///n5th gen are patrolling the area and will respond once they see that we're after the F-22s.   ///n///nAll F-16s are expendable but the escaping F-22(s) must not be destroyed.///n///nOnce all escaping F-22s are nearby the airfield our SAM sites will activate to deter any remaining enemy fighters.
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = For players 1-6.  Fill from top down.///n///nDifficulty optimized for 1, 2, 3, 4 players.///n///nAt 4+ players enemy forces are maximized and balanced for 4 players.  ///n///nSlots 5/6 being filled don't increase difficulty.
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = Note, intelligence has determined the valley immediately east of our airfield has no EW radars.  The path has been sent to your GPS.   Note there are farmers in the valley who may report suspicious noises back to the local militia so if you go this route, make sure to not dilly dally.
 			imagePath = 
 			audioClipPath = 
 		}
