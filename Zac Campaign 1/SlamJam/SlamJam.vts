@@ -1,0 +1,1010 @@
+CustomScenario
+{
+	gameVersion = 1.12.6m1
+	campaignID = Zac Campaign 1
+	campaignOrderIdx = 4
+	scenarioName = untitled
+	scenarioID = SlamJam
+	scenarioDescription = 
+	mapID = SlamJamMap
+	vehicle = AV-42C
+	multiplayer = True
+	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;sidearmx1;sidearmx2;sidearmx3;marmx1;av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;42c_aim9ex2;42c_aim9ex1;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 100000
+	isTraining = False
+	rtbWptID = 
+	refuelWptID = 
+	mpPlayerCount = 8
+	autoPlayerCount = True
+	overrideAlliedPlayerCount = 0
+	overrideEnemyPlayerCount = 0
+	scorePerDeath_A = 0
+	scorePerDeath_B = 0
+	scorePerKill_A = 0
+	scorePerKill_B = 0
+	mpBudgetMode = Life
+	rtbWptID_B = 
+	refuelWptID_B = 
+	separateBriefings = False
+	baseBudgetB = 100000
+	infiniteAmmo = False
+	infAmmoReloadDelay = 5
+	fuelDrainMult = 1
+	envName = day
+	selectableEnv = False
+	windDir = 0
+	windSpeed = 0
+	windVariation = 0
+	windGusts = 0
+	defaultWeather = 0
+	customTimeOfDay = 11
+	overrideLocation = False
+	overrideLatitude = 0
+	overrideLongitude = 0
+	month = 1
+	day = 1
+	year = 2024
+	timeOfDaySpeed = 1
+	qsMode = Anywhere
+	qsLimit = -1
+	WEATHER_PRESETS
+	{
+	}
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (115190.55453491211, 101.8875732421875, 93470.945678710938)
+			unitInstanceID = 0
+			unitID = MultiplayerSpawn
+			rotation = (5.130413E-08, 327.3968, 2.226363E-05)
+			lastValidPlacement = (115190.55453491211, 101.8875732421875, 93470.945678710938)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = A-10D
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Charlie
+				startMode = FlightReady
+				equipment = warthog_maverickx1;warthog_maverickx3;warthog_gbu31;warthog_gbu38x1;warthog_gbu39x4;
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;free;|
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (115133.04702758789, 101.88751220703125, 93433.923889160156)
+			unitInstanceID = 1
+			unitID = MultiplayerSpawn
+			rotation = (5.130413E-08, 327.3968, 2.226363E-05)
+			lastValidPlacement = (115133.04702758789, 101.88751220703125, 93433.923889160156)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = A-10D
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Charlie
+				startMode = FlightReady
+				equipment = warthog_maverickx1;warthog_maverickx3;warthog_gbu31;warthog_gbu38x1;warthog_gbu39x4;
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;free;|
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (115080.75521850586, 101.887451171875, 93400.419921875)
+			unitInstanceID = 2
+			unitID = MultiplayerSpawn
+			rotation = (5.130413E-08, 327.3968, 2.226363E-05)
+			lastValidPlacement = (115080.75521850586, 101.887451171875, 93400.419921875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = A-10D
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Charlie
+				startMode = FlightReady
+				equipment = warthog_maverickx1;warthog_maverickx3;warthog_gbu31;warthog_gbu38x1;warthog_gbu39x4;
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;free;|
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (115033.36965942383, 101.887451171875, 93370.059509277344)
+			unitInstanceID = 3
+			unitID = MultiplayerSpawn
+			rotation = (5.130331E-08, 327.3968, 2.226363E-05)
+			lastValidPlacement = (115033.36965942383, 101.887451171875, 93370.059509277344)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = A-10D
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Charlie
+				startMode = FlightReady
+				equipment = warthog_maverickx1;warthog_maverickx3;warthog_gbu31;warthog_gbu38x1;warthog_gbu39x4;
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;free;|
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (113989.39053344727, 101.88699340820313, 92692.458374023438)
+			unitInstanceID = 4
+			unitID = MultiplayerSpawn
+			rotation = (5.130331E-08, 327.3968, 2.226363E-05)
+			lastValidPlacement = (113989.39053344727, 101.88699340820313, 92692.458374023438)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F-16
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Bravo
+				startMode = FlightReady
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = viper_gun;viper_amraamRail;viper_amraamRail;f16_harmx1;f16_harmx1;ViperHTS;f16_jammer;viper_tgp2;f16_harmx1;f16_harmx1;viper_amraamRail;viper_amraamRail;|
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (113947.00549316406, 101.886962890625, 92664.746826171875)
+			unitInstanceID = 5
+			unitID = MultiplayerSpawn
+			rotation = (5.130331E-08, 327.3968, 2.226363E-05)
+			lastValidPlacement = (113947.00549316406, 101.886962890625, 92664.746826171875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F-16
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Bravo
+				startMode = FlightReady
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = viper_gun;viper_amraamRail;viper_amraamRail;f16_harmx1;f16_harmx1;ViperHTS;f16_jammer;viper_tgp2;f16_harmx1;f16_harmx1;viper_amraamRail;viper_amraamRail;|
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F-22 1
+			globalPosition = (133875.6416015625, 3195, 105724.6650390625)
+			unitInstanceID = 7
+			unitID = MultiplayerSpawn
+			rotation = (0, 327.3968, 0)
+			lastValidPlacement = (133875.6416015625, 3195, 105724.6650390625)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F-22A
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Alpha
+				startMode = Cold
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = f22_gun;f22_aim9x;f22_aim260x1;f22_gbu32x1Internal_left;f22_gbu32x1Internal_right;f22_aim260x1;f22_aim9x;;;;;|0;1;2;3;4;5;6;7;8;9;10;|0.600592
+			}
+		}
+		UnitSpawner
+		{
+			unitName = F-22 2
+			globalPosition = (136501.546875, 3195, 110154.2236328125)
+			unitInstanceID = 9
+			unitID = MultiplayerSpawn
+			rotation = (0, 237.508, 0)
+			lastValidPlacement = (136501.546875, 3195, 110154.2236328125)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F-22A
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Alpha
+				startMode = Cold
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = f22_gun;f22_aim9x;f22_aim260x1;f22_gbu32x1Internal_left;f22_gbu32x1Internal_right;f22_aim260x1;f22_aim9x;;;;;|0;1;2;3;4;5;6;7;8;9;10;|0.600592
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Supply Boat 1
+			globalPosition = (63292.220947265625, -5, 98082.21923828125)
+			unitInstanceID = 10
+			unitID = MineBoat
+			rotation = (0, 237.508, 0)
+			lastValidPlacement = (63292.220947265625, -5, 98082.21923828125)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Lima
+				defaultBehavior = Move_To_Waypoint
+				defaultWaypoint = 0
+				defaultPath = null
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Supply Boat 2
+			globalPosition = (90416.942993164063, -5, -7202.4658203125)
+			unitInstanceID = 11
+			unitID = MineBoat
+			rotation = (0, 358.0161, 0)
+			lastValidPlacement = (90416.942993164063, -5, -7202.4658203125)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Lima
+				defaultBehavior = Move_To_Waypoint
+				defaultWaypoint = 1
+				defaultPath = null
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser 1
+			globalPosition = (90724.175048828125, -5, -7368.6533203125)
+			unitInstanceID = 12
+			unitID = DroneMissileCruiser
+			rotation = (0, 0, 0)
+			lastValidPlacement = (90724.175048828125, -5, -7368.6533203125)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Move_To_Waypoint
+				defaultWaypoint = 2
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Cruiser 2
+			globalPosition = (63386.6396484375, -5, 99298.5693359375)
+			unitInstanceID = 13
+			unitID = DroneMissileCruiser
+			rotation = (0, 139.701, 0)
+			lastValidPlacement = (63386.6396484375, -5, 99298.5693359375)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Move_To_Waypoint
+				defaultWaypoint = 3
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (72682.658386230469, 138.74871826171875, 70221.379821777344)
+			unitInstanceID = 14
+			unitID = ASF-30
+			rotation = (-3.408891E-07, 331.674, 1.376246E-05)
+			lastValidPlacement = (72682.658386230469, 138.74871826171875, 70221.379821777344)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Alpha
+				defaultBehavior = Parked
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				allowJammingAtWill = False
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (72639.760131835938, 138.74871826171875, 70196.655654907227)
+			unitInstanceID = 16
+			unitID = ASF-30
+			rotation = (0, 331.674, 0)
+			lastValidPlacement = (72639.760131835938, 138.74871826171875, 70196.655654907227)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Alpha
+				defaultBehavior = Parked
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				allowJammingAtWill = False
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (72586.721008300781, 138.74871826171875, 70161.927108764648)
+			unitInstanceID = 17
+			unitID = ASF-30
+			rotation = (0, 331.674, 0)
+			lastValidPlacement = (72586.721008300781, 138.74871826171875, 70161.927108764648)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Bravo
+				defaultBehavior = Parked
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				allowJammingAtWill = False
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = ASF-30
+			globalPosition = (72540.468627929688, 138.74871826171875, 70131.690246582031)
+			unitInstanceID = 18
+			unitID = ASF-30
+			rotation = (0, 331.674, 0)
+			lastValidPlacement = (72540.468627929688, 138.74871826171875, 70131.690246582031)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Bravo
+				defaultBehavior = Parked
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				allowJammingAtWill = False
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+	}
+	PATHS
+	{
+	}
+	WAYPOINTS
+	{
+		WAYPOINT
+		{
+			id = 0
+			name = Enemy Ship Dropoff 1
+			globalPoint = (74228.123672485352, -5, 73330.915069580078)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = Enemy Ship Dropoff 2
+			globalPoint = (92167.513061523438, -5, 18666.186584472656)
+		}
+		WAYPOINT
+		{
+			id = 2
+			name = Cruiser 1 Defensive Position
+			globalPoint = (90410.74560546875, -5, 2947.1689453125)
+		}
+		WAYPOINT
+		{
+			id = 3
+			name = Cruiser 2 Defensive Position
+			globalPoint = (72353.22802734375, -5, 83895.15234375)
+		}
+	}
+	UNITGROUPS
+	{
+		ALLIED
+		{
+			Charlie = 2;0;1;2;3;
+			Bravo = 2;4;5;
+			Alpha = 2;9;7;
+			Charlie_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Bravo_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Alpha_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+		}
+		ENEMY
+		{
+			Lima = 1;10;11;
+			Alpha = 2;14;16;
+			Bravo = 2;17;18;
+			Lima_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Alpha_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Bravo_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+		}
+	}
+	TimedEventGroups
+	{
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+	}
+	OBJECTIVES_OPFOR
+	{
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+		CONDITIONAL
+		{
+			id = 0
+			outputNodePos = (267.6357, 9.250078, 0)
+			root = 1
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-507.5209, 185.0016, 0)
+				unit = 11
+				methodName = SCC_GetsKilled
+				isNot = False
+			}
+			COMP
+			{
+				id = 1
+				type = SCCOr
+				uiPos = (-119.6343, 70.30059, 0)
+				factors = 0;2;
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-495.1875, 29.60025, 0)
+				unit = 11
+				methodName = SCC_NearWaypoint
+				isNot = False
+				methodParameters
+				{
+					value = 1
+				}
+				methodParameters
+				{
+					value = 100
+				}
+			}
+		}
+	}
+	ConditionalActions
+	{
+		ConditionalAction
+		{
+			id = 0
+			name = 
+			BASE_BLOCK
+			{
+				blockName = 
+				blockId = 1
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-522.9377, 77.08398, 0)
+						unit = 11
+						methodName = SC_IsAlive
+						isNot = True
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 13
+						eventName = Spawn Unit
+						methodName = SpawnUnit
+						altTargetIdx = -2
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 2
+			name = 
+			BASE_BLOCK
+			{
+				blockName = If still more supply boats to spawn
+				blockId = 3
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCGlobalValueCompare
+						uiPos = (-469.9039, 69.06725, 0)
+						gvA = 0
+						gvB = 1
+						comparison = Less
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Enemy out of resupply boats from this side of the map
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 10
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 0
+						eventName = Stop
+						methodName = Stop
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+	}
+	RandomEvents
+	{
+	}
+	EventSequences
+	{
+		SEQUENCE
+		{
+			id = 0
+			sequenceName = Boat 2 Resupply
+			startImmediately = True
+			whileLoop = False
+			ListOrderIndex = 0
+			ListFolderName = 
+			EVENT
+			{
+				delay = 30
+				nodeName = Spawn in supply boat
+				exitConditional = 0
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 11
+						eventName = Spawn Unit
+						methodName = SpawnUnit
+						altTargetIdx = -2
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Increment Value
+						methodName = IncrementValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 0
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Add
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (0,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Supply boat detected on the south side of the island
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = If supply boat destroyed
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 0
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = If supply boat arrived
+				EventInfo
+				{
+					eventName = 
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = Boat supply loop ender
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 2
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = Restart the node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 0
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 0
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+		BaseInfo
+		{
+			id = 2
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+		BaseInfo
+		{
+			id = 5
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+	}
+	GlobalValues
+	{
+		gv
+		{
+			data = 0;Boat supply 2 counter;;0;
+			ListOrderIndex = 0
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 1;Num Resupply Boats;;3;
+			ListOrderIndex = 10
+			ListFolderName = 
+		}
+		FOLDER_DATA
+		{
+		}
+	}
+	Briefing
+	{
+	}
+	Briefing_B
+	{
+	}
+}
+
