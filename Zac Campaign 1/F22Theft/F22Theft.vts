@@ -5,7 +5,7 @@ CustomScenario
 	campaignOrderIdx = 3
 	scenarioName = untitled
 	scenarioID = F22Theft
-	scenarioDescription = 
+	scenarioDescription = Ferry F-22s into local conflict area.  Note: we've encountered some strange communication issues in the area and are currently investigating
 	mapID = picoCristo38x5840
 	vehicle = AV-42C
 	multiplayer = True
@@ -34,16 +34,16 @@ CustomScenario
 	infAmmoReloadDelay = 5
 	fuelDrainMult = 1
 	envName = day
-	selectableEnv = False
+	selectableEnv = True
 	windDir = 0
 	windSpeed = 0
 	windVariation = 0
 	windGusts = 0
-	defaultWeather = 0
+	defaultWeather = 2
 	customTimeOfDay = 11
 	overrideLocation = False
 	overrideLatitude = 26.4
-	overrideLongitude = -2.245383E-06
+	overrideLongitude = 0
 	month = 1
 	day = 1
 	year = 2024
@@ -121,14 +121,14 @@ CustomScenario
 			unitInstanceID = 3
 			unitID = MultiplayerSpawn
 			rotation = (0, 179.6215, 0)
-			lastValidPlacement = (7471.109375, 9994.9990234375, 116030.57275390625)
+			lastValidPlacement = (20220.812622070313, 88.811347961425781, 18971.569519042969)
 			editorPlacementMode = Air
 			onCarrier = False
 			mpSelectEnabled = True
 			UnitFields
 			{
 				vehicle = F-22A
-				selectableAltSpawn = False
+				selectableAltSpawn = True
 				slotLabel = 
 				unitGroup = Allied:Alpha
 				startMode = FlightAP
@@ -142,6 +142,33 @@ CustomScenario
 				liveryRef = 0;
 				receiveFriendlyDamage = True
 				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;||0.03641953
+			}
+			altSpawn
+			{
+				globalPos = (20220.812622070313, 88.811347961425781, 18971.569519042969)
+				rotation = (-4.805978E-07, 77.48901, -1.793075E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = F-22A
+					selectableAltSpawn = True
+					slotLabel = DEBUG LANDED
+					unitGroup = Allied:Alpha
+					startMode = FlightAP
+					equipment = f22_gun;f22_gun_no_tracers;f22_aim120x2_L;f22_aim120x2_R;f22_aim120x1;f22_aim260x1;f22_aim260x2_L;f22_aim260x2_R;f22_aim9x;f22_aim9m;f22_gbu32x1Internal_left;f22_gbu32x1Internal_right;f22-gbu39_left;f22-gbu39_right;f22_droptank_left;f22_droptank_right;
+					initialSpeed = 350
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = True
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+					forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;||1
+				}
 			}
 		}
 		UnitSpawner
@@ -173,6 +200,283 @@ CustomScenario
 				receiveFriendlyDamage = True
 				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;||0.04370379
 			}
+			altSpawn
+			{
+				globalPos = (5783.724609375, 9994.9990234375, 117552.7265625)
+				rotation = (0, 179.6215, 0)
+				weight = 100
+				placementMode = Air
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = F-22A
+					selectableAltSpawn = False
+					slotLabel = 
+					unitGroup = Allied:Alpha
+					startMode = FlightAP
+					equipment = 
+					initialSpeed = 350
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = True
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+					forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;||0.04370379
+				}
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20250.796752929688, 88.81134033203125, 18949.058094024658)
+			unitInstanceID = 5
+			unitID = EnemySoldier
+			rotation = (-3.478014E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20250.796752929688, 88.81134033203125, 18949.058094024658)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20252.502716064453, 88.81134033203125, 18944.750755310059)
+			unitInstanceID = 7
+			unitID = EnemySoldier
+			rotation = (-3.478014E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20252.502716064453, 88.81134033203125, 18944.750755310059)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20253.350234985352, 88.81134033203125, 18939.877853393555)
+			unitInstanceID = 8
+			unitID = EnemySoldier
+			rotation = (-3.478014E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20253.350234985352, 88.81134033203125, 18939.877853393555)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20255.038696289063, 88.81134033203125, 18935.614677429199)
+			unitInstanceID = 9
+			unitID = EnemySoldier
+			rotation = (-3.478014E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20255.038696289063, 88.81134033203125, 18935.614677429199)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20256.375335693359, 88.81134033203125, 18932.239971160889)
+			unitInstanceID = 10
+			unitID = EnemySoldier
+			rotation = (-3.478014E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20256.375335693359, 88.81134033203125, 18932.239971160889)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20247.788940429688, 88.811355590820313, 18984.125564575195)
+			unitInstanceID = 11
+			unitID = EnemySoldier
+			rotation = (-3.478153E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20247.788940429688, 88.811355590820313, 18984.125564575195)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Zulu
+				behavior = Path
+				defaultPath = 2
+				waypoint = null
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20247.767715454102, 88.811355590820313, 18982.285186767578)
+			unitInstanceID = 12
+			unitID = EnemySoldier
+			rotation = (-3.478153E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20247.767715454102, 88.811355590820313, 18982.285186767578)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Zulu
+				behavior = Path
+				defaultPath = 2
+				waypoint = 1
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20248.00146484375, 88.811355590820313, 18981.12841796875)
+			unitInstanceID = 13
+			unitID = EnemySoldier
+			rotation = (-3.478153E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20248.00146484375, 88.811355590820313, 18981.12841796875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Zulu
+				behavior = Path
+				defaultPath = 2
+				waypoint = null
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20248.221557617188, 88.811355590820313, 18980.039077758789)
+			unitInstanceID = 14
+			unitID = EnemySoldier
+			rotation = (-3.478153E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20248.221557617188, 88.811355590820313, 18980.039077758789)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Zulu
+				behavior = Path
+				defaultPath = 2
+				waypoint = 1
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Infantry
+			globalPosition = (20248.495193481445, 88.811355590820313, 18978.684829711914)
+			unitInstanceID = 15
+			unitID = EnemySoldier
+			rotation = (-3.478153E-07, 260.1354, 1.793382E-05)
+			lastValidPlacement = (20248.495193481445, 88.811355590820313, 18978.684829711914)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Zulu
+				behavior = Path
+				defaultPath = 2
+				waypoint = null
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
 		}
 	}
 	PATHS
@@ -188,6 +492,18 @@ CustomScenario
 	}
 	WAYPOINTS
 	{
+		WAYPOINT
+		{
+			id = 0
+			name = Destination Airbase
+			globalPoint = (19698.603515625, 88.7626953125, 18759.383422851563)
+		}
+		WAYPOINT
+		{
+			id = 1
+			name = F22 Parking 1
+			globalPoint = (20226.063003540039, 88.811355590820313, 18985.005294799805)
+		}
 	}
 	UNITGROUPS
 	{
@@ -204,9 +520,80 @@ CustomScenario
 				syncAltSpawns = False
 			}
 		}
+		ENEMY
+		{
+			Zulu = 0;11;12;13;14;15;
+			Zulu_SETTINGS
+			{
+				syncAltSpawns = True
+			}
+		}
 	}
 	TimedEventGroups
 	{
+		TimedEventGroup
+		{
+			groupName = Capture F-22 1
+			groupID = 0
+			beginImmediately = False
+			initialDelay = 0
+			ListOrderIndex = 0
+			ListFolderName = 
+			TimedEventInfo
+			{
+				eventName = New Timed Event
+				time = 0
+				EventTarget
+				{
+					targetType = UnitGroup
+					targetID = 225
+					eventName = Spawn All
+					methodName = SpawnAll
+					altTargetIdx = -1
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = New Timed Event
+				time = 5
+				EventTarget
+				{
+					targetType = UnitGroup
+					targetID = 225
+					eventName = Move Path
+					methodName = MovePath
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = FollowPath
+						value = 2
+						name = path
+					}
+				}
+			}
+			TimedEventInfo
+			{
+				eventName = New Timed Event
+				time = 5
+				EventTarget
+				{
+					targetType = UnitGroup
+					targetID = 225
+					eventName = Set Engage Enemies
+					methodName = SetEngageEnemies
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.Boolean
+						value = True
+						name = Engage
+					}
+				}
+			}
+		}
+		FOLDER_DATA
+		{
+		}
 	}
 	TRIGGER_EVENTS
 	{
@@ -252,12 +639,142 @@ CustomScenario
 				failConditional = 1
 			}
 		}
+		Objective
+		{
+			objectiveName = Land At Airbase
+			objectiveInfo = Land at airbase
+			objectiveID = 1
+			orderID = 1
+			required = True
+			completionReward = 0
+			waypoint = 0
+			autoSetWaypoint = False
+			startMode = PreReqs
+			objectiveType = Conditional
+			preReqObjectives = 0;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 2
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = New Objective
+			objectiveInfo = Have a nice relaxing evening after a long flight
+			objectiveID = 2
+			orderID = 2
+			required = True
+			completionReward = 0
+			waypoint = null
+			autoSetWaypoint = False
+			startMode = PreReqs
+			objectiveType = Conditional
+			preReqObjectives = 1;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Timed_Events
+						targetID = 0
+						eventName = Begin
+						methodName = Begin
+						altTargetIdx = -1
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 3
+				failConditional = null
+			}
+		}
 	}
 	OBJECTIVES_OPFOR
 	{
 	}
 	StaticObjects
 	{
+		StaticObject
+		{
+			prefabID = ConcreteBarrierX7
+			id = 0
+			globalPos = (20228.821426391602, 88.811355590820313, 18972.579406738281)
+			rotation = (1.793716E-05, 169.1211, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteBarrierX7
+			id = 1
+			globalPos = (20223.413452148438, 88.811355590820313, 18964.484878540039)
+			rotation = (6.433472E-07, 81.07979, 2.544443E-14)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteBarrierX7
+			id = 2
+			globalPos = (20220.600952148438, 88.811355590820313, 18978.602737426758)
+			rotation = (6.433472E-07, 81.07979, 2.544443E-14)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteBarrierX7
+			id = 3
+			globalPos = (20230.315689086914, 88.81134033203125, 18935.209396362305)
+			rotation = (-8.029642E-07, 261.5901, 0)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteBarrierX7
+			id = 4
+			globalPos = (20238.585098266602, 88.81134033203125, 18929.22444152832)
+			rotation = (1.793667E-05, 168.5901, 2.035555E-13)
+		}
+		StaticObject
+		{
+			prefabID = ConcreteBarrierX7
+			id = 5
+			globalPos = (20232.953720092773, 88.81134033203125, 18921.129539489746)
+			rotation = (-8.029642E-07, 261.5901, 0)
+		}
 	}
 	Conditionals
 	{
@@ -378,7 +895,7 @@ CustomScenario
 				type = SCCUnitGroup
 				uiPos = (-555.7244, -498.4987, 0)
 				unitGroup = Allied:Alpha
-				methodName = NumAirborne
+				methodName = SCC_NumAlive
 				isNot = False
 				methodParameters
 				{
@@ -419,6 +936,56 @@ CustomScenario
 				type = SCCAnd
 				uiPos = (-164.3913, 42.72681, 0)
 				factors = 1;0;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 2
+			outputNodePos = (38.23366, -155.4013, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCUnitGroup
+				uiPos = (-429.8204, -114.701, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyNearPoint
+				isNot = False
+				methodParameters
+				{
+					value = (20220.812728881836, 88.811355590820313, 18971.569564819336)
+				}
+				methodParameters
+				{
+					value = 10
+				}
+				methodParameters
+				{
+					value = True
+				}
+			}
+		}
+		CONDITIONAL
+		{
+			id = 3
+			outputNodePos = (-114.701, 20.96684, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCUnitGroup
+				uiPos = (-461.8872, 64.75055, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_NumAlive
+				isNot = False
+				methodParameters
+				{
+					value = Equals
+				}
+				methodParameters
+				{
+					value = 0
+				}
 			}
 		}
 	}
@@ -472,6 +1039,24 @@ CustomScenario
 	}
 	Briefing
 	{
+		BRIEFING_NOTE
+		{
+			text = Player 1: Alpha 1-1///nPlayer 2: Alpha 1-2
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = We have 2 prototype F-22 fighters we want to use in this area and are ferrying them in.///n///nOur initial refueling rendevous was missed and now the flight is dangerously low fuel.///n///nRefuel immediately.   ///n///nAlpha 1-2 has marginally more fuel but alternating refueling may still be necessary.
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = After refueling proceed to airbase and land.///n///nNote there have been significant comms disruptions in the area.   We are investigating but currently have no information on why this is happening.
+			imagePath = 
+			audioClipPath = 
+		}
 	}
 	Briefing_B
 	{
