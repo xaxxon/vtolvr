@@ -1,0 +1,292 @@
+CustomScenario
+{
+	gameVersion = 1.12.6m1
+	campaignID = Zac Campaign 1
+	campaignOrderIdx = 2
+	scenarioName = untitled
+	scenarioID = LogicTest
+	scenarioDescription = 
+	mapID = picoCristo38x5840
+	vehicle = AV-42C
+	multiplayer = True
+	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;sidearmx1;sidearmx2;sidearmx3;marmx1;av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;42c_aim9ex2;42c_aim9ex1;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 100000
+	isTraining = False
+	rtbWptID = 
+	refuelWptID = 
+	mpPlayerCount = 1
+	autoPlayerCount = True
+	overrideAlliedPlayerCount = 0
+	overrideEnemyPlayerCount = 0
+	scorePerDeath_A = 0
+	scorePerDeath_B = 0
+	scorePerKill_A = 0
+	scorePerKill_B = 0
+	mpBudgetMode = Life
+	rtbWptID_B = 
+	refuelWptID_B = 
+	separateBriefings = False
+	baseBudgetB = 100000
+	infiniteAmmo = False
+	infAmmoReloadDelay = 5
+	fuelDrainMult = 1
+	envName = day
+	selectableEnv = False
+	windDir = 0
+	windSpeed = 0
+	windVariation = 0
+	windGusts = 0
+	defaultWeather = 0
+	customTimeOfDay = 11
+	overrideLocation = False
+	overrideLatitude = 0
+	overrideLongitude = 0
+	month = 1
+	day = 1
+	year = 2024
+	timeOfDaySpeed = 1
+	qsMode = Anywhere
+	qsLimit = -1
+	WEATHER_PRESETS
+	{
+	}
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = Early Warning Radar
+			globalPosition = (53047.1943359375, 1225.875, 9966.8427734375)
+			unitInstanceID = 0
+			unitID = ewRadarPyramid
+			rotation = (7.608074, 0.8436425, 6.346489)
+			lastValidPlacement = (53047.1943359375, 1225.875, 9966.8427734375)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (19561.590454101563, 88.811767578125, 20232.975952148438)
+			unitInstanceID = 1
+			unitID = MultiplayerSpawn
+			rotation = (1.791872E-05, 171.357, 8.00825E-07)
+			lastValidPlacement = (19561.590454101563, 88.811767578125, 20232.975952148438)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F/A-26B
+				selectableAltSpawn = True
+				slotLabel = 
+				unitGroup = Allied:Alpha
+				startMode = Cold
+				equipment = 
+				initialSpeed = 0
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = False
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (19561.590454101563, 88.811767578125, 20232.975952148438)
+				rotation = (1.791872E-05, 171.357, 8.00825E-07)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = F-22A
+					selectableAltSpawn = True
+					slotLabel = 
+					unitGroup = null
+					startMode = Cold
+					equipment = 
+					initialSpeed = 0
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = False
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+				}
+			}
+		}
+	}
+	PATHS
+	{
+	}
+	WAYPOINTS
+	{
+	}
+	UNITGROUPS
+	{
+		ALLIED
+		{
+			Alpha = 2;1;
+			Alpha_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+		}
+	}
+	TimedEventGroups
+	{
+	}
+	TRIGGER_EVENTS
+	{
+		TriggerEvent
+		{
+			id = 0
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 0
+			ListFolderName = 
+			conditional = 0
+			eventName = Trigger Events 0
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = Unit
+					targetID = 0
+					eventName = Set Engage Enemies
+					methodName = SetEngageEnemies
+					altTargetIdx = -2
+					ParamInfo
+					{
+						type = System.Boolean
+						value = False
+						name = Engage
+					}
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Detected
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 10
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+			}
+		}
+	}
+	OBJECTIVES
+	{
+	}
+	OBJECTIVES_OPFOR
+	{
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+		CONDITIONAL
+		{
+			id = 0
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCUnitGroup
+				uiPos = (-468.054, 162.8014, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyUnitDetected
+				isNot = False
+				methodParameters
+				{
+					value = Enemy
+				}
+			}
+		}
+	}
+	ConditionalActions
+	{
+	}
+	RandomEvents
+	{
+	}
+	EventSequences
+	{
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 1
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+		BaseInfo
+		{
+			id = 28
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+	}
+	GlobalValues
+	{
+	}
+	Briefing
+	{
+	}
+	Briefing_B
+	{
+	}
+}
+

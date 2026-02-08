@@ -1,0 +1,480 @@
+CustomScenario
+{
+	gameVersion = 1.12.6m1
+	campaignID = Zac Campaign 1
+	campaignOrderIdx = 3
+	scenarioName = untitled
+	scenarioID = F22Theft
+	scenarioDescription = 
+	mapID = picoCristo38x5840
+	vehicle = AV-42C
+	multiplayer = True
+	allowedEquips = gau-8;m230;h70-x7;h70-4x4;h70-x19;mk82x1;mk82x2;mk82x3;mk82HDx1;mk82HDx2;mk82HDx3;agm89x1;gbu38x1;gbu38x2;gbu38x3;gbu39x3;gbu39x4u;cbu97x1;hellfirex4;maverickx1;maverickx3;cagm-6;sidewinderx1;sidewinderx2;sidewinderx3;iris-t-x1;iris-t-x2;iris-t-x3;sidearmx1;sidearmx2;sidearmx3;marmx1;av42_gbu12x1;av42_gbu12x2;av42_gbu12x3;42c_aim9ex2;42c_aim9ex1;
+	forceEquips = False
+	normForcedFuel = 1
+	equipsConfigurable = True
+	baseBudget = 100000
+	isTraining = False
+	rtbWptID = 
+	refuelWptID = 
+	mpPlayerCount = 2
+	autoPlayerCount = True
+	overrideAlliedPlayerCount = 0
+	overrideEnemyPlayerCount = 0
+	scorePerDeath_A = 0
+	scorePerDeath_B = 0
+	scorePerKill_A = 0
+	scorePerKill_B = 0
+	mpBudgetMode = Life
+	rtbWptID_B = 
+	refuelWptID_B = 
+	separateBriefings = False
+	baseBudgetB = 100000
+	infiniteAmmo = False
+	infAmmoReloadDelay = 5
+	fuelDrainMult = 1
+	envName = day
+	selectableEnv = False
+	windDir = 0
+	windSpeed = 0
+	windVariation = 0
+	windGusts = 0
+	defaultWeather = 0
+	customTimeOfDay = 11
+	overrideLocation = False
+	overrideLatitude = 26.4
+	overrideLongitude = -2.245383E-06
+	month = 1
+	day = 1
+	year = 2024
+	timeOfDaySpeed = 1
+	qsMode = Anywhere
+	qsLimit = -1
+	WEATHER_PRESETS
+	{
+	}
+	UNITS
+	{
+		UnitSpawner
+		{
+			unitName = KC-49
+			globalPosition = (5799.1396484375, 9995, 96703.539764404297)
+			unitInstanceID = 2
+			unitID = KC-49
+			rotation = (0, 90, 0)
+			lastValidPlacement = (5799.1396484375, 9995, 96703.539764404297)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Allied:Romeo
+				defaultBehavior = Path
+				initialSpeed = 160
+				defaultNavSpeed = 160
+				defaultOrbitPoint = null
+				defaultPath = 1
+				orbitAltitude = 3200
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = GECM Truck
+			globalPosition = (4760.5693359375, 648.30859375, 89955.66259765625)
+			unitInstanceID = 1
+			unitID = EJammerTruck
+			rotation = (3.839976, 359.0072, 343.1361)
+			lastValidPlacement = (4760.5693359375, 648.30859375, 89955.66259765625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				moveSpeed = Slow_10
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (7471.109375, 9994.9990234375, 116030.57275390625)
+			unitInstanceID = 3
+			unitID = MultiplayerSpawn
+			rotation = (0, 179.6215, 0)
+			lastValidPlacement = (7471.109375, 9994.9990234375, 116030.57275390625)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F-22A
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Alpha
+				startMode = FlightAP
+				equipment = f22_gun;f22_gun_no_tracers;f22_aim120x2_L;f22_aim120x2_R;f22_aim120x1;f22_aim260x1;f22_aim260x2_L;f22_aim260x2_R;f22_aim9x;f22_aim9m;f22_gbu32x1Internal_left;f22_gbu32x1Internal_right;f22-gbu39_left;f22-gbu39_right;f22_droptank_left;f22_droptank_right;
+				initialSpeed = 350
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;||0.03641953
+			}
+		}
+		UnitSpawner
+		{
+			unitName = MP Spawn
+			globalPosition = (5783.724853515625, 9994.9990234375, 117552.72534179688)
+			unitInstanceID = 4
+			unitID = MultiplayerSpawn
+			rotation = (0, 179.6215, 0)
+			lastValidPlacement = (5783.724853515625, 9994.9990234375, 117552.72534179688)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				vehicle = F-22A
+				selectableAltSpawn = False
+				slotLabel = 
+				unitGroup = Allied:Alpha
+				startMode = FlightAP
+				equipment = 
+				initialSpeed = 350
+				rtbIsSpawn = False
+				limitedLives = False
+				lifeCount = 1
+				b_eqAssignmentMode = True
+				costToSpawn = 0
+				liveryRef = 0;
+				receiveFriendlyDamage = True
+				forcedEquipsList = free;free;free;free;free;free;free;free;free;free;free;||0.04370379
+			}
+		}
+	}
+	PATHS
+	{
+		PATH
+		{
+			id = 1
+			name = Refuel Path
+			loop = True
+			points = (35814.625, 3195, 96913.4296875);(115016.1015625, 3195, 96453.609375);
+			pathMode = Smooth
+		}
+	}
+	WAYPOINTS
+	{
+	}
+	UNITGROUPS
+	{
+		ALLIED
+		{
+			Alpha = 2;3;4;
+			Romeo = 2;2;
+			Alpha_SETTINGS
+			{
+				syncAltSpawns = True
+			}
+			Romeo_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+		}
+	}
+	TimedEventGroups
+	{
+	}
+	TRIGGER_EVENTS
+	{
+	}
+	OBJECTIVES
+	{
+		Objective
+		{
+			objectiveName = Refuel all F22s
+			objectiveInfo = Refuel all F-22s
+			objectiveID = 0
+			orderID = 0
+			required = True
+			completionReward = 0
+			waypoint = null
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 0
+				failConditional = 1
+			}
+		}
+	}
+	OBJECTIVES_OPFOR
+	{
+	}
+	StaticObjects
+	{
+	}
+	Conditionals
+	{
+		CONDITIONAL
+		{
+			id = 0
+			outputNodePos = (444.6204, -2.466721, 0)
+			root = 5
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-555.0046, 221.3852, 0)
+				unit = 3
+				methodName = SCC_FuelLevel
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 80
+				}
+			}
+			COMP
+			{
+				id = 1
+				type = SCCUnit
+				uiPos = (-552.075, 41.11241, 0)
+				unit = 3
+				methodName = SCC_IsAlive
+				isNot = True
+			}
+			COMP
+			{
+				id = 2
+				type = SCCOr
+				uiPos = (60.28027, 268.0477, 0)
+				factors = 9;0;1;
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnit
+				uiPos = (-572.4251, -140.8058, 0)
+				unit = 4
+				methodName = SCC_FuelLevel
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 80
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCUnit
+				uiPos = (-563.7917, -327.0407, 0)
+				unit = 4
+				methodName = SCC_IsAlive
+				isNot = True
+			}
+			COMP
+			{
+				id = 5
+				type = SCCAnd
+				uiPos = (239.7318, 41.72908, 0)
+				factors = 2;6;11;
+			}
+			COMP
+			{
+				id = 6
+				type = SCCOr
+				uiPos = (-259.7725, -151.2892, 0)
+				factors = 3;4;
+			}
+			COMP
+			{
+				id = 7
+				type = SCCGlobalValue
+				uiPos = (-550.0167, 528.8444, 0)
+				gv = 0
+				comparison = Equals
+				c_value = 1
+			}
+			COMP
+			{
+				id = 8
+				type = SCCUnit
+				uiPos = (-551.2501, 384.5432, 0)
+				unit = 3
+				methodName = SCC_FuelLevel
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 0.1
+				}
+			}
+			COMP
+			{
+				id = 9
+				type = SCCAnd
+				uiPos = (-200.3638, 450.5271, 0)
+				factors = 7;8;
+			}
+			COMP
+			{
+				id = 11
+				type = SCCUnitGroup
+				uiPos = (-555.7244, -498.4987, 0)
+				unitGroup = Allied:Alpha
+				methodName = NumAirborne
+				isNot = False
+				methodParameters
+				{
+					value = Greater_Than
+				}
+				methodParameters
+				{
+					value = 0
+				}
+			}
+		}
+		CONDITIONAL
+		{
+			id = 1
+			outputNodePos = (0, 0, 0)
+			root = 3
+			COMP
+			{
+				id = 0
+				type = SCCUnitGroup
+				uiPos = (-556.8547, -45.63372, 0)
+				unitGroup = Allied:Alpha
+				methodName = SCC_AnyGetsKilled
+				isNot = False
+			}
+			COMP
+			{
+				id = 1
+				type = SCCGlobalValue
+				uiPos = (-555.6213, 111.0009, 0)
+				gv = 1
+				comparison = Equals
+				c_value = 0
+			}
+			COMP
+			{
+				id = 3
+				type = SCCAnd
+				uiPos = (-164.3913, 42.72681, 0)
+				factors = 1;0;
+			}
+		}
+	}
+	ConditionalActions
+	{
+	}
+	RandomEvents
+	{
+	}
+	EventSequences
+	{
+	}
+	BASES
+	{
+		BaseInfo
+		{
+			id = 1
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+		BaseInfo
+		{
+			id = 28
+			overrideBaseName = 
+			baseTeam = Allied
+			CUSTOM_DATA
+			{
+			}
+		}
+	}
+	GlobalValues
+	{
+		gv
+		{
+			data = 0;Easy Refuel DEBUG;;1;
+			ListOrderIndex = 0
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 1;NO FAIL MISSION;;1;
+			ListOrderIndex = 10
+			ListFolderName = 
+		}
+		FOLDER_DATA
+		{
+		}
+	}
+	Briefing
+	{
+	}
+	Briefing_B
+	{
+	}
+}
+
