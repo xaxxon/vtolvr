@@ -831,6 +831,63 @@ CustomScenario
 				receiveFriendlyDamage = True
 			}
 		}
+		UnitSpawner
+		{
+			unitName = Primary Target 1
+			globalPosition = (94820.085693359375, 1755.11328125, 68751.755859375)
+			unitInstanceID = 28
+			unitID = bunker1
+			rotation = (345.14, 336.7098, 347.7949)
+			lastValidPlacement = (77765.4462890625, 1963.8515625, 39146.54931640625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = False
+			}
+			altSpawn
+			{
+				globalPos = (73138.89501953125, 373.01953125, 63023.001220703125)
+				rotation = (4.356678E-06, 336.7098, -1.875398E-06)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = True
+					respawnable = False
+					receiveFriendlyDamage = False
+				}
+			}
+			altSpawn
+			{
+				globalPos = (77765.4462890625, 1963.8515625, 39146.54931640625)
+				rotation = (344.3174, 334.7348, 7.270133)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = True
+					respawnable = False
+					receiveFriendlyDamage = False
+				}
+			}
+		}
 	}
 	PATHS
 	{
@@ -926,9 +983,197 @@ CustomScenario
 	}
 	TRIGGER_EVENTS
 	{
+		TriggerEvent
+		{
+			id = 0
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 0
+			ListFolderName = 
+			conditional = 8
+			eventName = Trigger Events 0
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Set Value
+					methodName = SetValue
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 6
+						name = Global Value
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Set to
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (-99999,99999)
+						}
+					}
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 1
+					eventName = Display Message
+					methodName = DisplayMessage
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = System.String
+						value = Jammer target identified
+						name = Text
+						ParamAttrInfo
+						{
+							type = TextInputModes
+							data = MultiLine
+						}
+						ParamAttrInfo
+						{
+							type = System.Int32
+							data = 140
+						}
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 10
+						name = Duration
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (1,9999)
+						}
+					}
+				}
+			}
+		}
 	}
 	OBJECTIVES
 	{
+		Objective
+		{
+			objectiveName = ID Jammer Targets
+			objectiveInfo = Determine all the jammer targets for F-22 precision strike
+			objectiveID = 0
+			orderID = 0
+			required = True
+			completionReward = 0
+			waypoint = null
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 9
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = Destroy Jammers
+			objectiveInfo = Destroy all jammers
+			objectiveID = 1
+			orderID = 1
+			required = True
+			completionReward = 0
+			waypoint = null
+			autoSetWaypoint = False
+			startMode = PreReqs
+			objectiveType = Destroy
+			preReqObjectives = 0;
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 7
+						eventName = Set AltSpawn Available
+						methodName = SetAltSpawnAvailable
+						altTargetIdx = -2
+						ParamInfo
+						{
+							type = System.Boolean
+							value = True
+							name = Available
+						}
+					}
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 9
+						eventName = Set AltSpawn Available
+						methodName = SetAltSpawnAvailable
+						altTargetIdx = -2
+						ParamInfo
+						{
+							type = System.Boolean
+							value = True
+							name = Available
+						}
+					}
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				targets = 28;
+				minRequired = 1
+				perUnitReward = 0
+				fullCompleteBonus = 0
+			}
+		}
 	}
 	OBJECTIVES_OPFOR
 	{
@@ -1067,6 +1312,147 @@ CustomScenario
 				c_value = 2
 			}
 		}
+		CONDITIONAL
+		{
+			id = 7
+			outputNodePos = (267.6357, 9.250078, 0)
+			root = 1
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-507.5209, 185.0016, 0)
+				unit = 11
+				methodName = SCC_GetsKilled
+				isNot = False
+			}
+			COMP
+			{
+				id = 1
+				type = SCCOr
+				uiPos = (-119.6343, 70.30059, 0)
+				factors = 0;2;
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-495.1875, 29.60025, 0)
+				unit = 11
+				methodName = SCC_NearWaypoint
+				isNot = False
+				methodParameters
+				{
+					value = 1
+				}
+				methodParameters
+				{
+					value = 100
+				}
+			}
+		}
+		CONDITIONAL
+		{
+			id = 8
+			outputNodePos = (0, 0, 0)
+			root = 1
+			COMP
+			{
+				id = 1
+				type = SCCUnit
+				uiPos = (-442.5401, 192.8579, 0)
+				unit = 0
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 28
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+		}
+		CONDITIONAL
+		{
+			id = 9
+			outputNodePos = (657.5765, -86.47318, 0)
+			root = 8
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-167.2448, 191.9514, 0)
+				gv = 6
+				comparison = Equals
+				c_value = 1
+			}
+			COMP
+			{
+				id = 1
+				type = SCCGlobalValue
+				uiPos = (-185.6543, 41.1269, 0)
+				gv = -1
+				comparison = Equals
+				c_value = 0
+			}
+			COMP
+			{
+				id = 2
+				type = SCCGlobalValue
+				uiPos = (-195.1569, -76.70467, 0)
+				gv = 9
+				comparison = Equals
+				c_value = 1
+			}
+			COMP
+			{
+				id = 3
+				type = SCCGlobalValue
+				uiPos = (-219.8635, -204.9891, 0)
+				gv = 10
+				comparison = Equals
+				c_value = 1
+			}
+			COMP
+			{
+				id = 4
+				type = SCCAnd
+				uiPos = (137.7869, 110.2295, 0)
+				factors = 0;1;
+			}
+			COMP
+			{
+				id = 5
+				type = SCCAnd
+				uiPos = (150.1403, -135.8864, 0)
+				factors = 2;3;
+			}
+			COMP
+			{
+				id = 6
+				type = SCCOr
+				uiPos = (284.058, -188.6225, 0)
+				factors = 5;7;
+			}
+			COMP
+			{
+				id = 7
+				type = SCCGlobalValue
+				uiPos = (-208.4409, -379.1129, 0)
+				gv = 7
+				comparison = Equals
+				c_value = 1
+			}
+			COMP
+			{
+				id = 8
+				type = SCCAnd
+				uiPos = (425.0065, -41.19717, 0)
+				factors = 4;6;
+			}
+		}
 	}
 	ConditionalActions
 	{
@@ -1123,6 +1509,7 @@ CustomScenario
 				{
 					id = 0
 					outputNodePos = (0, 0, 0)
+					root = 1
 					COMP
 					{
 						id = 1
@@ -1186,6 +1573,265 @@ CustomScenario
 				}
 			}
 		}
+		ConditionalAction
+		{
+			id = 4
+			name = 
+			BASE_BLOCK
+			{
+				blockName = 
+				blockId = 1
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-522.9377, 77.08398, 0)
+						unit = 10
+						methodName = SC_IsAlive
+						isNot = True
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 12
+						eventName = Spawn Unit
+						methodName = SpawnUnit
+						altTargetIdx = -2
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 6
+			name = 
+			BASE_BLOCK
+			{
+				blockName = If still more supply boats to spawn
+				blockId = 3
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 1
+					COMP
+					{
+						id = 1
+						type = SCCGlobalValue
+						uiPos = (-424.2281, 43.18684, 0)
+						gv = 3
+						comparison = Greater_Than
+						c_value = 2
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Enemy out of resupply boats from this side of the map
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 10
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 0
+						eventName = Stop
+						methodName = Stop
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 8
+			name = 
+			BASE_BLOCK
+			{
+				blockName = reaches port
+				blockId = 9
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (190.8784, -7.5276, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-105.3864, 87.10506, 0)
+						unit = 10
+						methodName = SCC_NearWaypoint
+						isNot = False
+						methodParameters
+						{
+							value = 0
+						}
+						methodParameters
+						{
+							value = 100
+						}
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Increment Value
+						methodName = IncrementValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 3
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Add
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (0,99999)
+							}
+						}
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 10
+			name = 
+			BASE_BLOCK
+			{
+				blockName = 
+				blockId = 11
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-434.4503, 46.77872, 0)
+						unit = 11
+						methodName = SCC_NearWaypoint
+						isNot = False
+						methodParameters
+						{
+							value = unit:11
+						}
+						methodParameters
+						{
+							value = 100
+						}
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Increment Value
+						methodName = IncrementValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 2
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Add
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (0,99999)
+							}
+						}
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+				}
+			}
+		}
 	}
 	RandomEvents
 	{
@@ -1198,7 +1844,7 @@ CustomScenario
 			sequenceName = Boat 2 Resupply
 			startImmediately = True
 			whileLoop = False
-			ListOrderIndex = 0
+			ListOrderIndex = 10
 			ListFolderName = 
 			EVENT
 			{
@@ -1343,6 +1989,20 @@ CustomScenario
 							}
 						}
 					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 10
+							name = Action
+						}
+					}
 				}
 			}
 			EVENT
@@ -1392,7 +2052,7 @@ CustomScenario
 			sequenceName = Airfield 2 Fighter Launch
 			startImmediately = True
 			whileLoop = False
-			ListOrderIndex = 10
+			ListOrderIndex = 20
 			ListFolderName = 
 			EVENT
 			{
@@ -1455,7 +2115,7 @@ CustomScenario
 			sequenceName = Airfield 2 Fighter Launch
 			startImmediately = True
 			whileLoop = False
-			ListOrderIndex = 20
+			ListOrderIndex = 30
 			ListFolderName = 
 			EVENT
 			{
@@ -1487,6 +2147,187 @@ CustomScenario
 					eventName = 
 				}
 			}
+		}
+		SEQUENCE
+		{
+			id = 3
+			sequenceName = Boat 1 Resupply
+			startImmediately = True
+			whileLoop = False
+			ListOrderIndex = 0
+			ListFolderName = 
+			EVENT
+			{
+				delay = 30
+				nodeName = Spawn in supply boat
+				exitConditional = 7
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 10
+						eventName = Spawn Unit
+						methodName = SpawnUnit
+						altTargetIdx = -2
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Supply boat detected on the south side of the island
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = If supply boat destroyed
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 4
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = If supply boat arrived
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Increment Value
+						methodName = IncrementValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 3
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Add
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (0,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 8
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = Boat supply loop ender
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 6
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = Restart the node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 3
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		FOLDER_DATA
+		{
 		}
 	}
 	BASES
@@ -1523,26 +2364,44 @@ CustomScenario
 	{
 		gv
 		{
-			data = 0;Boat supply 2 counter;;0;
+			data = 7;Only 2 Target Flag;;0;
 			ListOrderIndex = 0
 			ListFolderName = 
 		}
 		gv
 		{
-			data = 1;Num Resupply Boats;;3;
-			ListOrderIndex = 30
+			data = 6;Target identified 1;;0;
+			ListOrderIndex = 10
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 2;Airfield 2 Fghtr sqnce;;0;
-			ListOrderIndex = 20
+			ListOrderIndex = 60
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 3;Arifield 1 Fghtr sqnce;;0;
-			ListOrderIndex = 10
+			ListOrderIndex = 50
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 8;Target identified 2;;0;
+			ListOrderIndex = 20
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 9;Target identified 3;;0;
+			ListOrderIndex = 30
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 10;Target identified 4;;0;
+			ListOrderIndex = 40
 			ListFolderName = 
 		}
 		FOLDER_DATA
