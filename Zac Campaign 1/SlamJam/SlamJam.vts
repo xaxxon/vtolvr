@@ -308,7 +308,7 @@ CustomScenario
 			mpSelectEnabled = True
 			UnitFields
 			{
-				unitGroup = Enemy:Lima
+				unitGroup = null
 				defaultBehavior = Move_To_Waypoint
 				defaultWaypoint = 0
 				defaultPath = null
@@ -319,6 +319,28 @@ CustomScenario
 				respawnable = True
 				receiveFriendlyDamage = True
 			}
+			altSpawn
+			{
+				globalPos = (63292.220703125, -5, 98082.21875)
+				rotation = (0, 237.508, 0)
+				weight = 100
+				placementMode = Unknown
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					unitGroup = Enemy:Lima
+					defaultBehavior = Move_To_Waypoint
+					defaultWaypoint = 0
+					defaultPath = null
+					engageEnemies = False
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = True
+					receiveFriendlyDamage = True
+				}
+			}
 		}
 		UnitSpawner
 		{
@@ -327,7 +349,7 @@ CustomScenario
 			unitInstanceID = 11
 			unitID = MineBoat
 			rotation = (0, 358.0161, 0)
-			lastValidPlacement = (90416.942993164063, -5, -7202.4658203125)
+			lastValidPlacement = (90210.6103515625, -5, 16505.1669921875)
 			editorPlacementMode = Sea
 			onCarrier = False
 			mpSelectEnabled = True
@@ -339,7 +361,7 @@ CustomScenario
 				defaultPath = null
 				engageEnemies = False
 				detectionMode = Default
-				spawnOnStart = True
+				spawnOnStart = False
 				invincible = False
 				respawnable = True
 				receiveFriendlyDamage = True
@@ -397,11 +419,11 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = ASF-30
+			unitName = Fighter base 1 1-1
 			globalPosition = (72682.658386230469, 138.74871826171875, 70221.379821777344)
 			unitInstanceID = 14
 			unitID = ASF-30
-			rotation = (-3.408891E-07, 331.674, 1.376246E-05)
+			rotation = (-3.408889E-07, 331.674, 1.376246E-05)
 			lastValidPlacement = (72682.658386230469, 138.74871826171875, 70221.379821777344)
 			editorPlacementMode = Ground
 			onCarrier = False
@@ -432,7 +454,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = ASF-30
+			unitName = Fighter base 1 1-2
 			globalPosition = (72639.760131835938, 138.74871826171875, 70196.655654907227)
 			unitInstanceID = 16
 			unitID = ASF-30
@@ -467,7 +489,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = ASF-30
+			unitName = Fighter base 1 2-1
 			globalPosition = (72586.721008300781, 138.74871826171875, 70161.927108764648)
 			unitInstanceID = 17
 			unitID = ASF-30
@@ -502,7 +524,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = ASF-30
+			unitName = Fighter base 1 2-2
 			globalPosition = (72540.468627929688, 138.74871826171875, 70131.690246582031)
 			unitInstanceID = 18
 			unitID = ASF-30
@@ -532,6 +554,280 @@ CustomScenario
 				spawnOnStart = False
 				invincible = False
 				respawnable = True
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 2 1-1
+			globalPosition = (96864.012145996094, 325.40646362304688, 21610.961822509766)
+			unitInstanceID = 19
+			unitID = ASF-30
+			rotation = (-1.039108E-06, 342.9971, 1.99593E-05)
+			lastValidPlacement = (96864.012145996094, 325.40646362304688, 21610.961822509766)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Delta
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				allowJammingAtWill = False
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 2 1-2
+			globalPosition = (97063.490661621094, 325.40655517578125, 21672.965484619141)
+			unitInstanceID = 20
+			unitID = ASF-30
+			rotation = (-1.039108E-06, 342.9971, 1.99593E-05)
+			lastValidPlacement = (97063.490661621094, 325.40655517578125, 21672.965484619141)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Delta
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				allowJammingAtWill = False
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 2 2-1
+			globalPosition = (97268.010776519775, 325.40655517578125, 21723.261047363281)
+			unitInstanceID = 22
+			unitID = ASF-33
+			rotation = (0, 342.9971, 0)
+			lastValidPlacement = (97268.010776519775, 325.40655517578125, 21723.261047363281)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Echo
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 2 2-2
+			globalPosition = (97803.401214599609, 325.40655517578125, 21886.634399414063)
+			unitInstanceID = 23
+			unitID = ASF-33
+			rotation = (0, 342.9971, 0)
+			lastValidPlacement = (97803.401214599609, 325.40655517578125, 21886.634399414063)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Echo
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 2 3-1
+			globalPosition = (97994.639831542969, 325.40655517578125, 21951.757461547852)
+			unitInstanceID = 24
+			unitID = ASF-58
+			rotation = (0, 342.9971, 0)
+			lastValidPlacement = (97994.639831542969, 325.40655517578125, 21951.757461547852)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Foxtrot
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 8000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 2 3-2
+			globalPosition = (98206.233123779297, 325.40655517578125, 22007.718246459961)
+			unitInstanceID = 25
+			unitID = ASF-58
+			rotation = (0, 342.9971, 0)
+			lastValidPlacement = (98206.233123779297, 325.40655517578125, 22007.718246459961)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Foxtrot
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 8000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 1 3-1
+			globalPosition = (72458.411865234375, 138.748046875, 70109.15685749054)
+			unitInstanceID = 26
+			unitID = ASF-58
+			rotation = (0, 333.5348, 0)
+			lastValidPlacement = (72458.411865234375, 138.748046875, 70109.15685749054)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Charlie
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 8000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Fighter base 1 3-2
+			globalPosition = (72405.578979492188, 138.748046875, 70078.535663604736)
+			unitInstanceID = 27
+			unitID = ASF-58
+			rotation = (0, 333.5348, 0)
+			lastValidPlacement = (72405.578979492188, 138.748046875, 70078.535663604736)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Charlie
+				defaultBehavior = TakeOff
+				initialSpeed = 220
+				defaultNavSpeed = 220
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 8000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				defaultRadarEnabled = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
 				receiveFriendlyDamage = True
 			}
 		}
@@ -588,9 +884,13 @@ CustomScenario
 		}
 		ENEMY
 		{
-			Lima = 1;10;11;
+			Lima = 1;11;
 			Alpha = 2;14;16;
 			Bravo = 2;17;18;
+			Delta = 2;19;20;
+			Echo = 2;22;23;
+			Foxtrot = 2;24;25;
+			Charlie = 2;26;27;
 			Lima_SETTINGS
 			{
 				syncAltSpawns = False
@@ -600,6 +900,22 @@ CustomScenario
 				syncAltSpawns = False
 			}
 			Bravo_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Delta_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Echo_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Foxtrot_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Charlie_SETTINGS
 			{
 				syncAltSpawns = False
 			}
@@ -661,6 +977,96 @@ CustomScenario
 				}
 			}
 		}
+		CONDITIONAL
+		{
+			id = 1
+			outputNodePos = (125.8185, 38.71337, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-262.3906, 135.4968, 0)
+				gv = 2
+				comparison = Greater_Than
+				c_value = 0
+			}
+		}
+		CONDITIONAL
+		{
+			id = 2
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-278.5212, 109.6879, 0)
+				gv = 2
+				comparison = Greater_Than
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 3
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-342.3695, 71.27548, 0)
+				gv = 2
+				comparison = Greater_Than
+				c_value = 2
+			}
+		}
+		CONDITIONAL
+		{
+			id = 4
+			outputNodePos = (145.1751, 21.50743, 0)
+			root = 1
+			COMP
+			{
+				id = 1
+				type = SCCGlobalValue
+				uiPos = (-180.8631, 64.13508, 0)
+				gv = 3
+				comparison = Greater_Than
+				c_value = 0
+			}
+		}
+		CONDITIONAL
+		{
+			id = 5
+			outputNodePos = (170.4464, 8.065286, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-145.3758, 38.32617, 0)
+				gv = 3
+				comparison = Greater_Than
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 6
+			outputNodePos = (144.0998, -31.72346, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-174.9485, 4.989657, 0)
+				gv = 3
+				comparison = Greater_Than
+				c_value = 2
+			}
+		}
 	}
 	ConditionalActions
 	{
@@ -717,15 +1123,14 @@ CustomScenario
 				{
 					id = 0
 					outputNodePos = (0, 0, 0)
-					root = 0
 					COMP
 					{
-						id = 0
-						type = SCCGlobalValueCompare
-						uiPos = (-469.9039, 69.06725, 0)
-						gvA = 0
-						gvB = 1
-						comparison = Less
+						id = 1
+						type = SCCGlobalValue
+						uiPos = (-424.2281, 43.18684, 0)
+						gv = 2
+						comparison = Greater_Than
+						c_value = 2
 					}
 				}
 				ACTIONS
@@ -908,6 +1313,36 @@ CustomScenario
 				EventInfo
 				{
 					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Increment Value
+						methodName = IncrementValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 2
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Add
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (0,99999)
+							}
+						}
+					}
 				}
 			}
 			EVENT
@@ -948,6 +1383,108 @@ CustomScenario
 						methodName = Restart
 						altTargetIdx = -1
 					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 1
+			sequenceName = Airfield 2 Fighter Launch
+			startImmediately = True
+			whileLoop = False
+			ListOrderIndex = 10
+			ListFolderName = 
+			EVENT
+			{
+				conditional = 1
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 203
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			EVENT
+			{
+				conditional = 2
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 204
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			EVENT
+			{
+				conditional = 3
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 205
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 2
+			sequenceName = Airfield 2 Fighter Launch
+			startImmediately = True
+			whileLoop = False
+			ListOrderIndex = 20
+			ListFolderName = 
+			EVENT
+			{
+				conditional = 4
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+				}
+			}
+			EVENT
+			{
+				conditional = 5
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+				}
+			}
+			EVENT
+			{
+				conditional = 6
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
 				}
 			}
 		}
@@ -993,6 +1530,18 @@ CustomScenario
 		gv
 		{
 			data = 1;Num Resupply Boats;;3;
+			ListOrderIndex = 30
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 2;Airfield 2 Fghtr sqnce;;0;
+			ListOrderIndex = 20
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 3;Arifield 1 Fghtr sqnce;;0;
 			ListOrderIndex = 10
 			ListFolderName = 
 		}
