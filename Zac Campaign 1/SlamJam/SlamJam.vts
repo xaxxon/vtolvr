@@ -3,9 +3,9 @@ CustomScenario
 	gameVersion = 1.12.6m1
 	campaignID = Zac Campaign 1
 	campaignOrderIdx = 4
-	scenarioName = untitled
+	scenarioName = Slam Jam
 	scenarioID = SlamJam
-	scenarioDescription = 
+	scenarioDescription = Destroy enemy GPS jamming systems
 	mapID = SlamJamMap
 	vehicle = AV-42C
 	multiplayer = True
@@ -43,7 +43,7 @@ CustomScenario
 	customTimeOfDay = 11
 	overrideLocation = False
 	overrideLatitude = 0
-	overrideLongitude = 0
+	overrideLongitude = 26.4
 	month = 1
 	day = 1
 	year = 2024
@@ -129,7 +129,7 @@ CustomScenario
 			UnitFields
 			{
 				vehicle = A-10D
-				selectableAltSpawn = False
+				selectableAltSpawn = True
 				slotLabel = 
 				unitGroup = Allied:Delta
 				startMode = FlightReady
@@ -187,7 +187,7 @@ CustomScenario
 			UnitFields
 			{
 				vehicle = A-10D
-				selectableAltSpawn = False
+				selectableAltSpawn = True
 				slotLabel = 
 				unitGroup = Allied:Delta
 				startMode = FlightReady
@@ -353,7 +353,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = Supply Boat 1
+			unitName = North Supply Boat
 			globalPosition = (63292.220947265625, -5, 98082.21923828125)
 			unitInstanceID = 10
 			unitID = MineBoat
@@ -400,7 +400,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = Supply Boat 2
+			unitName = South Supply Boat
 			globalPosition = (90416.942993164063, -5, -7202.4658203125)
 			unitInstanceID = 11
 			unitID = MineBoat
@@ -425,7 +425,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = Cruiser 1
+			unitName = South Cruiser
 			globalPosition = (90724.175048828125, -5, -7368.6533203125)
 			unitInstanceID = 12
 			unitID = DroneMissileCruiser
@@ -450,7 +450,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = Cruiser 2
+			unitName = North Cruiser
 			globalPosition = (63386.6396484375, -5, 99298.5693359375)
 			unitInstanceID = 13
 			unitID = DroneMissileCruiser
@@ -953,13 +953,13 @@ CustomScenario
 		WAYPOINT
 		{
 			id = 0
-			name = Enemy Ship Dropoff 1
+			name = Northern Port
 			globalPoint = (74228.123672485352, -5, 73330.915069580078)
 		}
 		WAYPOINT
 		{
 			id = 1
-			name = Enemy Ship Dropoff 2
+			name = Southern Port
 			globalPoint = (92167.513061523438, -5, 18666.186584472656)
 		}
 		WAYPOINT
@@ -2051,6 +2051,53 @@ CustomScenario
 				chance = 100
 			}
 		}
+		CONDITIONAL
+		{
+			id = 13
+			outputNodePos = (203.4755, 89.5766, 0)
+			root = 2
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-459.7473, 33.81368, 0)
+				gv = 2
+				comparison = Less_Than
+				c_value = 3
+			}
+			COMP
+			{
+				id = 1
+				type = SCCMPTeamStats
+				uiPos = (-459.1541, 193.3905, 0)
+				team = Allied
+				statType = Player_Count
+				comparison = Greater_Than
+				count = 2
+			}
+			COMP
+			{
+				id = 2
+				type = SCCAnd
+				uiPos = (17.6761, 133.7822, 0)
+				factors = 1;0;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 14
+			outputNodePos = (62.88158, 18.98312, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-350.5945, 59.32225, 0)
+				gv = 3
+				comparison = Less_Than
+				c_value = 3
+			}
+		}
 	}
 	ConditionalActions
 	{
@@ -2060,7 +2107,7 @@ CustomScenario
 			name = 
 			BASE_BLOCK
 			{
-				blockName = 
+				blockName = If not alive
 				blockId = 1
 				CONDITIONAL
 				{
@@ -2083,7 +2130,7 @@ CustomScenario
 					EventTarget
 					{
 						targetType = Unit
-						targetID = 13
+						targetID = 12
 						eventName = Spawn Unit
 						methodName = SpawnUnit
 						altTargetIdx = -2
@@ -2097,87 +2144,11 @@ CustomScenario
 		}
 		ConditionalAction
 		{
-			id = 2
-			name = 
-			BASE_BLOCK
-			{
-				blockName = If still more supply boats to spawn
-				blockId = 3
-				CONDITIONAL
-				{
-					id = 0
-					outputNodePos = (0, 0, 0)
-					root = 1
-					COMP
-					{
-						id = 1
-						type = SCCGlobalValue
-						uiPos = (-424.2281, 43.18684, 0)
-						gv = 2
-						comparison = Greater_Than
-						c_value = 2
-					}
-				}
-				ACTIONS
-				{
-					eventName = 
-				}
-				ELSE_ACTIONS
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = System
-						targetID = 1
-						eventName = Display Message
-						methodName = DisplayMessage
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = System.String
-							value = Enemy out of resupply boats from this side of the map
-							name = Text
-							ParamAttrInfo
-							{
-								type = TextInputModes
-								data = MultiLine
-							}
-							ParamAttrInfo
-							{
-								type = System.Int32
-								data = 140
-							}
-						}
-						ParamInfo
-						{
-							type = System.Single
-							value = 10
-							name = Duration
-							ParamAttrInfo
-							{
-								type = MinMax
-								data = (1,9999)
-							}
-						}
-					}
-					EventTarget
-					{
-						targetType = Event_Sequences
-						targetID = 0
-						eventName = Stop
-						methodName = Stop
-						altTargetIdx = -1
-					}
-				}
-			}
-		}
-		ConditionalAction
-		{
 			id = 4
 			name = 
 			BASE_BLOCK
 			{
-				blockName = 
+				blockName = If south supply boat destroyed
 				blockId = 1
 				CONDITIONAL
 				{
@@ -2214,82 +2185,6 @@ CustomScenario
 		}
 		ConditionalAction
 		{
-			id = 6
-			name = 
-			BASE_BLOCK
-			{
-				blockName = If still more supply boats to spawn
-				blockId = 3
-				CONDITIONAL
-				{
-					id = 0
-					outputNodePos = (0, 0, 0)
-					root = 1
-					COMP
-					{
-						id = 1
-						type = SCCGlobalValue
-						uiPos = (-424.2281, 43.18684, 0)
-						gv = 3
-						comparison = Greater_Than
-						c_value = 2
-					}
-				}
-				ACTIONS
-				{
-					eventName = 
-				}
-				ELSE_ACTIONS
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = System
-						targetID = 1
-						eventName = Display Message
-						methodName = DisplayMessage
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = System.String
-							value = Enemy out of resupply boats from this side of the map
-							name = Text
-							ParamAttrInfo
-							{
-								type = TextInputModes
-								data = MultiLine
-							}
-							ParamAttrInfo
-							{
-								type = System.Int32
-								data = 140
-							}
-						}
-						ParamInfo
-						{
-							type = System.Single
-							value = 10
-							name = Duration
-							ParamAttrInfo
-							{
-								type = MinMax
-								data = (1,9999)
-							}
-						}
-					}
-					EventTarget
-					{
-						targetType = Event_Sequences
-						targetID = 0
-						eventName = Stop
-						methodName = Stop
-						altTargetIdx = -1
-					}
-				}
-			}
-		}
-		ConditionalAction
-		{
 			id = 8
 			name = 
 			BASE_BLOCK
@@ -2305,7 +2200,7 @@ CustomScenario
 					{
 						id = 0
 						type = SCCUnit
-						uiPos = (-105.3864, 87.10506, 0)
+						uiPos = (-153.4374, 37.27439, 0)
 						unit = 10
 						methodName = SCC_NearWaypoint
 						isNot = False
@@ -2365,7 +2260,7 @@ CustomScenario
 			name = 
 			BASE_BLOCK
 			{
-				blockName = 
+				blockName = If supply boat arrived
 				blockId = 11
 				CONDITIONAL
 				{
@@ -2874,6 +2769,7 @@ CustomScenario
 			ListFolderName = 
 			EVENT
 			{
+				conditional = 13
 				delay = 30
 				nodeName = Spawn in supply boat
 				exitConditional = 0
@@ -2887,36 +2783,6 @@ CustomScenario
 						eventName = Spawn Unit
 						methodName = SpawnUnit
 						altTargetIdx = -2
-					}
-					EventTarget
-					{
-						targetType = System
-						targetID = 2
-						eventName = Increment Value
-						methodName = IncrementValue
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = GlobalValue
-							value = 0
-							name = Global Value
-						}
-						ParamInfo
-						{
-							type = System.Single
-							value = 1
-							name = Add
-							ParamAttrInfo
-							{
-								type = UnitSpawnAttributeRange+RangeTypes
-								data = Int
-							}
-							ParamAttrInfo
-							{
-								type = MinMax
-								data = (0,99999)
-							}
-						}
 					}
 					EventTarget
 					{
@@ -2944,7 +2810,7 @@ CustomScenario
 						ParamInfo
 						{
 							type = System.Single
-							value = 1
+							value = 10
 							name = Duration
 							ParamAttrInfo
 							{
@@ -2988,36 +2854,6 @@ CustomScenario
 					EventTarget
 					{
 						targetType = System
-						targetID = 2
-						eventName = Increment Value
-						methodName = IncrementValue
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = GlobalValue
-							value = 2
-							name = Global Value
-						}
-						ParamInfo
-						{
-							type = System.Single
-							value = 1
-							name = Add
-							ParamAttrInfo
-							{
-								type = UnitSpawnAttributeRange+RangeTypes
-								data = Int
-							}
-							ParamAttrInfo
-							{
-								type = MinMax
-								data = (0,99999)
-							}
-						}
-					}
-					EventTarget
-					{
-						targetType = System
 						targetID = 0
 						eventName = Fire Conditional Action
 						methodName = FireConditionalAction
@@ -3026,29 +2862,6 @@ CustomScenario
 						{
 							type = ConditionalActionReference
 							value = 10
-							name = Action
-						}
-					}
-				}
-			}
-			EVENT
-			{
-				delay = 0
-				nodeName = Boat supply loop ender
-				EventInfo
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = System
-						targetID = 0
-						eventName = Fire Conditional Action
-						methodName = FireConditionalAction
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = ConditionalActionReference
-							value = 2
 							name = Action
 						}
 					}
@@ -3078,7 +2891,7 @@ CustomScenario
 			sequenceName = Airfield 2 Fighter Launch
 			startImmediately = True
 			whileLoop = False
-			ListOrderIndex = 20
+			ListOrderIndex = 30
 			ListFolderName = 
 			EVENT
 			{
@@ -3138,10 +2951,10 @@ CustomScenario
 		SEQUENCE
 		{
 			id = 2
-			sequenceName = Airfield 2 Fighter Launch
+			sequenceName = Airfield 1 Fighter Launch
 			startImmediately = True
 			whileLoop = False
-			ListOrderIndex = 30
+			ListOrderIndex = 20
 			ListFolderName = 
 			EVENT
 			{
@@ -3151,6 +2964,14 @@ CustomScenario
 				EventInfo
 				{
 					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 200
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
 				}
 			}
 			EVENT
@@ -3161,6 +2982,14 @@ CustomScenario
 				EventInfo
 				{
 					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 201
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
 				}
 			}
 			EVENT
@@ -3171,6 +3000,14 @@ CustomScenario
 				EventInfo
 				{
 					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 202
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
 				}
 			}
 		}
@@ -3184,6 +3021,7 @@ CustomScenario
 			ListFolderName = 
 			EVENT
 			{
+				conditional = 14
 				delay = 30
 				nodeName = Spawn in supply boat
 				exitConditional = 7
@@ -3268,36 +3106,6 @@ CustomScenario
 					EventTarget
 					{
 						targetType = System
-						targetID = 2
-						eventName = Increment Value
-						methodName = IncrementValue
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = GlobalValue
-							value = 3
-							name = Global Value
-						}
-						ParamInfo
-						{
-							type = System.Single
-							value = 1
-							name = Add
-							ParamAttrInfo
-							{
-								type = UnitSpawnAttributeRange+RangeTypes
-								data = Int
-							}
-							ParamAttrInfo
-							{
-								type = MinMax
-								data = (0,99999)
-							}
-						}
-					}
-					EventTarget
-					{
-						targetType = System
 						targetID = 0
 						eventName = Fire Conditional Action
 						methodName = FireConditionalAction
@@ -3306,29 +3114,6 @@ CustomScenario
 						{
 							type = ConditionalActionReference
 							value = 8
-							name = Action
-						}
-					}
-				}
-			}
-			EVENT
-			{
-				delay = 0
-				nodeName = Boat supply loop ender
-				EventInfo
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = System
-						targetID = 0
-						eventName = Fire Conditional Action
-						methodName = FireConditionalAction
-						altTargetIdx = -1
-						ParamInfo
-						{
-							type = ConditionalActionReference
-							value = 6
 							name = Action
 						}
 					}
@@ -3448,6 +3233,24 @@ CustomScenario
 	}
 	Briefing
 	{
+		BRIEFING_NOTE
+		{
+			text = Solo: Alternate F-16 and A-10/AH-94, Solo F-22///n///n2 Player: F-16 and A-10/AH-94 then 2 ship of F-22s///n///n3+ players: Fill roles as desired
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = The source of the enemy jamming has been triangulated to this nearby island.///n///nWe've established a local airbase but have limited supplies available.  Identify which of the local bunker sites are sitting above the active jamming hardware buried deep underground and then a flight of F-22s will arrive with penetrator weapons to destroy them.
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = The enemy has two airbases on the north and south ends of the island but are missing key supplies to fly their jets.   ///n///nThey are actively shipping in those supplies and can make their fighters airworthy quickly if the resupply ships arrive.///n///nThere are nearby destroyers which the enemy can call in for anti-air support if they deem it necessary.
+			imagePath = 
+			audioClipPath = 
+		}
 	}
 	Briefing_B
 	{
