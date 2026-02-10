@@ -890,11 +890,11 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = Primary Target 1
-			globalPosition = (94820.085693359375, 1755.11328125, 68751.755859375)
+			globalPosition = (84961.7236328125, 916.75390625, 67840.27001953125)
 			unitInstanceID = 28
 			unitID = bunker1
-			rotation = (345.14, 336.7098, 347.7949)
-			lastValidPlacement = (77765.4462890625, 1963.8515625, 39146.54931640625)
+			rotation = (355.6413, 335.3165, 11.60019)
+			lastValidPlacement = (125786.21313476563, 343.6689453125, 58995.44287109375)
 			editorPlacementMode = Ground
 			onCarrier = False
 			mpSelectEnabled = True
@@ -909,8 +909,8 @@ CustomScenario
 			}
 			altSpawn
 			{
-				globalPos = (73138.89501953125, 373.01953125, 63023.001220703125)
-				rotation = (4.356678E-06, 336.7098, -1.875398E-06)
+				globalPos = (54897.30078125, 134.587890625, 46285.46875)
+				rotation = (8.713386E-06, 336.7098, -3.75081E-06)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -927,8 +927,8 @@ CustomScenario
 			}
 			altSpawn
 			{
-				globalPos = (77765.4462890625, 1963.8515625, 39146.54931640625)
-				rotation = (344.3174, 334.7348, 7.270133)
+				globalPos = (78655.6611328125, 871.791015625, 32108.203125)
+				rotation = (356.2827, 335.2574, 351.9921)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -942,6 +942,213 @@ CustomScenario
 					respawnable = False
 					receiveFriendlyDamage = False
 				}
+			}
+			altSpawn
+			{
+				globalPos = (57569.240234375, 256.1162109375, 17791.341796875)
+				rotation = (358.7994, 334.7229, 0.5668631)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = True
+					respawnable = False
+					receiveFriendlyDamage = False
+				}
+			}
+			altSpawn
+			{
+				globalPos = (98484.0400390625, 277.6474609375, 46867.22607421875)
+				rotation = (4.289461E-06, 334.7348, -2.024432E-06)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = True
+					respawnable = False
+					receiveFriendlyDamage = False
+				}
+			}
+			altSpawn
+			{
+				globalPos = (125786.21313476563, 343.6689453125, 58995.44287109375)
+				rotation = (3.314374, 334.4735, 355.4895)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = True
+					respawnable = False
+					receiveFriendlyDamage = False
+				}
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Primary Target 2
+			globalPosition = (80312.7109375, 508.44921875, 64309.2490234375)
+			unitInstanceID = 29
+			unitID = bunker1
+			rotation = (352.0052, 334.7948, 3.745421)
+			lastValidPlacement = (129497.87548828125, 30.552734375, 55551.775390625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+			altSpawn
+			{
+				globalPos = (52859.624633789063, 233.255859375, 47013.44580078125)
+				rotation = (3.708986, 335.3165, 8.011747)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (74631.189208984375, 709.681640625, 28191.63232421875)
+				rotation = (356.291, 335.3165, 351.9883)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (54620.994262695313, 90.646484375, 18014.6533203125)
+				rotation = (359.3993, 334.7919, 0.2827611)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (98866.169677734375, 527.228515625, 41860.97509765625)
+				rotation = (7.960187, 334.2652, 356.1811)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+			altSpawn
+			{
+				globalPos = (129497.87548828125, 30.552734375, 55551.775390625)
+				rotation = (359.5053, 334.8039, 358.9487)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					engageEnemies = True
+					detectionMode = Default
+					spawnOnStart = True
+					invincible = False
+					respawnable = False
+					receiveFriendlyDamage = True
+				}
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Primary Target 3
+			globalPosition = (80312.7109375, 508.44921875, 64309.2490234375)
+			unitInstanceID = 30
+			unitID = bunker1
+			rotation = (352.0052, 334.7948, 3.745421)
+			lastValidPlacement = (80312.7109375, 508.44921875, 64309.2490234375)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Primary Target 4
+			globalPosition = (80312.7109375, 508.44921875, 64309.2490234375)
+			unitInstanceID = 31
+			unitID = bunker1
+			rotation = (352.0052, 334.7948, 3.745421)
+			lastValidPlacement = (80312.7109375, 508.44921875, 64309.2490234375)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
 			}
 		}
 	}
@@ -973,6 +1180,42 @@ CustomScenario
 			id = 3
 			name = Cruiser 2 Defensive Position
 			globalPoint = (72353.22802734375, -5, 83895.15234375)
+		}
+		WAYPOINT
+		{
+			id = 4
+			name = Target Point 1
+			globalPoint = (84498.94775390625, 771.09765625, 66555.548828125)
+		}
+		WAYPOINT
+		{
+			id = 5
+			name = Target Point 2
+			globalPoint = (51652.376220703125, 135.7890625, 44398.1376953125)
+		}
+		WAYPOINT
+		{
+			id = 6
+			name = Target Point 3
+			globalPoint = (78417.264892578125, 730.66796875, 29695.61328125)
+		}
+		WAYPOINT
+		{
+			id = 7
+			name = Target Point 4
+			globalPoint = (57537.33837890625, 153.7109375, 15699.9189453125)
+		}
+		WAYPOINT
+		{
+			id = 8
+			name = Target Point 5
+			globalPoint = (97659.927734375, 492.236328125, 45442.3095703125)
+		}
+		WAYPOINT
+		{
+			id = 9
+			name = Target Point 6
+			globalPoint = (126671.51513671875, 249.673828125, 59416.568359375)
 		}
 	}
 	UNITGROUPS
@@ -1044,85 +1287,6 @@ CustomScenario
 	}
 	TRIGGER_EVENTS
 	{
-		TriggerEvent
-		{
-			id = 0
-			enabled = True
-			triggerType = Conditional
-			ListOrderIndex = 0
-			ListFolderName = Jammers Detected
-			conditional = 8
-			eventName = Jammer 1 Found
-			EventInfo
-			{
-				eventName = 
-				EventTarget
-				{
-					targetType = System
-					targetID = 2
-					eventName = Set Value
-					methodName = SetValue
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = GlobalValue
-						value = 6
-						name = Global Value
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 1
-						name = Set to
-						ParamAttrInfo
-						{
-							type = UnitSpawnAttributeRange+RangeTypes
-							data = Int
-						}
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (-99999,99999)
-						}
-					}
-				}
-				EventTarget
-				{
-					targetType = System
-					targetID = 1
-					eventName = Display Message
-					methodName = DisplayMessage
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = System.String
-						value = Jammer target identified
-						name = Text
-						ParamAttrInfo
-						{
-							type = TextInputModes
-							data = MultiLine
-						}
-						ParamAttrInfo
-						{
-							type = System.Int32
-							data = 140
-						}
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 10
-						name = Duration
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (1,9999)
-						}
-					}
-				}
-			}
-		}
 		TriggerEvent
 		{
 			id = 2
@@ -1230,12 +1394,56 @@ CustomScenario
 		}
 		TriggerEvent
 		{
-			id = 3
+			id = 6
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 1
-			ListFolderName = Jammers Detected
-			conditional = 8
+			ListOrderIndex = 20
+			ListFolderName = 
+			conditional = 21
+			eventName = Jammer 1 Found
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Set Value
+					methodName = SetValue
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 6
+						name = Global Value
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Set to
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (-99999,99999)
+						}
+					}
+				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 7
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 30
+			ListFolderName = 
+			conditional = 22
 			eventName = Jammer 2 Found
 			EventInfo
 			{
@@ -1250,7 +1458,7 @@ CustomScenario
 					ParamInfo
 					{
 						type = GlobalValue
-						value = 6
+						value = 8
 						name = Global Value
 					}
 					ParamInfo
@@ -1270,130 +1478,16 @@ CustomScenario
 						}
 					}
 				}
-				EventTarget
-				{
-					targetType = System
-					targetID = 1
-					eventName = Display Message
-					methodName = DisplayMessage
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = System.String
-						value = Jammer target identified
-						name = Text
-						ParamAttrInfo
-						{
-							type = TextInputModes
-							data = MultiLine
-						}
-						ParamAttrInfo
-						{
-							type = System.Int32
-							data = 140
-						}
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 10
-						name = Duration
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (1,9999)
-						}
-					}
-				}
 			}
 		}
 		TriggerEvent
 		{
-			id = 4
+			id = 8
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 3
-			ListFolderName = Jammers Detected
-			conditional = 8
-			eventName = Jammer 4 Found
-			EventInfo
-			{
-				eventName = 
-				EventTarget
-				{
-					targetType = System
-					targetID = 2
-					eventName = Set Value
-					methodName = SetValue
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = GlobalValue
-						value = 6
-						name = Global Value
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 1
-						name = Set to
-						ParamAttrInfo
-						{
-							type = UnitSpawnAttributeRange+RangeTypes
-							data = Int
-						}
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (-99999,99999)
-						}
-					}
-				}
-				EventTarget
-				{
-					targetType = System
-					targetID = 1
-					eventName = Display Message
-					methodName = DisplayMessage
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = System.String
-						value = Jammer target identified
-						name = Text
-						ParamAttrInfo
-						{
-							type = TextInputModes
-							data = MultiLine
-						}
-						ParamAttrInfo
-						{
-							type = System.Int32
-							data = 140
-						}
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 10
-						name = Duration
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (1,9999)
-						}
-					}
-				}
-			}
-		}
-		TriggerEvent
-		{
-			id = 5
-			enabled = True
-			triggerType = Conditional
-			ListOrderIndex = 2
-			ListFolderName = Jammers Detected
-			conditional = 8
+			ListOrderIndex = 40
+			ListFolderName = 
+			conditional = 23
 			eventName = Jammer 3 Found
 			EventInfo
 			{
@@ -1408,7 +1502,7 @@ CustomScenario
 					ParamInfo
 					{
 						type = GlobalValue
-						value = 6
+						value = 9
 						name = Global Value
 					}
 					ParamInfo
@@ -1428,38 +1522,47 @@ CustomScenario
 						}
 					}
 				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 9
+			enabled = True
+			triggerType = Conditional
+			ListOrderIndex = 50
+			ListFolderName = 
+			conditional = 24
+			eventName = Jammer 4 Found
+			EventInfo
+			{
+				eventName = 
 				EventTarget
 				{
 					targetType = System
-					targetID = 1
-					eventName = Display Message
-					methodName = DisplayMessage
+					targetID = 2
+					eventName = Set Value
+					methodName = SetValue
 					altTargetIdx = -1
 					ParamInfo
 					{
-						type = System.String
-						value = Jammer target identified
-						name = Text
-						ParamAttrInfo
-						{
-							type = TextInputModes
-							data = MultiLine
-						}
-						ParamAttrInfo
-						{
-							type = System.Int32
-							data = 140
-						}
+						type = GlobalValue
+						value = 10
+						name = Global Value
 					}
 					ParamInfo
 					{
 						type = System.Single
-						value = 10
-						name = Duration
+						value = 1
+						name = Set to
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
 						ParamAttrInfo
 						{
 							type = MinMax
-							data = (1,9999)
+							data = (-99999,99999)
 						}
 					}
 				}
@@ -1508,6 +1611,36 @@ CustomScenario
 				EventInfo
 				{
 					eventName = Completed Event
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 13
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
 				}
 			}
 			fields
@@ -1653,6 +1786,240 @@ CustomScenario
 			{
 				successConditional = 11
 				failConditional = 10
+			}
+		}
+		Objective
+		{
+			objectiveName = Check Target Point 1
+			objectiveInfo = Check Target Point 1 for jammers
+			objectiveID = 3
+			orderID = 3
+			required = False
+			completionReward = 0
+			waypoint = 4
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 15
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = Check Target Point 2
+			objectiveInfo = Check Target Point 2 for jammers
+			objectiveID = 4
+			orderID = 4
+			required = False
+			completionReward = 0
+			waypoint = 5
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 16
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = Check Target Point 3
+			objectiveInfo = Check Target Point 3 for jammers
+			objectiveID = 5
+			orderID = 5
+			required = False
+			completionReward = 0
+			waypoint = 6
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 17
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = Check Target Point 4
+			objectiveInfo = Check Target Point 4 for jammers
+			objectiveID = 6
+			orderID = 6
+			required = False
+			completionReward = 0
+			waypoint = 7
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 18
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = Check Target Point 5
+			objectiveInfo = Check Target Point 5 for jammers
+			objectiveID = 7
+			orderID = 7
+			required = False
+			completionReward = 0
+			waypoint = 8
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 19
+				failConditional = null
+			}
+		}
+		Objective
+		{
+			objectiveName = Check Target Point 6
+			objectiveInfo = Check Target Point 6 for jammers
+			objectiveID = 8
+			orderID = 8
+			required = False
+			completionReward = 0
+			waypoint = 9
+			autoSetWaypoint = False
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 20
+				failConditional = null
 			}
 		}
 	}
@@ -1834,14 +2201,14 @@ CustomScenario
 		}
 		CONDITIONAL
 		{
-			id = 8
-			outputNodePos = (270.417, -62.88769, 0)
+			id = 21
+			outputNodePos = (335.6017, -87.40955, 0)
 			root = 5
 			COMP
 			{
-				id = 1
+				id = 0
 				type = SCCUnit
-				uiPos = (-393.4877, 273.3541, 0)
+				uiPos = (-499.4933, 240.2551, 0)
 				unit = 0
 				methodName = SCC_IsLockingTarget
 				isNot = False
@@ -1858,8 +2225,8 @@ CustomScenario
 			{
 				id = 2
 				type = SCCUnit
-				uiPos = (-389.1154, 85.87926, 0)
-				unit = 0
+				uiPos = (-502.1279, 50.9187, 0)
+				unit = 1
 				methodName = SCC_IsLockingTarget
 				isNot = False
 				methodParameters
@@ -1875,8 +2242,8 @@ CustomScenario
 			{
 				id = 3
 				type = SCCUnit
-				uiPos = (-386.5998, -92.72177, 0)
-				unit = 0
+				uiPos = (-502.7658, -123.9004, 0)
+				unit = 2
 				methodName = SCC_IsLockingTarget
 				isNot = False
 				methodParameters
@@ -1892,8 +2259,8 @@ CustomScenario
 			{
 				id = 4
 				type = SCCUnit
-				uiPos = (-381.5688, -263.7762, 0)
-				unit = 0
+				uiPos = (-508.5081, -300.6336, 0)
+				unit = 3
 				methodName = SCC_IsLockingTarget
 				isNot = False
 				methodParameters
@@ -1909,8 +2276,8 @@ CustomScenario
 			{
 				id = 5
 				type = SCCOr
-				uiPos = (113.1978, 1.257754, 0)
-				factors = 1;2;3;4;
+				uiPos = (155.9486, -22.10201, 0)
+				factors = 0;2;3;4;
 			}
 		}
 		CONDITIONAL
@@ -2096,6 +2463,339 @@ CustomScenario
 				gv = 3
 				comparison = Less_Than
 				c_value = 3
+			}
+		}
+		CONDITIONAL
+		{
+			id = 15
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-360.0861, 59.32225, 0)
+				gv = 13
+				comparison = Equals
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 16
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-513.39, -13.97165, 0)
+				gv = 13
+				comparison = Equals
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 17
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-499.1526, 43.57093, 0)
+				gv = 13
+				comparison = Equals
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 18
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-587.5428, 19.24881, 0)
+				gv = 13
+				comparison = Equals
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 19
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-467.1186, 21.02848, 0)
+				gv = 13
+				comparison = Equals
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 20
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-402.4574, 19.84203, 0)
+				gv = 13
+				comparison = Equals
+				c_value = 1
+			}
+		}
+		CONDITIONAL
+		{
+			id = 22
+			outputNodePos = (125.0532, -144.1939, 0)
+			root = 4
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-540.0415, 198.0738, 0)
+				unit = 0
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 29
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 1
+				type = SCCUnit
+				uiPos = (-532.3852, 8.580095, 0)
+				unit = 1
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 29
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-527.9191, -173.2574, 0)
+				unit = 2
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 29
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnit
+				uiPos = (-528.5571, -354.4566, 0)
+				unit = 3
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 29
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCOr
+				uiPos = (-55.50824, -80.39127, 0)
+				factors = 0;1;2;3;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 23
+			outputNodePos = (0, 0, 0)
+			root = 5
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-695.7198, 231.8891, 0)
+				unit = 0
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 30
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-686.6674, 41.44403, 0)
+				unit = 1
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 30
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnit
+				uiPos = (-691.7716, -146.7736, 0)
+				unit = 2
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 30
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCUnit
+				uiPos = (-695.5997, -342.0095, 0)
+				unit = 3
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 30
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 5
+				type = SCCOr
+				uiPos = (-257.0044, -15.62603, 0)
+				factors = 0;2;3;4;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 24
+			outputNodePos = (263.5048, -5.104206, 0)
+			root = 4
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-528.557, 288.6734, 0)
+				unit = 0
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 31
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 1
+				type = SCCUnit
+				uiPos = (-527.9189, 111.3023, 0)
+				unit = 1
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 31
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 2
+				type = SCCUnit
+				uiPos = (-528.5569, -67.34498, 0)
+				unit = 2
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 31
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 3
+				type = SCCUnit
+				uiPos = (-528.5569, -245.3542, 0)
+				unit = 3
+				methodName = SCC_IsLockingTarget
+				isNot = False
+				methodParameters
+				{
+					value = 31
+				}
+				methodParameters
+				{
+					value = TGP
+				}
+			}
+			COMP
+			{
+				id = 4
+				type = SCCOr
+				uiPos = (41.47169, 31.26327, 0)
+				factors = 0;1;2;3;
 			}
 		}
 	}
@@ -3181,49 +3881,55 @@ CustomScenario
 		}
 		gv
 		{
-			data = 6;Target identified 1;;1;
-			ListOrderIndex = 30
-			ListFolderName = 
-		}
-		gv
-		{
-			data = 2;Airfield 2 Fghtr sqnce;;0;
-			ListOrderIndex = 80
-			ListFolderName = 
-		}
-		gv
-		{
-			data = 3;Arifield 1 Fghtr sqnce;;0;
-			ListOrderIndex = 70
-			ListFolderName = 
-		}
-		gv
-		{
-			data = 8;Target identified 2;;0;
+			data = 6;Target identified 1;;0;
 			ListOrderIndex = 40
 			ListFolderName = 
 		}
 		gv
 		{
-			data = 9;Target identified 3;;0;
+			data = 2;Airfield 2 Fghtr sqnce;;0;
+			ListOrderIndex = 90
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 3;Arifield 1 Fghtr sqnce;;0;
+			ListOrderIndex = 80
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 8;Target identified 2;;0;
 			ListOrderIndex = 50
 			ListFolderName = 
 		}
 		gv
 		{
-			data = 10;Target identified 4;;0;
+			data = 9;Target identified 3;;0;
 			ListOrderIndex = 60
 			ListFolderName = 
 		}
 		gv
 		{
+			data = 10;Target identified 4;;0;
+			ListOrderIndex = 70
+			ListFolderName = 
+		}
+		gv
+		{
 			data = 11;NO FAIL;;0;
-			ListOrderIndex = 20
+			ListOrderIndex = 30
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 12;All Jammers Destroyed;;0;
+			ListOrderIndex = 20
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 13;All Jammers Found;;0;
 			ListOrderIndex = 10
 			ListFolderName = 
 		}
