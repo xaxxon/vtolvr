@@ -1,7 +1,12 @@
 SlamJam Mission 3
-Mission for 1-6
+Mission for 1-6 
+  - balanced for 2 or 4 players.
+  - 1, 3 are harder because same difficulty as 2, 4.
+  - 5-6 is easier - no additional difficulty
 
-NOTE: FIGHTER BASE 1 is north base, 2 is south
+# BIGGEST ISSUE - MAKE SURE MAP IS BIG ENOUGH.
+  - I'm worried that sam sites will have too much range to cover other objectives they aren't meant to cover
+    
 
 TODO:
 1. need to create and fix up all the different jammer location settings for sending gps points and doing random spawns.   Setting GV for which spawns vs which ones are found needs to be updated
