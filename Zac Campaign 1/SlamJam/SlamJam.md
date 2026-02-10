@@ -1,6 +1,9 @@
 SlamJam Mission 3
 Mission for 1-6
 
+TODO:
+need to create and fix up all the different jammer location settings for sending gps points and doing random spawns.   Setting GV for which spawns vs which ones are found needs to be updated
+
 We found where the GPS jammers are - they're in a nearby island and we need to take them out.   
 
 We have A-10s and F-16s situated in a local air base but with limited armorment. 
