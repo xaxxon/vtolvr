@@ -6,7 +6,12 @@ Mission for 1-6
 
 # BIGGEST ISSUE - MAKE SURE MAP IS BIG ENOUGH.
   - I'm worried that sam sites will have too much range to cover other objectives they aren't meant to cover
+
+## Different difficulties by player count
+  - Which airbase/resupply points are active, one or both.  Could it be random which is "alive" with 1,2 players?
+  - how many GPS sites are present.   Just 2 for 1-2 players.
     
+  
 
 TODO:
 1. need to create and fix up all the different jammer location settings for sending gps points and doing random spawns.   Setting GV for which spawns vs which ones are found needs to be updated
