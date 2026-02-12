@@ -42,8 +42,8 @@ CustomScenario
 	defaultWeather = 0
 	customTimeOfDay = 11
 	overrideLocation = False
-	overrideLatitude = 0
-	overrideLongitude = 26.4
+	overrideLatitude = 26.4
+	overrideLongitude = -2.245383E-06
 	month = 1
 	day = 1
 	year = 2024
@@ -238,14 +238,14 @@ CustomScenario
 			unitInstanceID = 4
 			unitID = MultiplayerSpawn
 			rotation = (5.130331E-08, 327.3968, 2.226363E-05)
-			lastValidPlacement = (113989.39053344727, 101.88699340820313, 92692.458374023438)
+			lastValidPlacement = (113141.5009765625, 2495, 12562.1484375)
 			editorPlacementMode = Ground
 			onCarrier = False
 			mpSelectEnabled = True
 			UnitFields
 			{
 				vehicle = F-16
-				selectableAltSpawn = False
+				selectableAltSpawn = True
 				slotLabel = Bravo 1-1 F-16
 				unitGroup = Allied:Bravo
 				startMode = FlightReady
@@ -259,6 +259,61 @@ CustomScenario
 				liveryRef = 0;
 				receiveFriendlyDamage = True
 				forcedEquipsList = viper_gun;viper_amraamRail;viper_amraamRail;f16_harmx1;f16_harmx1;ViperHTS;f16_jammer;viper_tgp2;f16_harmx1;f16_harmx1;viper_amraamRail;viper_amraamRail;|
+			}
+			altSpawn
+			{
+				globalPos = (113141.5009765625, 2495, 12562.1484375)
+				rotation = (0, 268.0793, 0)
+				weight = 100
+				placementMode = Air
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = F-16
+					selectableAltSpawn = True
+					slotLabel = Bravo 1-1 F-16 SOUTHBASE DEBUG
+					unitGroup = Allied:Bravo
+					startMode = FlightReady
+					equipment = 
+					initialSpeed = 0
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = True
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+					forcedEquipsList = viper_gun;viper_amraamRail;viper_amraamRail;f16_harmx1;f16_harmx1;ViperHTS;f16_jammer;viper_tgp2;f16_harmx1;f16_harmx1;viper_amraamRail;viper_amraamRail;|
+				}
+			}
+			altSpawn
+			{
+				globalPos = (113989.39053344727, 101.886962890625, 92692.458374023438)
+				rotation = (5.130331E-08, 327.3968, 2.226363E-05)
+				weight = 100
+				placementMode = Ground
+				onCarrier = False
+				mpSelectEnabled = True
+				unitFields
+				{
+					vehicle = T-55
+					selectableAltSpawn = True
+					slotLabel = Bravo 1-1 T-55
+					unitGroup = Allied:Bravo
+					startMode = FlightReady
+					equipment = 
+					initialSpeed = 0
+					rtbIsSpawn = False
+					limitedLives = False
+					lifeCount = 1
+					b_eqAssignmentMode = True
+					costToSpawn = 0
+					liveryRef = 0;
+					receiveFriendlyDamage = True
+					forcedEquipsList = viper_gun;viper_amraamRail;viper_amraamRail;f16_harmx1;f16_harmx1;ViperHTS;f16_jammer;viper_tgp2;f16_harmx1;f16_harmx1;viper_amraamRail;viper_amraamRail;|
+					slots = 2
+				}
 			}
 		}
 		UnitSpawner
@@ -354,11 +409,11 @@ CustomScenario
 		UnitSpawner
 		{
 			unitName = North Supply Boat
-			globalPosition = (63292.220947265625, -5, 98082.21923828125)
+			globalPosition = (70629.39208984375, -5, 84703.7548828125)
 			unitInstanceID = 10
 			unitID = MineBoat
-			rotation = (0, 237.508, 0)
-			lastValidPlacement = (63292.220947265625, -5, 98082.21923828125)
+			rotation = (0, 165.4988, 0)
+			lastValidPlacement = (70629.39208984375, -5, 84703.7548828125)
 			editorPlacementMode = Sea
 			onCarrier = False
 			mpSelectEnabled = True
@@ -377,21 +432,21 @@ CustomScenario
 			}
 			altSpawn
 			{
-				globalPos = (63292.220703125, -5, 98082.21875)
-				rotation = (0, 237.508, 0)
-				weight = 100
-				placementMode = Unknown
+				globalPos = (70629.39208984375, -5, 84703.7548828125)
+				rotation = (0, 165.4988, 0)
+				weight = 0
+				placementMode = Sea
 				onCarrier = False
 				mpSelectEnabled = True
 				unitFields
 				{
-					unitGroup = Enemy:Lima
+					unitGroup = null
 					defaultBehavior = Move_To_Waypoint
 					defaultWaypoint = 0
 					defaultPath = null
 					engageEnemies = False
 					detectionMode = Default
-					spawnOnStart = True
+					spawnOnStart = False
 					invincible = False
 					respawnable = True
 					receiveFriendlyDamage = True
@@ -425,12 +480,12 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = South Cruiser
-			globalPosition = (90724.175048828125, -5, -7368.6533203125)
+			unitName = South Suprt Cruiser
+			globalPosition = (91104.510650634766, -5, -20355.013671875)
 			unitInstanceID = 12
 			unitID = DroneMissileCruiser
 			rotation = (0, 0, 0)
-			lastValidPlacement = (90724.175048828125, -5, -7368.6533203125)
+			lastValidPlacement = (91104.510650634766, -5, -20355.013671875)
 			editorPlacementMode = Sea
 			onCarrier = False
 			mpSelectEnabled = True
@@ -450,7 +505,7 @@ CustomScenario
 		}
 		UnitSpawner
 		{
-			unitName = North Cruiser
+			unitName = North Suprt Cruiser
 			globalPosition = (63386.6396484375, -5, 99298.5693359375)
 			unitInstanceID = 13
 			unitID = DroneMissileCruiser
@@ -900,7 +955,7 @@ CustomScenario
 			mpSelectEnabled = True
 			UnitFields
 			{
-				engageEnemies = True
+				engageEnemies = False
 				detectionMode = Default
 				spawnOnStart = True
 				invincible = True
@@ -946,7 +1001,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (57569.240234375, 256.1162109375, 17791.341796875)
-				rotation = (358.7994, 334.7229, 0.5668631)
+				rotation = (358.7994, 334.7229, 0.5668632)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1011,17 +1066,17 @@ CustomScenario
 			mpSelectEnabled = True
 			UnitFields
 			{
-				engageEnemies = True
+				engageEnemies = False
 				detectionMode = Default
 				spawnOnStart = True
-				invincible = False
+				invincible = True
 				respawnable = False
-				receiveFriendlyDamage = True
+				receiveFriendlyDamage = False
 			}
 			altSpawn
 			{
 				globalPos = (52859.624633789063, 233.255859375, 47013.44580078125)
-				rotation = (3.708986, 335.3165, 8.011747)
+				rotation = (3.70899, 335.3165, 8.011765)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1075,7 +1130,7 @@ CustomScenario
 			altSpawn
 			{
 				globalPos = (98866.169677734375, 527.228515625, 41860.97509765625)
-				rotation = (7.960187, 334.2652, 356.1811)
+				rotation = (7.960188, 334.2652, 356.1811)
 				weight = 100
 				placementMode = Ground
 				onCarrier = False
@@ -1122,12 +1177,12 @@ CustomScenario
 			mpSelectEnabled = True
 			UnitFields
 			{
-				engageEnemies = True
+				engageEnemies = False
 				detectionMode = Default
 				spawnOnStart = True
-				invincible = False
+				invincible = True
 				respawnable = False
-				receiveFriendlyDamage = True
+				receiveFriendlyDamage = False
 			}
 		}
 		UnitSpawner
@@ -1143,9 +1198,472 @@ CustomScenario
 			mpSelectEnabled = True
 			UnitFields
 			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SouthDef Destroyer 1
+			globalPosition = (89827.6708984375, -5, -21950.966796875)
+			unitInstanceID = 32
+			unitID = ESuperMissileCruiser
+			rotation = (0, 0, 0)
+			lastValidPlacement = (89827.6708984375, -5, -21950.966796875)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Tango
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
 				engageEnemies = True
 				detectionMode = Default
 				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SouthDef Destroyer 1
+			globalPosition = (92698.874755859375, -5, -23956.373046875)
+			unitInstanceID = 33
+			unitID = ESuperMissileCruiser
+			rotation = (0, 0, 0)
+			lastValidPlacement = (92698.874755859375, -5, -23956.373046875)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Tango
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = NFP Carrier
+			globalPosition = (89354.857872009277, -5, -24685.1103515625)
+			unitInstanceID = 34
+			unitID = EnemyCarrier
+			rotation = (0, 0, 0)
+			lastValidPlacement = (89354.857872009277, -5, -24685.1103515625)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = South Supply Plane
+			globalPosition = (89389.041717529297, 19.70060920715332, -24475.7529296875)
+			unitInstanceID = 37
+			unitID = GAV-25
+			rotation = (0, 0, 0)
+			lastValidPlacement = (89389.041717529297, 19.70060920715332, -24475.7529296875)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Path
+				initialSpeed = 350
+				defaultNavSpeed = 350
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = False
+				autoRTB = True
+				rtbDestination = map:1
+				parkedStartMode = FlightReady
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = True
+				receiveFriendlyDamage = True
+				equips = gav_gun;asf-srm-rax1;;;;;;;asf-srm-rax1;
+			}
+		}
+		UnitSpawner
+		{
+			unitName = South SAM 1
+			globalPosition = (97455.859375, 323.72686767578125, 22663.696563720703)
+			unitInstanceID = 38
+			unitID = SAAW
+			rotation = (1.339778E-06, 163.8606, -1.994137E-05)
+			lastValidPlacement = (97455.859375, 323.72686767578125, 22663.696563720703)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Golf
+				moveSpeed = Slow_10
+				behavior = Path
+				defaultPath = null
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = South SAM 2
+			globalPosition = (98057.554718017578, 323.15716552734375, 22848.9931640625)
+			unitInstanceID = 39
+			unitID = IRAPC
+			rotation = (1.339778E-06, 163.8606, -1.994137E-05)
+			lastValidPlacement = (98057.554718017578, 323.15716552734375, 22848.9931640625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Golf
+				moveSpeed = Slow_10
+				behavior = Path
+				defaultPath = 1
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Decoy Target 1
+			globalPosition = (76096.586791992188, 339.150390625, 61146.02978515625)
+			unitInstanceID = 40
+			unitID = bunker1
+			rotation = (356.291, 335.3165, 351.9883)
+			lastValidPlacement = (76096.586791992188, 339.150390625, 61146.02978515625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Decoy Target 2
+			globalPosition = (74103.517822265625, 358.20703125, 59299.7451171875)
+			unitInstanceID = 41
+			unitID = bunker1
+			rotation = (11.60689, 335.6697, 4.34067)
+			lastValidPlacement = (74103.517822265625, 358.20703125, 59299.7451171875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Decoy Target 3
+			globalPosition = (75366.3818359375, 571.71484375, 57730.5712890625)
+			unitInstanceID = 42
+			unitID = bunker1
+			rotation = (356.291, 335.3165, 351.9883)
+			lastValidPlacement = (75366.3818359375, 571.71484375, 57730.5712890625)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = Decoy Target 4
+			globalPosition = (78137.444580078125, 420.705078125, 58750.6044921875)
+			unitInstanceID = 43
+			unitID = bunker1
+			rotation = (4.291579E-06, 334.7948, -2.019938E-06)
+			lastValidPlacement = (78137.444580078125, 420.705078125, 58750.6044921875)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = False
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (72899.320922851563, 137.0687255859375, 70527.369415283203)
+			unitInstanceID = 44
+			unitID = SAAW
+			rotation = (-9.019852E-07, 334.0118, 1.37371E-05)
+			lastValidPlacement = (72899.320922851563, 137.0687255859375, 70527.369415283203)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Hotel
+				moveSpeed = Slow_10
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = SAAW
+			globalPosition = (72730.586120605469, 137.06875610351563, 70440.196624755859)
+			unitInstanceID = 45
+			unitID = SAAW
+			rotation = (-9.019852E-07, 334.0118, 1.37371E-05)
+			lastValidPlacement = (72730.586120605469, 137.06875610351563, 70440.196624755859)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Hotel
+				moveSpeed = Slow_10
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = IRAPC
+			globalPosition = (73543.961791992188, 136.49884033203125, 70373.549835205078)
+			unitInstanceID = 46
+			unitID = IRAPC
+			rotation = (-9.019852E-07, 334.0118, 1.37371E-05)
+			lastValidPlacement = (73543.961791992188, 136.49884033203125, 70373.549835205078)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Hotel
+				moveSpeed = Slow_10
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = IRAPC
+			globalPosition = (73443.834106445313, 136.498779296875, 70320.683013916016)
+			unitInstanceID = 47
+			unitID = IRAPC
+			rotation = (-9.019852E-07, 334.0118, 1.37371E-05)
+			lastValidPlacement = (73443.834106445313, 136.498779296875, 70320.683013916016)
+			editorPlacementMode = Ground
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Hotel
+				moveSpeed = Slow_10
+				behavior = Parked
+				defaultPath = null
+				waypoint = null
+				stopToEngage = True
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = False
+				invincible = False
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = NMSS Cruiser
+			globalPosition = (56994.2041015625, -5, 110683.53515625)
+			unitInstanceID = 48
+			unitID = ESuperMissileCruiser
+			rotation = (0, 165.4988, 0)
+			lastValidPlacement = (56994.2041015625, -5, 110683.53515625)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Uniform
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = NMSS Cruiser
+			globalPosition = (58117.701171875, -5, 112385.125)
+			unitInstanceID = 49
+			unitID = ESuperMissileCruiser
+			rotation = (0, 165.4988, 0)
+			lastValidPlacement = (58117.701171875, -5, 112385.125)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Uniform
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = NFP Carrier
+			globalPosition = (55040.6826171875, -5, 112033.005859375)
+			unitInstanceID = 50
+			unitID = EnemyCarrier
+			rotation = (0, 165.4988, 0)
+			lastValidPlacement = (55040.6826171875, -5, 112033.005859375)
+			editorPlacementMode = Sea
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = Enemy:Uniform
+				defaultBehavior = Parked
+				defaultWaypoint = null
+				defaultPath = null
+				engageEnemies = True
+				detectionMode = Default
+				spawnOnStart = True
+				invincible = True
+				respawnable = False
+				receiveFriendlyDamage = True
+			}
+		}
+		UnitSpawner
+		{
+			unitName = North Resupply Plane
+			globalPosition = (55146.523769378662, 31.028778076171875, 111806.524269104)
+			unitInstanceID = 51
+			unitID = GAV-25
+			rotation = (0, 165.4988, 0)
+			lastValidPlacement = (55146.523769378662, 31.028778076171875, 111806.524269104)
+			editorPlacementMode = Air
+			onCarrier = False
+			mpSelectEnabled = True
+			UnitFields
+			{
+				unitGroup = null
+				defaultBehavior = Path
+				initialSpeed = 350
+				defaultNavSpeed = 350
+				defaultOrbitPoint = null
+				defaultPath = null
+				orbitAltitude = 3000
+				fuel = 100
+				autoRefuel = True
+				autoRTB = True
+				rtbDestination = 
+				parkedStartMode = FlightReady
+				engageEnemies = False
+				detectionMode = Default
+				spawnOnStart = False
 				invincible = False
 				respawnable = False
 				receiveFriendlyDamage = True
@@ -1172,13 +1690,13 @@ CustomScenario
 		WAYPOINT
 		{
 			id = 2
-			name = Cruiser 1 Defensive Position
+			name = Cruiser South Defensive Position
 			globalPoint = (90410.74560546875, -5, 2947.1689453125)
 		}
 		WAYPOINT
 		{
 			id = 3
-			name = Cruiser 2 Defensive Position
+			name = Cruiser North Defensive Position
 			globalPoint = (72353.22802734375, -5, 83895.15234375)
 		}
 		WAYPOINT
@@ -1252,6 +1770,10 @@ CustomScenario
 			Echo = 2;22;23;
 			Foxtrot = 2;24;25;
 			Charlie = 2;26;27;
+			Tango = 1;33;32;
+			Golf = 0;39;38;
+			Hotel = 0;44;45;46;47;
+			Uniform = 1;48;49;50;
 			Lima_SETTINGS
 			{
 				syncAltSpawns = False
@@ -1277,6 +1799,22 @@ CustomScenario
 				syncAltSpawns = False
 			}
 			Charlie_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Tango_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Golf_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Hotel_SETTINGS
+			{
+				syncAltSpawns = False
+			}
+			Uniform_SETTINGS
 			{
 				syncAltSpawns = False
 			}
@@ -1397,8 +1935,8 @@ CustomScenario
 			id = 6
 			enabled = True
 			triggerType = Conditional
-			ListOrderIndex = 20
-			ListFolderName = 
+			ListOrderIndex = 0
+			ListFolderName = Jammers Detected
 			conditional = 21
 			eventName = Jammer 1 Found
 			EventInfo
@@ -1438,134 +1976,74 @@ CustomScenario
 		}
 		TriggerEvent
 		{
-			id = 7
+			id = 10
+			enabled = False
+			triggerType = Conditional
+			ListOrderIndex = 20
+			ListFolderName = 
+			conditional = 27
+			eventName = South Airfield Supply Event Handler
+			EventInfo
+			{
+				eventName = 
+				EventTarget
+				{
+					targetType = System
+					targetID = 2
+					eventName = Increment Value
+					methodName = IncrementValue
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = GlobalValue
+						value = 19
+						name = Global Value
+					}
+					ParamInfo
+					{
+						type = System.Single
+						value = 1
+						name = Add
+						ParamAttrInfo
+						{
+							type = UnitSpawnAttributeRange+RangeTypes
+							data = Int
+						}
+						ParamAttrInfo
+						{
+							type = MinMax
+							data = (0,99999)
+						}
+					}
+				}
+				EventTarget
+				{
+					targetType = System
+					targetID = 0
+					eventName = Fire Random Event
+					methodName = FireRandomEvent
+					altTargetIdx = -1
+					ParamInfo
+					{
+						type = RandomEventReference
+						value = 25
+						name = Event
+					}
+				}
+			}
+		}
+		TriggerEvent
+		{
+			id = 11
 			enabled = True
 			triggerType = Conditional
 			ListOrderIndex = 30
 			ListFolderName = 
-			conditional = 22
-			eventName = Jammer 2 Found
+			conditional = 29
+			eventName = Decoy Found
 			EventInfo
 			{
 				eventName = 
-				EventTarget
-				{
-					targetType = System
-					targetID = 2
-					eventName = Set Value
-					methodName = SetValue
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = GlobalValue
-						value = 8
-						name = Global Value
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 1
-						name = Set to
-						ParamAttrInfo
-						{
-							type = UnitSpawnAttributeRange+RangeTypes
-							data = Int
-						}
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (-99999,99999)
-						}
-					}
-				}
-			}
-		}
-		TriggerEvent
-		{
-			id = 8
-			enabled = True
-			triggerType = Conditional
-			ListOrderIndex = 40
-			ListFolderName = 
-			conditional = 23
-			eventName = Jammer 3 Found
-			EventInfo
-			{
-				eventName = 
-				EventTarget
-				{
-					targetType = System
-					targetID = 2
-					eventName = Set Value
-					methodName = SetValue
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = GlobalValue
-						value = 9
-						name = Global Value
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 1
-						name = Set to
-						ParamAttrInfo
-						{
-							type = UnitSpawnAttributeRange+RangeTypes
-							data = Int
-						}
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (-99999,99999)
-						}
-					}
-				}
-			}
-		}
-		TriggerEvent
-		{
-			id = 9
-			enabled = True
-			triggerType = Conditional
-			ListOrderIndex = 50
-			ListFolderName = 
-			conditional = 24
-			eventName = Jammer 4 Found
-			EventInfo
-			{
-				eventName = 
-				EventTarget
-				{
-					targetType = System
-					targetID = 2
-					eventName = Set Value
-					methodName = SetValue
-					altTargetIdx = -1
-					ParamInfo
-					{
-						type = GlobalValue
-						value = 10
-						name = Global Value
-					}
-					ParamInfo
-					{
-						type = System.Single
-						value = 1
-						name = Set to
-						ParamAttrInfo
-						{
-							type = UnitSpawnAttributeRange+RangeTypes
-							data = Int
-						}
-						ParamAttrInfo
-						{
-							type = MinMax
-							data = (-99999,99999)
-						}
-					}
-				}
 			}
 		}
 		FOLDER_DATA
@@ -2022,6 +2500,84 @@ CustomScenario
 				failConditional = null
 			}
 		}
+		Objective
+		{
+			objectiveName = Deny North Resupply
+			objectiveInfo = Deny northern enemy airbase supply shipments
+			objectiveID = 9
+			orderID = 9
+			required = False
+			completionReward = 0
+			waypoint = 0
+			autoSetWaypoint = True
+			startMode = Immediate
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = 30
+				failConditional = 31
+			}
+		}
+		Objective
+		{
+			objectiveName = Deny South Resupply
+			objectiveInfo = Deny southern enemy airbase supply shipments
+			objectiveID = 10
+			orderID = 10
+			required = False
+			completionReward = 0
+			waypoint = 1
+			autoSetWaypoint = False
+			startMode = Triggered
+			objectiveType = Conditional
+			startEvent
+			{
+				EventInfo
+				{
+					eventName = Start Event
+				}
+			}
+			failEvent
+			{
+				EventInfo
+				{
+					eventName = Failed Event
+				}
+			}
+			completeEvent
+			{
+				EventInfo
+				{
+					eventName = Completed Event
+				}
+			}
+			fields
+			{
+				successConditional = null
+				failConditional = 32
+			}
+		}
 	}
 	OBJECTIVES_OPFOR
 	{
@@ -2072,18 +2628,8 @@ CustomScenario
 		}
 		CONDITIONAL
 		{
-			id = 1
-			outputNodePos = (125.8185, 38.71337, 0)
-			root = 0
-			COMP
-			{
-				id = 0
-				type = SCCGlobalValue
-				uiPos = (-262.3906, 135.4968, 0)
-				gv = 2
-				comparison = Greater_Than
-				c_value = 0
-			}
+			id = 27
+			outputNodePos = (0, 0, 0)
 		}
 		CONDITIONAL
 		{
@@ -2125,7 +2671,7 @@ CustomScenario
 				id = 1
 				type = SCCGlobalValue
 				uiPos = (-180.8631, 64.13508, 0)
-				gv = 3
+				gv = 2
 				comparison = Greater_Than
 				c_value = 0
 			}
@@ -2170,7 +2716,7 @@ CustomScenario
 				id = 0
 				type = SCCUnit
 				uiPos = (-507.5209, 185.0016, 0)
-				unit = 11
+				unit = 10
 				methodName = SCC_GetsKilled
 				isNot = False
 			}
@@ -2186,7 +2732,7 @@ CustomScenario
 				id = 2
 				type = SCCUnit
 				uiPos = (-495.1875, 29.60025, 0)
-				unit = 11
+				unit = 10
 				methodName = SCC_NearWaypoint
 				isNot = False
 				methodParameters
@@ -2208,7 +2754,7 @@ CustomScenario
 			{
 				id = 0
 				type = SCCUnit
-				uiPos = (-499.4933, 240.2551, 0)
+				uiPos = (-557.3665, 813.3632, 0)
 				unit = 0
 				methodName = SCC_IsLockingTarget
 				isNot = False
@@ -2225,7 +2771,7 @@ CustomScenario
 			{
 				id = 2
 				type = SCCUnit
-				uiPos = (-502.1279, 50.9187, 0)
+				uiPos = (-589.9614, 314.4189, 0)
 				unit = 1
 				methodName = SCC_IsLockingTarget
 				isNot = False
@@ -2242,7 +2788,7 @@ CustomScenario
 			{
 				id = 3
 				type = SCCUnit
-				uiPos = (-502.7658, -123.9004, 0)
+				uiPos = (-562.8627, -235.101, 0)
 				unit = 2
 				methodName = SCC_IsLockingTarget
 				isNot = False
@@ -2259,7 +2805,7 @@ CustomScenario
 			{
 				id = 4
 				type = SCCUnit
-				uiPos = (-508.5081, -300.6336, 0)
+				uiPos = (-556.3235, -831.2753, 0)
 				unit = 3
 				methodName = SCC_IsLockingTarget
 				isNot = False
@@ -2277,7 +2823,171 @@ CustomScenario
 				id = 5
 				type = SCCOr
 				uiPos = (155.9486, -22.10201, 0)
-				factors = 0;2;3;4;
+				factors = 7;9;18;17;
+			}
+			COMP
+			{
+				id = 6
+				type = SCCUnit
+				uiPos = (-548.1145, 653.6237, 0)
+				unit = 0
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 7
+				type = SCCAnd
+				uiPos = (-251.021, 574.5603, 0)
+				factors = 0;6;12;
+			}
+			COMP
+			{
+				id = 8
+				type = SCCUnit
+				uiPos = (-579.0139, 139.4746, 0)
+				unit = 1
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 9
+				type = SCCAnd
+				uiPos = (-170.8253, 148.7593, 0)
+				factors = 2;8;11;
+			}
+			COMP
+			{
+				id = 11
+				type = SCCUnit
+				uiPos = (-587.6896, -30.91786, 0)
+				unit = 1
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 12
+				type = SCCUnit
+				uiPos = (-560.1429, 501.3462, 0)
+				unit = 0
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 13
+				type = SCCUnit
+				uiPos = (-557.5336, -396.2157, 0)
+				unit = 2
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 14
+				type = SCCUnit
+				uiPos = (-561.4568, -565.2052, 0)
+				unit = 2
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 15
+				type = SCCUnit
+				uiPos = (-553.718, -1004.454, 0)
+				unit = 3
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 16
+				type = SCCUnit
+				uiPos = (-544.6795, -1165.336, 0)
+				unit = 3
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 17
+				type = SCCAnd
+				uiPos = (-178.1287, -896.243, 0)
+				factors = 4;15;16;
+			}
+			COMP
+			{
+				id = 18
+				type = SCCAnd
+				uiPos = (-152.924, -390.9043, 0)
+				factors = 3;13;14;
 			}
 		}
 		CONDITIONAL
@@ -2440,7 +3150,7 @@ CustomScenario
 				team = Allied
 				statType = Player_Count
 				comparison = Greater_Than
-				count = 2
+				count = 0
 			}
 			COMP
 			{
@@ -2557,245 +3267,457 @@ CustomScenario
 		}
 		CONDITIONAL
 		{
-			id = 22
-			outputNodePos = (125.0532, -144.1939, 0)
-			root = 4
+			id = 29
+			outputNodePos = (462.753, 41.02628, 0)
+			root = 7
 			COMP
 			{
 				id = 0
 				type = SCCUnit
-				uiPos = (-540.0415, 198.0738, 0)
+				uiPos = (-334.3439, 533.475, 0)
 				unit = 0
-				methodName = SCC_IsLockingTarget
+				methodName = SCC_IsLockingTgtList
 				isNot = False
 				methodParameters
 				{
-					value = 29
+					value = 40;41;42;43;
 				}
 				methodParameters
 				{
-					value = TGP
+					value = Radar
 				}
 			}
 			COMP
 			{
 				id = 1
 				type = SCCUnit
-				uiPos = (-532.3852, 8.580095, 0)
+				uiPos = (-336.6109, 27.85094, 0)
 				unit = 1
-				methodName = SCC_IsLockingTarget
+				methodName = SCC_IsLockingTgtList
 				isNot = False
 				methodParameters
 				{
-					value = 29
+					value = 40;41;42;43;
 				}
 				methodParameters
 				{
-					value = TGP
+					value = Radar
 				}
 			}
 			COMP
 			{
 				id = 2
 				type = SCCUnit
-				uiPos = (-527.9191, -173.2574, 0)
+				uiPos = (-393.3799, -599.5936, 0)
 				unit = 2
-				methodName = SCC_IsLockingTarget
+				methodName = SCC_IsLockingTgtList
 				isNot = False
 				methodParameters
 				{
-					value = 29
+					value = 40;41;42;43;
 				}
 				methodParameters
 				{
-					value = TGP
+					value = Radar
 				}
 			}
 			COMP
 			{
 				id = 3
 				type = SCCUnit
-				uiPos = (-528.5571, -354.4566, 0)
+				uiPos = (-432.2214, -1149.355, 0)
 				unit = 3
-				methodName = SCC_IsLockingTarget
+				methodName = SCC_IsLockingTgtList
 				isNot = False
 				methodParameters
 				{
-					value = 29
+					value = 40;41;42;43;
 				}
 				methodParameters
 				{
-					value = TGP
+					value = Radar
 				}
 			}
 			COMP
 			{
 				id = 4
-				type = SCCOr
-				uiPos = (-55.50824, -80.39127, 0)
-				factors = 0;1;2;3;
-			}
-		}
-		CONDITIONAL
-		{
-			id = 23
-			outputNodePos = (0, 0, 0)
-			root = 5
-			COMP
-			{
-				id = 0
 				type = SCCUnit
-				uiPos = (-695.7198, 231.8891, 0)
+				uiPos = (-333.4093, 362.2191, 0)
 				unit = 0
-				methodName = SCC_IsLockingTarget
+				methodName = SCC_AltitudeRadar
 				isNot = False
 				methodParameters
 				{
-					value = 30
+					value = Less_Than
 				}
 				methodParameters
 				{
-					value = TGP
-				}
-			}
-			COMP
-			{
-				id = 2
-				type = SCCUnit
-				uiPos = (-686.6674, 41.44403, 0)
-				unit = 1
-				methodName = SCC_IsLockingTarget
-				isNot = False
-				methodParameters
-				{
-					value = 30
-				}
-				methodParameters
-				{
-					value = TGP
-				}
-			}
-			COMP
-			{
-				id = 3
-				type = SCCUnit
-				uiPos = (-691.7716, -146.7736, 0)
-				unit = 2
-				methodName = SCC_IsLockingTarget
-				isNot = False
-				methodParameters
-				{
-					value = 30
-				}
-				methodParameters
-				{
-					value = TGP
-				}
-			}
-			COMP
-			{
-				id = 4
-				type = SCCUnit
-				uiPos = (-695.5997, -342.0095, 0)
-				unit = 3
-				methodName = SCC_IsLockingTarget
-				isNot = False
-				methodParameters
-				{
-					value = 30
-				}
-				methodParameters
-				{
-					value = TGP
+					value = 66
 				}
 			}
 			COMP
 			{
 				id = 5
+				type = SCCUnit
+				uiPos = (-327.4336, 199.3823, 0)
+				unit = 0
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 6
+				type = SCCAnd
+				uiPos = (29.27761, 385.9164, 0)
+				factors = 0;4;5;
+			}
+			COMP
+			{
+				id = 7
 				type = SCCOr
-				uiPos = (-257.0044, -15.62603, 0)
-				factors = 0;2;3;4;
+				uiPos = (272.7859, 94.60282, 0)
+				factors = 6;16;15;14;
+			}
+			COMP
+			{
+				id = 8
+				type = SCCUnit
+				uiPos = (-352.8302, -154.6758, 0)
+				unit = 1
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 9
+				type = SCCUnit
+				uiPos = (-433.034, -781.8833, 0)
+				unit = 0
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 10
+				type = SCCUnit
+				uiPos = (-515.0117, -1330.391, 0)
+				unit = 3
+				methodName = SCC_AltitudeRadar
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 66
+				}
+			}
+			COMP
+			{
+				id = 11
+				type = SCCUnit
+				uiPos = (-366.8282, -350.9051, 0)
+				unit = 1
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 12
+				type = SCCUnit
+				uiPos = (-426.4992, -956.839, 0)
+				unit = 2
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 13
+				type = SCCUnit
+				uiPos = (-498.2183, -1519.267, 0)
+				unit = 3
+				methodName = SCC_Airspeed
+				isNot = False
+				methodParameters
+				{
+					value = Less_Than
+				}
+				methodParameters
+				{
+					value = 103
+				}
+			}
+			COMP
+			{
+				id = 14
+				type = SCCAnd
+				uiPos = (-91.9071, -1344.06, 0)
+				factors = 3;10;13;
+			}
+			COMP
+			{
+				id = 15
+				type = SCCAnd
+				uiPos = (-120.9844, -804.7147, 0)
+				factors = 2;9;12;
+			}
+			COMP
+			{
+				id = 16
+				type = SCCAnd
+				uiPos = (-51.10648, -141.8753, 0)
+				factors = 1;8;11;
 			}
 		}
 		CONDITIONAL
 		{
-			id = 24
-			outputNodePos = (263.5048, -5.104206, 0)
+			id = 28
+			outputNodePos = (457.6689, -255.2333, 0)
 			root = 4
 			COMP
 			{
 				id = 0
+				type = SCCGlobalValue
+				uiPos = (-84.81036, -22.25519, 0)
+				gv = 17
+				comparison = Greater_Than
+				c_value = 0
+			}
+			COMP
+			{
+				id = 1
+				type = SCCGlobalValue
+				uiPos = (-83.5598, -150.58, 0)
+				gv = 14
+				comparison = Greater_Than
+				c_value = 0
+			}
+			COMP
+			{
+				id = 2
+				type = SCCGlobalValue
+				uiPos = (-82.513, -278.7135, 0)
+				gv = 15
+				comparison = Greater_Than
+				c_value = 0
+			}
+			COMP
+			{
+				id = 3
+				type = SCCGlobalValue
+				uiPos = (-83.51678, -403.9759, 0)
+				gv = 16
+				comparison = Greater_Than
+				c_value = 0
+			}
+			COMP
+			{
+				id = 4
+				type = SCCOr
+				uiPos = (285.6049, -193.2538, 0)
+				factors = 0;1;2;3;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 30
+			outputNodePos = (0, 0, 0)
+		}
+		CONDITIONAL
+		{
+			id = 31
+			outputNodePos = (0, 0, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-412.6235, 66.16412, 0)
+				gv = 18
+				comparison = Greater_Than
+				c_value = 0
+			}
+		}
+		CONDITIONAL
+		{
+			id = 32
+			outputNodePos = (100.4492, -11.42835, 0)
+			root = 0
+			COMP
+			{
+				id = 0
+				type = SCCGlobalValue
+				uiPos = (-282.0997, 29.47311, 0)
+				gv = 19
+				comparison = Greater_Than
+				c_value = 0
+			}
+		}
+		CONDITIONAL
+		{
+			id = 33
+			outputNodePos = (165, -50, 0)
+			root = 2
+			COMP
+			{
+				id = 0
 				type = SCCUnit
-				uiPos = (-528.557, 288.6734, 0)
-				unit = 0
-				methodName = SCC_IsLockingTarget
+				uiPos = (-453.5999, 119.6301, 0)
+				unit = 37
+				methodName = SCC_GetsKilled
 				isNot = False
-				methodParameters
-				{
-					value = 31
-				}
-				methodParameters
-				{
-					value = TGP
-				}
 			}
 			COMP
 			{
 				id = 1
 				type = SCCUnit
-				uiPos = (-527.9189, 111.3023, 0)
-				unit = 1
-				methodName = SCC_IsLockingTarget
+				uiPos = (-453.5999, -41.61995, 0)
+				unit = 37
+				methodName = SC_IsLanded
+				isNot = False
+			}
+			COMP
+			{
+				id = 2
+				type = SCCOr
+				uiPos = (0, 0, 0)
+				factors = 0;1;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 34
+			outputNodePos = (-1.276107, 0, 0)
+			root = 2
+			COMP
+			{
+				id = 0
+				type = SCCUnit
+				uiPos = (-462.0823, 129.6311, 0)
+				unit = 37
+				methodName = SCC_GetsKilled
+				isNot = False
+			}
+			COMP
+			{
+				id = 1
+				type = SCCUnit
+				uiPos = (-519.0338, -111.9321, 0)
+				unit = 37
+				methodName = SC_IsLanded
+				isNot = False
+			}
+			COMP
+			{
+				id = 2
+				type = SCCOr
+				uiPos = (-140.3941, 44.31939, 0)
+				factors = 0;1;
+			}
+		}
+		CONDITIONAL
+		{
+			id = 35
+			outputNodePos = (272.9077, 129.6311, 0)
+			root = 4
+			COMP
+			{
+				id = 1
+				type = SCCUnitGroup
+				uiPos = (-401.2983, 1.240489, 0)
+				unitGroup = Allied:Delta
+				methodName = SCC_NumAlive
 				isNot = False
 				methodParameters
 				{
-					value = 31
+					value = Greater_Than
 				}
 				methodParameters
 				{
-					value = TGP
+					value = 0
 				}
 			}
 			COMP
 			{
 				id = 2
-				type = SCCUnit
-				uiPos = (-528.5569, -67.34498, 0)
-				unit = 2
-				methodName = SCC_IsLockingTarget
+				type = SCCUnitGroup
+				uiPos = (-400.6781, 191.6556, 0)
+				unitGroup = Allied:Charlie
+				methodName = SCC_NumAlive
 				isNot = False
 				methodParameters
 				{
-					value = 31
+					value = Greater_Than
 				}
 				methodParameters
 				{
-					value = TGP
+					value = 0
 				}
 			}
 			COMP
 			{
 				id = 3
-				type = SCCUnit
-				uiPos = (-528.5569, -245.3542, 0)
-				unit = 3
-				methodName = SCC_IsLockingTarget
+				type = SCCUnitGroup
+				uiPos = (-402.5388, 387.0327, 0)
+				unitGroup = Allied:Bravo
+				methodName = SCC_NumAlive
 				isNot = False
 				methodParameters
 				{
-					value = 31
+					value = Greater_Than
 				}
 				methodParameters
 				{
-					value = TGP
+					value = 0
 				}
 			}
 			COMP
 			{
 				id = 4
 				type = SCCOr
-				uiPos = (41.47169, 31.26327, 0)
-				factors = 0;1;2;3;
+				uiPos = (47.95864, 186.347, 0)
+				factors = 3;2;1;
 			}
 		}
 	}
@@ -2831,9 +3753,15 @@ CustomScenario
 					{
 						targetType = Unit
 						targetID = 12
-						eventName = Spawn Unit
-						methodName = SpawnUnit
+						eventName = Move To
+						methodName = MoveTo
 						altTargetIdx = -2
+						ParamInfo
+						{
+							type = Waypoint
+							value = 2
+							name = Target
+						}
 					}
 				}
 				ELSE_ACTIONS
@@ -2848,7 +3776,7 @@ CustomScenario
 			name = 
 			BASE_BLOCK
 			{
-				blockName = If south supply boat destroyed
+				blockName = If north supply boat destroyed
 				blockId = 1
 				CONDITIONAL
 				{
@@ -2871,10 +3799,45 @@ CustomScenario
 					EventTarget
 					{
 						targetType = Unit
-						targetID = 12
+						targetID = 13
 						eventName = Spawn Unit
 						methodName = SpawnUnit
 						altTargetIdx = -2
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = North supply boat destroyed
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 10
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
 					}
 				}
 				ELSE_ACTIONS
@@ -2947,6 +3910,41 @@ CustomScenario
 							}
 						}
 					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Resupply boat arrived
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 10
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
 				}
 				ELSE_ACTIONS
 				{
@@ -2991,6 +3989,82 @@ CustomScenario
 					EventTarget
 					{
 						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = Resupply boat arrived
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = Trigger_Events
+						targetID = 10
+						eventName = Trigger
+						methodName = Trigger
+						altTargetIdx = -1
+					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 12
+			name = 
+			BASE_BLOCK
+			{
+				blockName = 
+				blockId = 13
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (0, 0, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-573.1005, 20.14091, 0)
+						unit = 37
+						methodName = SC_IsLanded
+						isNot = False
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
 						targetID = 2
 						eventName = Increment Value
 						methodName = IncrementValue
@@ -3018,6 +4092,39 @@ CustomScenario
 							}
 						}
 					}
+				}
+				ELSE_ACTIONS
+				{
+					eventName = 
+				}
+			}
+		}
+		ConditionalAction
+		{
+			id = 14
+			name = 
+			BASE_BLOCK
+			{
+				blockName = Got killed
+				blockId = 15
+				CONDITIONAL
+				{
+					id = 0
+					outputNodePos = (62.78577, -5.078262, 0)
+					root = 0
+					COMP
+					{
+						id = 0
+						type = SCCUnit
+						uiPos = (-245.6032, 36.93281, 0)
+						unit = 37
+						methodName = SCC_GetsKilled
+						isNot = False
+					}
+				}
+				ACTIONS
+				{
+					eventName = 
 				}
 				ELSE_ACTIONS
 				{
@@ -3456,13 +4563,535 @@ CustomScenario
 				}
 			}
 		}
+		RANDOM_EVENT
+		{
+			id = 20
+			note = 
+			ACTION
+			{
+				id = 21
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 14
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 14
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 203
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 22
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 15
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 15
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 204
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 23
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 16
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 16
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 205
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 24
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 17
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 17
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = SAM SPAWN IN NOT IMPLEMENTED YET
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 10
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+				}
+			}
+		}
+		RANDOM_EVENT
+		{
+			id = 25
+			note = 
+			ACTION
+			{
+				id = 26
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 14
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 14
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 203
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 27
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 15
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 15
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 204
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 28
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 16
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 16
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 205
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 29
+				actionName = 
+				fixedWeight = 100
+				gvWeight = 17
+				useGv = True
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 2
+						eventName = Set Value
+						methodName = SetValue
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = GlobalValue
+							value = 17
+							name = Global Value
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 0
+							name = Set to
+							ParamAttrInfo
+							{
+								type = UnitSpawnAttributeRange+RangeTypes
+								data = Int
+							}
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (-99999,99999)
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 206
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		RANDOM_EVENT
+		{
+			id = 30
+			note = 
+			ACTION
+			{
+				id = 31
+				actionName = 
+				fixedWeight = 50
+				gvWeight = -1
+				useGv = False
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 5
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 32
+				actionName = 
+				fixedWeight = 100
+				gvWeight = -1
+				useGv = False
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 6
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 33
+				actionName = 
+				fixedWeight = 200
+				gvWeight = -1
+				useGv = False
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 7
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+			ACTION
+			{
+				id = 34
+				actionName = 
+				fixedWeight = 100
+				gvWeight = -1
+				useGv = False
+				EVENT_INFO
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 8
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
 	}
 	EventSequences
 	{
 		SEQUENCE
 		{
 			id = 0
-			sequenceName = Boat 2 Resupply
+			sequenceName = South Resupply Boat
 			startImmediately = True
 			whileLoop = False
 			ListOrderIndex = 10
@@ -3587,71 +5216,8 @@ CustomScenario
 		}
 		SEQUENCE
 		{
-			id = 1
-			sequenceName = Airfield 2 Fighter Launch
-			startImmediately = True
-			whileLoop = False
-			ListOrderIndex = 30
-			ListFolderName = 
-			EVENT
-			{
-				conditional = 1
-				delay = 0
-				nodeName = New Node
-				EventInfo
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = UnitGroup
-						targetID = 203
-						eventName = Spawn All
-						methodName = SpawnAll
-						altTargetIdx = -1
-					}
-				}
-			}
-			EVENT
-			{
-				conditional = 2
-				delay = 0
-				nodeName = New Node
-				EventInfo
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = UnitGroup
-						targetID = 204
-						eventName = Spawn All
-						methodName = SpawnAll
-						altTargetIdx = -1
-					}
-				}
-			}
-			EVENT
-			{
-				conditional = 3
-				delay = 0
-				nodeName = New Node
-				EventInfo
-				{
-					eventName = 
-					EventTarget
-					{
-						targetType = UnitGroup
-						targetID = 205
-						eventName = Spawn All
-						methodName = SpawnAll
-						altTargetIdx = -1
-					}
-				}
-			}
-		}
-		SEQUENCE
-		{
 			id = 2
-			sequenceName = Airfield 1 Fighter Launch
+			sequenceName = Airfield North Fighter Launch
 			startImmediately = True
 			whileLoop = False
 			ListOrderIndex = 20
@@ -3714,7 +5280,7 @@ CustomScenario
 		SEQUENCE
 		{
 			id = 3
-			sequenceName = Boat 1 Resupply
+			sequenceName = North Resupply Boat
 			startImmediately = True
 			whileLoop = False
 			ListOrderIndex = 0
@@ -3762,7 +5328,7 @@ CustomScenario
 						ParamInfo
 						{
 							type = System.Single
-							value = 1
+							value = 10
 							name = Duration
 							ParamAttrInfo
 							{
@@ -3837,8 +5403,358 @@ CustomScenario
 				}
 			}
 		}
+		SEQUENCE
+		{
+			id = 4
+			sequenceName = South Cargo Plane
+			startImmediately = True
+			whileLoop = False
+			ListOrderIndex = 0
+			ListFolderName = South Cargo Plane
+			EVENT
+			{
+				conditional = 28
+				delay = 1
+				nodeName = pause a second before land
+				exitConditional = 34
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 37
+						eventName = Spawn Unit
+						methodName = SpawnUnit
+						altTargetIdx = -2
+					}
+					EventTarget
+					{
+						targetType = Unit
+						targetID = 37
+						eventName = Land
+						methodName = Land
+						altTargetIdx = -2
+						ParamInfo
+						{
+							type = AirportReference
+							value = map:1
+							name = Airfield
+							ParamAttrInfo
+							{
+								type = TeamOptions
+								data = SameTeam
+							}
+						}
+					}
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = South Supply plane launched
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 10
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = Gets killed
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 14
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = Landed
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Conditional Action
+						methodName = FireConditionalAction
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = ConditionalActionReference
+							value = 12
+							name = Action
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 0
+						eventName = Fire Random Event
+						methodName = FireRandomEvent
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = RandomEventReference
+							value = 30
+							name = Event
+						}
+					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 5
+			sequenceName = Respawn South Cargo Plane 2m timer
+			startImmediately = False
+			whileLoop = False
+			ListOrderIndex = 1
+			ListFolderName = South Cargo Plane
+			EVENT
+			{
+				delay = 120
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 4
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 6
+			sequenceName = Respawn South Cargo Plane 4m timer
+			startImmediately = False
+			whileLoop = False
+			ListOrderIndex = 2
+			ListFolderName = South Cargo Plane
+			EVENT
+			{
+				delay = 240
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 4
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 7
+			sequenceName = Respawn South Cargo Plane 6m timer
+			startImmediately = False
+			whileLoop = False
+			ListOrderIndex = 3
+			ListFolderName = South Cargo Plane
+			EVENT
+			{
+				delay = 360
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 4
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 8
+			sequenceName = Respawn South Cargo Plane 8m timer
+			startImmediately = False
+			whileLoop = False
+			ListOrderIndex = 4
+			ListFolderName = South Cargo Plane
+			EVENT
+			{
+				delay = 480
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = Event_Sequences
+						targetID = 4
+						eventName = Restart
+						methodName = Restart
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 9
+			sequenceName = Game Start (with spawn in)
+			startImmediately = True
+			whileLoop = False
+			ListOrderIndex = 40
+			ListFolderName = 
+			EVENT
+			{
+				conditional = 35
+				delay = 0
+				nodeName = Test for a player in plane
+				EventInfo
+				{
+					eventName = 
+				}
+			}
+		}
+		SEQUENCE
+		{
+			id = 10
+			sequenceName = North Base SAMs Activation
+			startImmediately = False
+			whileLoop = False
+			ListOrderIndex = 50
+			ListFolderName = 
+			EVENT
+			{
+				delay = 0
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = System
+						targetID = 1
+						eventName = Display Message
+						methodName = DisplayMessage
+						altTargetIdx = -1
+						ParamInfo
+						{
+							type = System.String
+							value = North base SAMs being rearmed, coming online in 30 seconds
+							name = Text
+							ParamAttrInfo
+							{
+								type = TextInputModes
+								data = MultiLine
+							}
+							ParamAttrInfo
+							{
+								type = System.Int32
+								data = 140
+							}
+						}
+						ParamInfo
+						{
+							type = System.Single
+							value = 1
+							name = Duration
+							ParamAttrInfo
+							{
+								type = MinMax
+								data = (1,9999)
+							}
+						}
+					}
+				}
+			}
+			EVENT
+			{
+				delay = 30
+				nodeName = New Node
+				EventInfo
+				{
+					eventName = 
+					EventTarget
+					{
+						targetType = UnitGroup
+						targetID = 207
+						eventName = Spawn All
+						methodName = SpawnAll
+						altTargetIdx = -1
+					}
+				}
+			}
+		}
 		FOLDER_DATA
 		{
+			FOLDER
+			{
+				name = South Cargo Plane
+				sortOrder = 30
+				expanded = True
+			}
 		}
 	}
 	BASES
@@ -3855,8 +5771,8 @@ CustomScenario
 		BaseInfo
 		{
 			id = 2
-			overrideBaseName = 
-			baseTeam = Allied
+			overrideBaseName = Enemy South Base
+			baseTeam = Enemy
 			CUSTOM_DATA
 			{
 			}
@@ -3864,8 +5780,8 @@ CustomScenario
 		BaseInfo
 		{
 			id = 5
-			overrideBaseName = 
-			baseTeam = Allied
+			overrideBaseName = Enemy North Base
+			baseTeam = Enemy
 			CUSTOM_DATA
 			{
 			}
@@ -3882,54 +5798,90 @@ CustomScenario
 		gv
 		{
 			data = 6;Target identified 1;;0;
-			ListOrderIndex = 40
+			ListOrderIndex = 100
 			ListFolderName = 
 		}
 		gv
 		{
-			data = 2;Airfield 2 Fghtr sqnce;;0;
-			ListOrderIndex = 90
+			data = 2;Airfield Sth Fghtr sqnce;;0;
+			ListOrderIndex = 150
 			ListFolderName = 
 		}
 		gv
 		{
-			data = 3;Arifield 1 Fghtr sqnce;;0;
-			ListOrderIndex = 80
+			data = 3;Arifield Nrt Fghtr sqnce;;0;
+			ListOrderIndex = 140
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 8;Target identified 2;;0;
-			ListOrderIndex = 50
+			ListOrderIndex = 110
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 9;Target identified 3;;0;
-			ListOrderIndex = 60
+			ListOrderIndex = 120
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 10;Target identified 4;;0;
-			ListOrderIndex = 70
+			ListOrderIndex = 130
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 11;NO FAIL;;0;
-			ListOrderIndex = 30
+			ListOrderIndex = 90
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 12;All Jammers Destroyed;;0;
-			ListOrderIndex = 20
+			ListOrderIndex = 80
 			ListFolderName = 
 		}
 		gv
 		{
 			data = 13;All Jammers Found;;0;
+			ListOrderIndex = 70
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 14;SouthBase Fghtr1 Supply;;10;
+			ListOrderIndex = 60
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 15;SouthBase Fghtr2 Supply;;5;
+			ListOrderIndex = 50
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 16;SouthBase Fghtr3 Supply;;2;
+			ListOrderIndex = 40
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 17;SouthBase SAM Supply;;3;
+			ListOrderIndex = 30
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 18;North Base Received Spls;;0;
+			ListOrderIndex = 20
+			ListFolderName = 
+		}
+		gv
+		{
+			data = 19;South Base Received Spls;;0;
 			ListOrderIndex = 10
 			ListFolderName = 
 		}
@@ -3941,7 +5893,7 @@ CustomScenario
 	{
 		BRIEFING_NOTE
 		{
-			text = Solo: Alternate F-16 and A-10/AH-94, Solo F-22///n///n2 Player: F-16 and A-10/AH-94 then 2 ship of F-22s///n///n3+ players: Fill roles as desired
+			text = Solo: Alternate F-16 and A-10/AH-94, Solo F-22///n///n2 Player: F-16 and A-10/AH-94 then 2 ship of F-22s///n///n3+ players: Fill additional roles as desired
 			imagePath = 
 			audioClipPath = 
 		}
@@ -3953,7 +5905,13 @@ CustomScenario
 		}
 		BRIEFING_NOTE
 		{
-			text = The enemy has two airbases on the north and south ends of the island but are missing key supplies to fly their jets.   ///n///nThey are actively shipping in those supplies and can make their fighters airworthy quickly if the resupply ships arrive.///n///nThere are nearby destroyers which the enemy can call in for anti-air support if they deem it necessary.
+			text = The jammers are buried underground below bunkers.  Our A-10s and AH-94s are equipped with special targeting pods which can see below ground to identify which bunkers have the jammers underneath them but you must fly low and slow for them to function.///n///nOur F-16s have not been equipped with these modifications.
+			imagePath = 
+			audioClipPath = 
+		}
+		BRIEFING_NOTE
+		{
+			text = The enemy has two airbases on the north and south ends of the island but are missing key supplies to fly their jets.   ///n///nThey are actively bringing in those supplies via sea and air and can make their fighters airworthy quickly if the supplies arrive.///n///nThere are nearby destroyers which the enemy can call in for anti-air support should they deem it necessary.
 			imagePath = 
 			audioClipPath = 
 		}
